@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sample-1",
+    "title": "Sample Entry — replace with a real title",
+    "author": ["Author Name"],
+    "year": 2020,
+    "publisher": "Publisher",
+    "tags": ["rhetoric", "example-tag"],
+    "status": "to-read",
+    "notes": "Placeholder entry. Delete once you add your real reading list to this file (src/data/books/rhetoric-tech-comm.json)."
+  },
+  {
+    "id": "sample-2",
+    "title": "Another Sample Entry",
+    "author": ["Author One", "Author Two"],
+    "year": 2018,
+    "publisher": "Publisher",
+    "tags": ["technical communication"],
+    "status": "reading",
+    "notes": "Each object in this array is one book. id must be unique within this file."
+  }
+]
