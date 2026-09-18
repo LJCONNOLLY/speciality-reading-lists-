@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
   background: var(--paper);
@@ -31,57 +35,69 @@ a {
 /* ---- Home ---- */
 
 .home {
-  max-width: 960px;
+  min-height: 100vh;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .home-header h1 {
-  font-size: 2.6rem;
+  font-size: 5rem;
+  line-height: 1.05;
 }
 
 .home-header p {
   color: var(--muted);
+  font-size: 1.4rem;
 }
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
 }
 
 .home-card {
-  display: block;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 55vh;
+  padding: 3.5rem;
   border: 1px solid var(--border);
-  border-top: 6px solid var(--accent);
-  border-radius: 10px;
+  border-top: 10px solid var(--accent);
+  border-radius: 14px;
   background: #fff;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .home-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
 }
 
 .home-card h2 {
-  font-size: 1.4rem;
+  font-size: 2.75rem;
+  line-height: 1.1;
   color: var(--accent);
 }
 
 .home-card p {
   color: var(--muted);
-  margin-bottom: 1rem;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex: 1;
 }
 
 .home-card-count {
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--muted);
