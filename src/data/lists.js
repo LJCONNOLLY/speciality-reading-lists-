@@ -15,7 +15,7 @@ export const lists = [
   },
   {
     id: 'queer-critical-data-studies',
-    title: 'Queer & Critical Data Studies',
+    title: 'Queer and Trans Critiques of Classification and Datafication',
     tagline: 'Queer theory in conversation with critical approaches to data, algorithms, and infrastructure.',
     accent: '#6d4aa0',
     books: queerCriticalDataStudies,
