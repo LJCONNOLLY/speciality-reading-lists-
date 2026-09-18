@@ -1,32 +1,32 @@
 [
   {
-    "id": "sample-1",
-    "title": "Sample Entry — replace with a real title",
-    "author": ["Author Name"],
-    "year": 2021,
-    "publisher": "Publisher",
-    "tags": ["queer theory", "example-tag"],
-    "status": "unread-unprinted",
-    "notes": "Placeholder entry. Delete once you add your real reading list to this file (src/data/books/queer-critical-data-studies.json)."
-  },
-  {
-    "id": "sample-2",
-    "title": "Another Sample Entry",
-    "author": ["Author One"],
-    "year": 2019,
-    "publisher": "Publisher",
-    "tags": ["critical data studies"],
+    "id": "guyan-constructing-a-queer-population",
+    "title": "Constructing a Queer Population? Asking About Sexual Orientation in Scotland's 2022 Census",
+    "author": ["Kevin Guyan"],
+    "year": 2022,
+    "publisher": "Journal of Gender Studies (Taylor & Francis)",
+    "tags": ["census", "sexual orientation", "data collection"],
     "status": "printed-ready",
-    "notes": "Each object in this array is one book. id must be unique within this file."
+    "notes": "Journal of Gender Studies, 31(6), 782–792. DOI: 10.1080/09589236.2020.1866513"
   },
   {
-    "id": "sample-3",
-    "title": "A Third Sample Entry",
-    "author": ["Author Name"],
-    "year": 2017,
-    "publisher": "Publisher",
-    "tags": ["example-tag"],
-    "status": "read",
-    "notes": "status must be one of: unread-unprinted, printed-ready, read (see src/utils/status.js)."
+    "id": "collier-cowan-queer-conflicts-concept-capture",
+    "title": "Queer Conflicts, Concept Capture and Category Co-Option: The Importance of Context in the State Collection and Recording of Sex/Gender Data",
+    "author": ["Ben Collier", "Sharon Cowan"],
+    "year": 2022,
+    "publisher": "Social & Legal Studies (SAGE)",
+    "tags": ["sex/gender data", "state data collection", "concept capture"],
+    "status": "printed-ready",
+    "notes": "Social & Legal Studies, 31(5), 746–772. DOI: 10.1177/09646639211061409"
+  },
+  {
+    "id": "simeoni-querying-the-quantification-of-the-queer",
+    "title": "Querying the Quantification of the Queer: Data-Driven Visualisations of the Gender Spectrum",
+    "author": ["Fe Simeoni", "María Menéndez-Blanco", "Rupesh Vyas", "Antonella De Angeli"],
+    "year": 2024,
+    "publisher": "ACM (DIS '24)",
+    "tags": ["gender spectrum", "data visualisation", "nonbinary"],
+    "status": "printed-ready",
+    "notes": "Designing Interactive Systems Conference (DIS '24), IT University of Copenhagen. DOI: 10.1145/3643834.3660695"
   }
 ]
