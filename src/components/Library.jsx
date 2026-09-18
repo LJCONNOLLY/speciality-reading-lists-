@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, useOutletContext } from 'react-router-dom';
+import { STATUSES, statusLabel } from '../utils/status.js';
 
 function matches(book, query) {
   const haystack = [
@@ -17,14 +18,53 @@ function matches(book, query) {
 export default function Library() {
   const { list } = useOutletContext();
   const [query, setQuery] = useState('');
+  const [folder, setFolder] = useState('all');
+
+  const counts = useMemo(() => {
+    const byStatus = { all: list.books.length };
+    STATUSES.forEach((status) => {
+      byStatus[status.id] = list.books.filter((book) => book.status === status.id).length;
+    });
+    return byStatus;
+  }, [list.books]);
 
   const results = useMemo(() => {
-    if (!query.trim()) return list.books;
-    return list.books.filter((book) => matches(book, query));
-  }, [list.books, query]);
+    let books = list.books;
+    if (folder !== 'all') {
+      books = books.filter((book) => book.status === folder);
+    }
+    if (query.trim()) {
+      books = books.filter((book) => matches(book, query));
+    }
+    return books;
+  }, [list.books, query, folder]);
 
   return (
     <div className="library">
+      <div className="folder-tabs" role="tablist" aria-label="Filter by reading status">
+        <button
+          type="button"
+          role="tab"
+          aria-selected={folder === 'all'}
+          className={`folder-tab${folder === 'all' ? ' active' : ''}`}
+          onClick={() => setFolder('all')}
+        >
+          All <span className="folder-count">{counts.all}</span>
+        </button>
+        {STATUSES.map((status) => (
+          <button
+            key={status.id}
+            type="button"
+            role="tab"
+            aria-selected={folder === status.id}
+            className={`folder-tab folder-tab-${status.id}${folder === status.id ? ' active' : ''}`}
+            onClick={() => setFolder(status.id)}
+          >
+            {status.label} <span className="folder-count">{counts[status.id] || 0}</span>
+          </button>
+        ))}
+      </div>
+
       <div className="search-bar">
         <input
           type="search"
@@ -39,7 +79,11 @@ export default function Library() {
       </div>
 
       {results.length === 0 ? (
-        <p className="empty-state">No texts match &ldquo;{query}&rdquo;.</p>
+        <p className="empty-state">
+          {query.trim()
+            ? `No texts match “${query}”.`
+            : 'No texts in this folder yet.'}
+        </p>
       ) : (
         <div className="book-grid">
           {results.map((book) => (
@@ -58,7 +102,7 @@ export default function Library() {
                   ))}
                 </div>
               ) : null}
-              <span className={`status status-${book.status}`}>{book.status}</span>
+              <span className={`status status-${book.status}`}>{statusLabel(book.status)}</span>
             </Link>
           ))}
         </div>

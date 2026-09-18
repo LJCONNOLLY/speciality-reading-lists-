@@ -6,7 +6,7 @@
     "year": 2021,
     "publisher": "Publisher",
     "tags": ["queer theory", "example-tag"],
-    "status": "to-read",
+    "status": "unread-unprinted",
     "notes": "Placeholder entry. Delete once you add your real reading list to this file (src/data/books/queer-critical-data-studies.json)."
   },
   {
@@ -16,7 +16,17 @@
     "year": 2019,
     "publisher": "Publisher",
     "tags": ["critical data studies"],
-    "status": "read",
+    "status": "printed-ready",
     "notes": "Each object in this array is one book. id must be unique within this file."
+  },
+  {
+    "id": "sample-3",
+    "title": "A Third Sample Entry",
+    "author": ["Author Name"],
+    "year": 2017,
+    "publisher": "Publisher",
+    "tags": ["example-tag"],
+    "status": "read",
+    "notes": "status must be one of: unread-unprinted, printed-ready, read (see src/utils/status.js)."
   }
 ]

@@ -4,9 +4,9 @@
   --muted: #6b6660;
   --border: #e4dfd8;
   --accent: #2f6f5e;
-  --status-to-read: #b8722e;
-  --status-reading: #2f6f5e;
-  --status-read: #4a5d8a;
+  --status-unread-unprinted: #b8722e;
+  --status-printed-ready: #2f6f8f;
+  --status-read: #3f7d4f;
   color-scheme: light;
 }
 
@@ -185,6 +185,45 @@ a {
   font-size: 1.05rem;
 }
 
+/* ---- Folders ---- */
+
+.folder-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.folder-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 5%, white);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.folder-tab:hover {
+  background: color-mix(in srgb, var(--accent) 14%, white);
+}
+
+.folder-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.folder-count {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
 /* ---- Search ---- */
 
 .search-bar {
@@ -282,14 +321,14 @@ a {
   margin-top: 0.5rem;
 }
 
-.status-to-read {
-  color: var(--status-to-read);
-  background: color-mix(in srgb, var(--status-to-read) 15%, white);
+.status-unread-unprinted {
+  color: var(--status-unread-unprinted);
+  background: color-mix(in srgb, var(--status-unread-unprinted) 15%, white);
 }
 
-.status-reading {
-  color: var(--status-reading);
-  background: color-mix(in srgb, var(--status-reading) 15%, white);
+.status-printed-ready {
+  color: var(--status-printed-ready);
+  background: color-mix(in srgb, var(--status-printed-ready) 15%, white);
 }
 
 .status-read {

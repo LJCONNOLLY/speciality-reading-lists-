@@ -1,4 +1,5 @@
 import { Link, useOutletContext, useParams } from 'react-router-dom';
+import { statusLabel } from '../utils/status.js';
 
 export default function BookProfile() {
   const { list } = useOutletContext();
@@ -24,7 +25,7 @@ export default function BookProfile() {
       <p className="book-card-meta">
         {book.year} {book.publisher ? `· ${book.publisher}` : ''}
       </p>
-      <span className={`status status-${book.status}`}>{book.status}</span>
+      <span className={`status status-${book.status}`}>{statusLabel(book.status)}</span>
       {book.tags?.length ? (
         <div className="tag-row">
           {book.tags.map((tag) => (

@@ -26,16 +26,26 @@ Each file is an array of book objects:
   "year": 2020,
   "publisher": "Publisher",
   "tags": ["topic-tag"],
-  "status": "to-read",
+  "status": "unread-unprinted",
   "notes": "Free-text notes/summary."
 }
 ```
 
-`id` must be unique within its file (used in the book's URL). `status` is
-free text but the sample data uses `to-read`, `reading`, `read`.
+`id` must be unique within its file (used in the book's URL). `status`
+must be one of the three folders defined in `src/utils/status.js`:
 
-The two sample entries in each file are placeholders — replace or delete
-them once you add your real lists.
+- `unread-unprinted`
+- `printed-ready`
+- `read`
+
+Each list page shows these as filterable folder tabs (All / Unread,
+Unprinted / Printed & Ready / Read) above the search bar, with a count
+per folder. To rename a folder or add a new one, edit the `STATUSES`
+array in `src/utils/status.js` — the tabs, book cards, and book pages
+all read from that one list.
+
+The three sample entries in each file are placeholders — replace or
+delete them once you add your real lists.
 
 ## Adding a third list
 

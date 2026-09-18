@@ -6,7 +6,7 @@
     "year": 2020,
     "publisher": "Publisher",
     "tags": ["rhetoric", "example-tag"],
-    "status": "to-read",
+    "status": "unread-unprinted",
     "notes": "Placeholder entry. Delete once you add your real reading list to this file (src/data/books/rhetoric-tech-comm.json)."
   },
   {
@@ -16,7 +16,17 @@
     "year": 2018,
     "publisher": "Publisher",
     "tags": ["technical communication"],
-    "status": "reading",
+    "status": "printed-ready",
     "notes": "Each object in this array is one book. id must be unique within this file."
+  },
+  {
+    "id": "sample-3",
+    "title": "A Third Sample Entry",
+    "author": ["Author Name"],
+    "year": 2015,
+    "publisher": "Publisher",
+    "tags": ["example-tag"],
+    "status": "read",
+    "notes": "status must be one of: unread-unprinted, printed-ready, read (see src/utils/status.js)."
   }
 ]
