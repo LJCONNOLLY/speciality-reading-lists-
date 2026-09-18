@@ -60,3 +60,12 @@ npm run build
 ```
 
 Outputs to `dist/`, configured for GitHub Pages under `/speciality-reading-lists-/`.
+
+## Deploying
+
+`.github/workflows/deploy.yml` builds the site and publishes it to GitHub
+Pages on every push to `main` (or manually via the Actions tab).
+
+One-time setup, in the repo's GitHub settings: **Settings → Pages → Build
+and deployment → Source: GitHub Actions**. After that, merging this branch
+into `main` will publish the site automatically.
