@@ -16,18 +16,20 @@ export default function ListLayout() {
 
   return (
     <div className="list-site" style={{ '--accent': list.accent }}>
-      <header className="list-header">
-        <Link to="/" className="list-home-link">
-          &larr; All lists
-        </Link>
-        <h1>
-          <Link to={`/list/${list.id}`}>{list.title}</Link>
-        </h1>
-        <p>{list.tagline}</p>
-      </header>
-      <main>
-        <Outlet context={{ list }} />
-      </main>
+      <div className="list-site-inner">
+        <header className="list-header">
+          <Link to="/" className="list-home-link">
+            &larr; All lists
+          </Link>
+          <h1>
+            <Link to={`/list/${list.id}`}>{list.title}</Link>
+          </h1>
+          <p>{list.tagline}</p>
+        </header>
+        <main>
+          <Outlet context={{ list }} />
+        </main>
+      </div>
     </div>
   );
 }

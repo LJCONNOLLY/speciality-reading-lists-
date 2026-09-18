@@ -16,9 +16,18 @@ export default function Home() {
             className="home-card"
             style={{ '--accent': list.accent }}
           >
+            <span className="home-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                <path d="M4 5.5C4 4.67 4.67 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z" />
+                <path d="M20 5.5c0-.83-.67-1.5-1.5-1.5H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13Z" />
+              </svg>
+            </span>
             <h2>{list.title}</h2>
             <p>{list.tagline}</p>
-            <span className="home-card-count">{list.books.length} texts</span>
+            <div className="home-card-footer">
+              <span className="home-card-count">{list.books.length} texts</span>
+              <span className="home-card-cta">Browse list &rarr;</span>
+            </div>
           </Link>
         ))}
       </div>

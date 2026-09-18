@@ -1,9 +1,12 @@
 :root {
   --ink: #1c1b1a;
-  --paper: #faf8f5;
+  --paper: #f1ece1;
   --muted: #6b6660;
   --border: #e4dfd8;
   --accent: #2f6f5e;
+  --status-to-read: #b8722e;
+  --status-reading: #2f6f5e;
+  --status-read: #4a5d8a;
   color-scheme: light;
 }
 
@@ -42,6 +45,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background:
+    radial-gradient(ellipse 900px 500px at 15% 0%, color-mix(in srgb, #2f6f5e 10%, transparent), transparent),
+    radial-gradient(ellipse 900px 500px at 85% 100%, color-mix(in srgb, #6d4aa0 10%, transparent), transparent);
 }
 
 .home-header {
@@ -70,16 +76,34 @@ a {
   flex-direction: column;
   min-height: 55vh;
   padding: 3.5rem;
-  border: 1px solid var(--border);
-  border-top: 10px solid var(--accent);
-  border-radius: 14px;
-  background: #fff;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
+  border-radius: 20px;
+  background:
+    linear-gradient(165deg, color-mix(in srgb, var(--accent) 16%, white), color-mix(in srgb, var(--accent) 6%, white));
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--accent) 12%, transparent);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .home-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.home-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1.75rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 20%, white);
+  color: var(--accent);
+}
+
+.home-card-icon svg {
+  width: 1.9rem;
+  height: 1.9rem;
 }
 
 .home-card h2 {
@@ -89,23 +113,49 @@ a {
 }
 
 .home-card p {
-  color: var(--muted);
+  color: var(--ink);
+  opacity: 0.75;
   font-size: 1.35rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
   flex: 1;
 }
 
+.home-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
 .home-card-count {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--muted);
 }
 
+.home-card-cta {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: transform 0.15s ease;
+}
+
+.home-card:hover .home-card-cta {
+  transform: translateX(4px);
+}
+
 /* ---- List site ---- */
 
 .list-site {
+  min-height: 100vh;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 8%, var(--paper)), var(--paper) 420px);
+}
+
+.list-site-inner {
   max-width: 1080px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem 4rem;
@@ -126,12 +176,13 @@ a {
 
 .list-header h1 {
   color: var(--accent);
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 .list-header p {
   color: var(--muted);
   max-width: 640px;
+  font-size: 1.05rem;
 }
 
 /* ---- Search ---- */
@@ -145,17 +196,18 @@ a {
 
 .search-bar input {
   flex: 1;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-size: 1rem;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
+  border-radius: 10px;
+  font-size: 1.05rem;
   font-family: inherit;
-  background: #fff;
+  background: color-mix(in srgb, var(--accent) 5%, white);
 }
 
 .search-bar input:focus {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
+  background: white;
 }
 
 .search-count {
@@ -178,15 +230,19 @@ a {
 
 .book-card {
   display: block;
-  padding: 1.25rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: #fff;
-  transition: box-shadow 0.15s ease;
+  padding: 1.25rem 1.25rem 1.25rem 1.4rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 15%, var(--border));
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 5%, white);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 6%, transparent);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
 .book-card:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+  background: color-mix(in srgb, var(--accent) 10%, white);
+  box-shadow: 0 10px 20px color-mix(in srgb, var(--accent) 14%, transparent);
 }
 
 .book-card h3 {
@@ -209,25 +265,46 @@ a {
 
 .tag {
   font-size: 0.75rem;
-  padding: 0.15rem 0.55rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  background: color-mix(in srgb, var(--accent) 14%, white);
   color: var(--accent);
 }
 
 .status {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: var(--muted);
-  margin-top: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  margin-top: 0.5rem;
+}
+
+.status-to-read {
+  color: var(--status-to-read);
+  background: color-mix(in srgb, var(--status-to-read) 15%, white);
+}
+
+.status-reading {
+  color: var(--status-reading);
+  background: color-mix(in srgb, var(--status-reading) 15%, white);
+}
+
+.status-read {
+  color: var(--status-read);
+  background: color-mix(in srgb, var(--status-read) 15%, white);
 }
 
 /* ---- Book profile ---- */
 
 .book-profile {
   max-width: 640px;
+  padding: 2rem;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--accent) 5%, white);
+  border: 1px solid color-mix(in srgb, var(--accent) 15%, var(--border));
 }
 
 .back-link {
