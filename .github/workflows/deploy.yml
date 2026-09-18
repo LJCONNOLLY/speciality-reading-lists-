@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [claude/bold-cerf-7vfe33]
   workflow_dispatch:
 
 permissions:

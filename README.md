@@ -64,8 +64,11 @@ Outputs to `dist/`, configured for GitHub Pages under `/speciality-reading-lists
 ## Deploying
 
 `.github/workflows/deploy.yml` builds the site and publishes it to GitHub
-Pages on every push to `main` (or manually via the Actions tab).
+Pages on every push to `claude/bold-cerf-7vfe33` (or manually via the
+Actions tab). There's no `main` branch yet, so the workflow targets this
+branch directly — update it to `main` (or another branch) once you adopt
+one as the repo's actual default.
 
 One-time setup, in the repo's GitHub settings: **Settings → Pages → Build
-and deployment → Source: GitHub Actions**. After that, merging this branch
-into `main` will publish the site automatically.
+and deployment → Source: GitHub Actions**. After that, pushing to this
+branch will publish the site automatically.
