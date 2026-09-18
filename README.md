@@ -72,3 +72,5 @@ one as the repo's actual default.
 One-time setup, in the repo's GitHub settings: **Settings → Pages → Build
 and deployment → Source: GitHub Actions**. After that, pushing to this
 branch will publish the site automatically.
+
+Live at: https://ljconnolly.github.io/speciality-reading-lists-/
