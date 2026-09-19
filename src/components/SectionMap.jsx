@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import { sectionSwatch } from '../utils/palette.js';
 
-const WIDE = { width: 800, height: 420, circleR: 100, boxW: 240, boxH: 60, sideX: 24 };
-const NARROW = { width: 360, height: 0, circleR: 66, boxW: 300, boxH: 56, gap: 18 };
+const WIDE = { width: 800, height: 420, circleR: 100, boxW: 240, sideX: 24 };
+const NARROW = { width: 360, circleR: 66, boxW: 300, gap: 18 };
+
+const TITLE_LINE_HEIGHT = 20;
+const NODE_MIN_HEIGHT = 60;
 
 function wrapText(text, maxCharsPerLine) {
   const words = text.split(' ');
@@ -21,6 +24,15 @@ function wrapText(text, maxCharsPerLine) {
   return lines;
 }
 
+// A spoke box's title can be arbitrarily long, so its height has to grow
+// with however many lines that title wraps to (never fixed) — otherwise
+// longer titles just overflow their box.
+function layoutNode(section, maxCharsPerLine) {
+  const lines = wrapText(section.title, maxCharsPerLine).slice(0, 3);
+  const height = Math.max(NODE_MIN_HEIGHT, 26 + (lines.length - 1) * TITLE_LINE_HEIGHT + 24 + 14);
+  return { lines, height };
+}
+
 function useIsNarrow() {
   const [isNarrow, setIsNarrow] = useState(
     () => typeof window !== 'undefined' && window.innerWidth < 640,
@@ -34,25 +46,63 @@ function useIsNarrow() {
   return isNarrow;
 }
 
+function NodeContent({ x, y, width, lines, countText, swatch }) {
+  const titleStartY = y + 26;
+  return (
+    <>
+      {lines.map((line, i) => (
+        <text
+          key={i}
+          x={x + width / 2}
+          y={titleStartY + i * TITLE_LINE_HEIGHT}
+          textAnchor="middle"
+          fill={swatch.text}
+          className="section-map-node-title"
+        >
+          {line}
+        </text>
+      ))}
+      <text
+        x={x + width / 2}
+        y={titleStartY + (lines.length - 1) * TITLE_LINE_HEIGHT + 22}
+        textAnchor="middle"
+        fill={swatch.text}
+        className="section-map-node-count"
+      >
+        {countText}
+      </text>
+    </>
+  );
+}
+
 function WideLayout({ list, activeSection, onSelect, counts }) {
-  const { width, height, circleR, boxW, boxH, sideX } = WIDE;
-  const center = { x: width / 2, y: height / 2 };
+  const { width, circleR, boxW, sideX } = WIDE;
   const rightX = width - sideX - boxW;
+  const gap = 22;
 
   const rightItems = list.sections.filter((_, i) => i % 2 === 0);
   const leftItems = list.sections.filter((_, i) => i % 2 === 1);
 
   function columnLayout(items, x) {
-    const gap = 22;
-    const totalHeight = items.length * boxH + (items.length - 1) * gap;
-    const startY = (height - totalHeight) / 2;
-    return items.map((item, i) => ({ section: item, x, y: startY + i * (boxH + gap) }));
+    const laidOut = items.map((section) => ({ section, x, ...layoutNode(section, 20) }));
+    const totalHeight = laidOut.reduce((sum, item) => sum + item.height, 0) + gap * (laidOut.length - 1);
+    return { laidOut, totalHeight };
   }
 
-  const positioned = [
-    ...columnLayout(rightItems, rightX).map((p) => ({ ...p, side: 'right' })),
-    ...columnLayout(leftItems, sideX).map((p) => ({ ...p, side: 'left' })),
-  ];
+  const right = columnLayout(rightItems, rightX);
+  const left = columnLayout(leftItems, sideX);
+  const height = Math.max(WIDE.height, right.totalHeight + 60, left.totalHeight + 60);
+  const center = { x: width / 2, y: height / 2 };
+
+  function stack(laidOut, totalHeight, side) {
+    const startY = center.y - totalHeight / 2;
+    return laidOut.reduce((acc, item) => {
+      const prevBottom = acc.length ? acc[acc.length - 1].y + acc[acc.length - 1].height + gap : startY;
+      return [...acc, { ...item, y: prevBottom, side }];
+    }, []);
+  }
+
+  const positioned = [...stack(right.laidOut, right.totalHeight, 'right'), ...stack(left.laidOut, left.totalHeight, 'left')];
 
   function circleEdgePoint(targetX, targetY) {
     const dx = targetX - center.x;
@@ -67,15 +117,15 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
 
   return (
     <svg className="section-map" viewBox={`0 0 ${width} ${height}`} role="group" aria-label="Browse by section">
-      {positioned.map(({ section, x, y, side }) => {
-        const anchor = side === 'left' ? { x: x + boxW, y: y + boxH / 2 } : { x, y: y + boxH / 2 };
+      {positioned.map(({ section, x, y, height: h, side }) => {
+        const anchor = side === 'left' ? { x: x + boxW, y: y + h / 2 } : { x, y: y + h / 2 };
         const edge = circleEdgePoint(anchor.x, anchor.y);
         return (
           <line key={`line-${section.id}`} className="section-map-line" x1={anchor.x} y1={anchor.y} x2={edge.x} y2={edge.y} />
         );
       })}
-      {positioned.map(({ section, x, y, side }) => {
-        const anchor = side === 'left' ? { x: x + boxW, y: y + boxH / 2 } : { x, y: y + boxH / 2 };
+      {positioned.map(({ section, x, y, height: h, side }) => {
+        const anchor = side === 'left' ? { x: x + boxW, y: y + h / 2 } : { x, y: y + h / 2 };
         const edge = circleEdgePoint(anchor.x, anchor.y);
         return (
           <g key={`dots-${section.id}`}>
@@ -84,7 +134,7 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
           </g>
         );
       })}
-      {positioned.map(({ section, x, y }) => {
+      {positioned.map(({ section, x, y, height: h, lines }) => {
         const originalIndex = list.sections.findIndex((s) => s.id === section.id);
         const swatch = sectionSwatch(section, originalIndex);
         const isActive = activeSection === section.id;
@@ -104,13 +154,8 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
               }
             }}
           >
-            <rect x={x} y={y} width={boxW} height={boxH} rx={14} fill={swatch.bg} stroke={isActive ? 'var(--ink)' : 'transparent'} strokeWidth={isActive ? 3 : 0} />
-            <text x={x + boxW / 2} y={y + boxH / 2 - 4} textAnchor="middle" fill={swatch.text} className="section-map-node-title">
-              {section.title}
-            </text>
-            <text x={x + boxW / 2} y={y + boxH / 2 + 15} textAnchor="middle" fill={swatch.text} className="section-map-node-count">
-              {counts[section.id] || 0} texts
-            </text>
+            <rect x={x} y={y} width={boxW} height={h} rx={14} fill={swatch.bg} stroke={isActive ? 'var(--ink)' : 'transparent'} strokeWidth={isActive ? 3 : 0} />
+            <NodeContent x={x} y={y} width={boxW} lines={lines} countText={`${counts[section.id] || 0} texts`} swatch={swatch} />
           </g>
         );
       })}
@@ -140,12 +185,19 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
 }
 
 function NarrowLayout({ list, activeSection, onSelect, counts }) {
-  const { width, circleR, boxW, boxH, gap } = NARROW;
+  const { width, circleR, boxW, gap } = NARROW;
   const centerX = width / 2;
   const hubCy = 78;
-  const firstBoxY = hubCy + circleR + 34;
-  const height = firstBoxY + list.sections.length * (boxH + gap);
   const boxX = (width - boxW) / 2;
+
+  const laidOut = list.sections.map((section) => ({ section, ...layoutNode(section, 24) }));
+  const startY = hubCy + circleR + 34;
+  const positioned = laidOut.reduce((acc, item) => {
+    const y = acc.length ? acc[acc.length - 1].y + acc[acc.length - 1].height + gap : startY;
+    return [...acc, { ...item, y }];
+  }, []);
+  const lastNode = positioned[positioned.length - 1];
+  const height = (lastNode ? lastNode.y + lastNode.height : startY) + 20;
 
   const titleLines = wrapText(list.title, 12).slice(0, 4);
   const lineHeight = 16;
@@ -153,9 +205,8 @@ function NarrowLayout({ list, activeSection, onSelect, counts }) {
 
   return (
     <svg className="section-map section-map-narrow" viewBox={`0 0 ${width} ${height}`} role="group" aria-label="Browse by section">
-      {list.sections.map((section, i) => {
-        const y = firstBoxY + i * (boxH + gap);
-        const prevBottom = i === 0 ? hubCy + circleR : firstBoxY + (i - 1) * (boxH + gap) + boxH;
+      {positioned.map(({ section, y }, i) => {
+        const prevBottom = i === 0 ? hubCy + circleR : positioned[i - 1].y + positioned[i - 1].height;
         return (
           <g key={`line-${section.id}`}>
             <line className="section-map-line" x1={centerX} y1={prevBottom} x2={centerX} y2={y} />
@@ -164,8 +215,7 @@ function NarrowLayout({ list, activeSection, onSelect, counts }) {
           </g>
         );
       })}
-      {list.sections.map((section, i) => {
-        const y = firstBoxY + i * (boxH + gap);
+      {positioned.map(({ section, y, height: h, lines }, i) => {
         const swatch = sectionSwatch(section, i);
         const isActive = activeSection === section.id;
         return (
@@ -184,13 +234,8 @@ function NarrowLayout({ list, activeSection, onSelect, counts }) {
               }
             }}
           >
-            <rect x={boxX} y={y} width={boxW} height={boxH} rx={14} fill={swatch.bg} stroke={isActive ? 'var(--ink)' : 'transparent'} strokeWidth={isActive ? 3 : 0} />
-            <text x={centerX} y={y + boxH / 2 - 4} textAnchor="middle" fill={swatch.text} className="section-map-node-title">
-              {section.title}
-            </text>
-            <text x={centerX} y={y + boxH / 2 + 15} textAnchor="middle" fill={swatch.text} className="section-map-node-count">
-              {counts[section.id] || 0} texts
-            </text>
+            <rect x={boxX} y={y} width={boxW} height={h} rx={14} fill={swatch.bg} stroke={isActive ? 'var(--ink)' : 'transparent'} strokeWidth={isActive ? 3 : 0} />
+            <NodeContent x={boxX} y={y} width={boxW} lines={lines} countText={`${counts[section.id] || 0} texts`} swatch={swatch} />
           </g>
         );
       })}

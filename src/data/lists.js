@@ -28,7 +28,11 @@ export const lists = [
     // instead of the multicolor categorical cycle. A number (0-360) gives a
     // light-to-dark ramp at that hue; 'soft-green' gives a wider spread of
     // distinct muted greens.
-    sections: [{ id: 'theoretical-foundations', title: 'Theoretical Foundations', hue: 'soft-green' }],
+    sections: [
+      { id: 'theoretical-foundations', title: 'Theoretical Foundations', hue: 'soft-green' },
+      { id: 'classification-critique', title: 'The Classification and Datafication Critique', hue: 212 },
+      { id: 'contemporary-applications', title: 'Contemporary Applications', hue: 265 },
+    ],
     books: queerCriticalDataStudies,
   },
 ];

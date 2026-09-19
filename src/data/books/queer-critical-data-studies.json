@@ -7,6 +7,7 @@
     "publisher": "Journal of Gender Studies (Taylor & Francis)",
     "tags": ["census", "sexual orientation", "data collection"],
     "status": "printed-ready",
+    "section": "classification-critique",
     "notes": "Journal of Gender Studies, 31(6), 782–792. DOI: 10.1080/09589236.2020.1866513"
   },
   {
@@ -17,6 +18,7 @@
     "publisher": "Social & Legal Studies (SAGE)",
     "tags": ["sex/gender data", "state data collection", "concept capture"],
     "status": "printed-ready",
+    "section": "classification-critique",
     "notes": "Social & Legal Studies, 31(5), 746–772. DOI: 10.1177/09646639211061409"
   },
   {
@@ -27,6 +29,7 @@
     "publisher": "ACM (DIS '24)",
     "tags": ["gender spectrum", "data visualisation", "nonbinary"],
     "status": "printed-ready",
+    "section": "contemporary-applications",
     "notes": "Designing Interactive Systems Conference (DIS '24), IT University of Copenhagen. DOI: 10.1145/3643834.3660695"
   },
   {
