@@ -85,8 +85,28 @@ export function softGreenRamp(count) {
   });
 }
 
+// A wider spread of natural earth tones — terracotta through brown to
+// beige/tan — for a list that wants a muted, low-key identity instead of
+// the bright categorical palette. Hue sweeps warm-dark to warm-light while
+// saturation falls and lightness rises alongside it (matching how those
+// named colors actually relate), with a little wobble so it doesn't read
+// as one smooth gradient.
+export function softEarthRamp(count) {
+  const total = Math.max(count, 1);
+  return Array.from({ length: total }, (_, i) => {
+    const t = total === 1 ? 0.3 : i / (total - 1);
+    const hue = 12 + t * (48 - 12);
+    const saturation = 50 - t * 25 + ((i % 3) * 4 - 4);
+    const lightness = 40 + t * 36 + (((i + 1) % 3) * 4 - 4);
+    const bg = hslToHex(hue, saturation, lightness);
+    return { bg, text: pickTextColor(bg) };
+  });
+}
+
 function resolveRamp(hue, count) {
-  return hue === 'soft-green' ? softGreenRamp(count) : hueRamp(hue, count);
+  if (hue === 'soft-green') return softGreenRamp(count);
+  if (hue === 'soft-earth') return softEarthRamp(count);
+  return hueRamp(hue, count);
 }
 
 // A single representative swatch for a section's spoke box: a mid-tone from
@@ -100,33 +120,44 @@ export function sectionSwatch(section, fallbackIndex) {
 }
 
 // Maps every book in a list to its swatch: books in a section that defines
-// a `hue` get shades of that one color (light -> dark, in list order);
-// everything else cycles through the categorical palette, keyed to its
-// stable position so a book's color never shifts when a filter changes.
+// a `hue` get shades of that one color family (in list order); books left
+// over (no section, or a section with no `hue`) fall back to the list's
+// `defaultPalette` ramp if it sets one, else the bright categorical
+// palette — each keyed to its stable position within that group so a
+// book's color never shifts when a filter changes.
 export function bookSwatches(list) {
   const bookIdsBySection = {};
+  const fallbackIds = [];
   list.books.forEach((book) => {
-    if (book.section) {
+    const sectionDef = book.section && list.sections?.find((s) => s.id === book.section);
+    if (sectionDef?.hue != null) {
       (bookIdsBySection[book.section] ||= []).push(book.id);
+    } else {
+      fallbackIds.push(book.id);
     }
   });
 
   const map = {};
   Object.entries(bookIdsBySection).forEach(([sectionId, bookIds]) => {
-    const sectionDef = list.sections?.find((s) => s.id === sectionId);
-    if (sectionDef?.hue != null) {
-      const ramp = resolveRamp(sectionDef.hue, bookIds.length);
-      bookIds.forEach((id, i) => {
-        map[id] = ramp[i];
-      });
-    }
+    const sectionDef = list.sections.find((s) => s.id === sectionId);
+    const ramp = resolveRamp(sectionDef.hue, bookIds.length);
+    bookIds.forEach((id, i) => {
+      map[id] = ramp[i];
+    });
   });
 
-  list.books.forEach((book, i) => {
-    if (!map[book.id]) {
-      map[book.id] = paletteSwatch(i);
-    }
-  });
+  if (list.defaultPalette) {
+    const ramp = resolveRamp(list.defaultPalette, fallbackIds.length);
+    fallbackIds.forEach((id, i) => {
+      map[id] = ramp[i];
+    });
+  } else {
+    list.books.forEach((book, i) => {
+      if (!map[book.id]) {
+        map[book.id] = paletteSwatch(i);
+      }
+    });
+  }
 
   return map;
 }
