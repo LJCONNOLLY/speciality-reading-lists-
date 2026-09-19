@@ -282,29 +282,81 @@ a {
   color: var(--muted);
 }
 
-/* ---- Book grid / cards ---- */
+/* ---- Section map (hub-and-spoke diagram) ---- */
 
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.25rem;
+.section-map {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  overflow: visible;
 }
 
-.book-card {
-  display: block;
-  padding: 1.25rem 1.25rem 1.25rem 1.4rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 15%, var(--border));
-  border-left: 4px solid var(--accent);
-  border-radius: 10px;
-  background: color-mix(in srgb, var(--accent) 5%, white);
-  box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 6%, transparent);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+.section-map-line {
+  stroke: color-mix(in srgb, var(--ink) 30%, transparent);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 5;
 }
 
-.book-card:hover {
-  transform: translateY(-2px);
-  background: color-mix(in srgb, var(--accent) 10%, white);
-  box-shadow: 0 10px 20px color-mix(in srgb, var(--accent) 14%, transparent);
+.section-map-dot {
+  fill: var(--ink);
+  opacity: 0.55;
+}
+
+.section-map-hub-circle {
+  fill: var(--accent);
+  stroke: color-mix(in srgb, var(--ink) 15%, transparent);
+  stroke-width: 2;
+}
+
+.section-map-hub-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 17px;
+  fill: white;
+}
+
+.section-map-hub-title-narrow {
+  font-size: 14px;
+}
+
+.section-map-hub {
+  cursor: pointer;
+}
+
+.section-map-hub:hover .section-map-hub-circle,
+.section-map-hub.active .section-map-hub-circle {
+  stroke: white;
+  stroke-width: 3;
+}
+
+.section-map-node {
+  cursor: pointer;
+}
+
+.section-map-node rect {
+  transition: transform 0.15s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.section-map-node:hover rect {
+  transform: scale(1.04);
+}
+
+.section-map-node-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.section-map-node-count {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.section-map-node:focus-visible rect,
+.section-map-hub:focus-visible .section-map-hub-circle {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
 }
 
 .section-badge {
@@ -317,8 +369,90 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.book-card h3 {
+/* ---- Reading list (colorful long buttons) ---- */
+
+.reading-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.reading-item {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.1rem 1.4rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.reading-item:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+}
+
+.reading-item-index {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, currentColor 20%, transparent);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.reading-item-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.reading-item-title {
+  font-weight: 700;
   font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.reading-item-meta {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.reading-item-status {
+  flex: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, currentColor 18%, transparent);
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .reading-item {
+    border-radius: 20px;
+    align-items: flex-start;
+  }
+  .reading-item-status {
+    display: none;
+  }
+}
+
+/* ---- Book meta (shared by profile) ---- */
+
+.book-profile-band {
+  height: 10px;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
 }
 
 .book-card-author,

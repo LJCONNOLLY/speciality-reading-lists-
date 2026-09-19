@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Link, useOutletContext } from 'react-router-dom';
 import { STATUSES, statusLabel } from '../utils/status.js';
+import { paletteSwatch } from '../utils/palette.js';
+import SectionMap from './SectionMap.jsx';
 
 function matches(book, query) {
   const haystack = [
@@ -13,10 +15,6 @@ function matches(book, query) {
     .join(' ')
     .toLowerCase();
   return haystack.includes(query.toLowerCase());
-}
-
-function sectionTitle(list, sectionId) {
-  return list.sections?.find((section) => section.id === sectionId)?.title || sectionId;
 }
 
 export default function Library() {
@@ -64,30 +62,8 @@ export default function Library() {
 
       {hasSections ? (
         <>
-          <div className="tab-group-label">Filter by section</div>
-          <div className="folder-tabs" role="tablist" aria-label="Filter by section">
-            <button
-              type="button"
-              role="tab"
-              aria-selected={section === 'all'}
-              className={`folder-tab${section === 'all' ? ' active' : ''}`}
-              onClick={() => setSection('all')}
-            >
-              All <span className="folder-count">{sectionCounts.all}</span>
-            </button>
-            {list.sections.map((sec) => (
-              <button
-                key={sec.id}
-                type="button"
-                role="tab"
-                aria-selected={section === sec.id}
-                className={`folder-tab${section === sec.id ? ' active' : ''}`}
-                onClick={() => setSection(sec.id)}
-              >
-                {sec.title} <span className="folder-count">{sectionCounts[sec.id] || 0}</span>
-              </button>
-            ))}
-          </div>
+          <div className="tab-group-label">Browse by section</div>
+          <SectionMap list={list} activeSection={section} onSelect={setSection} counts={sectionCounts} />
         </>
       ) : null}
 
@@ -136,29 +112,29 @@ export default function Library() {
             : 'No texts in this folder yet.'}
         </p>
       ) : (
-        <div className="book-grid">
-          {results.map((book) => (
-            <Link key={book.id} to={`book/${book.id}`} className="book-card">
-              {book.section ? (
-                <span className="section-badge">{sectionTitle(list, book.section)}</span>
-              ) : null}
-              <h3>{book.title}</h3>
-              <p className="book-card-author">{(book.author || []).join(', ')}</p>
-              <p className="book-card-meta">
-                {book.year} {book.publisher ? `· ${book.publisher}` : ''}
-              </p>
-              {book.tags?.length ? (
-                <div className="tag-row">
-                  {book.tags.map((tag) => (
-                    <span key={tag} className="tag">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              ) : null}
-              <span className={`status status-${book.status}`}>{statusLabel(book.status)}</span>
-            </Link>
-          ))}
+        <div className="reading-list">
+          {results.map((book, i) => {
+            const colorIndex = list.books.findIndex((b) => b.id === book.id);
+            const swatch = paletteSwatch(colorIndex);
+            return (
+              <Link
+                key={book.id}
+                to={`book/${book.id}`}
+                className="reading-item"
+                style={{ background: swatch.bg, color: swatch.text }}
+              >
+                <span className="reading-item-index">{i + 1}</span>
+                <span className="reading-item-body">
+                  <span className="reading-item-title">{book.title}</span>
+                  <span className="reading-item-meta">
+                    {(book.author || []).join(', ')}
+                    {book.year ? ` · ${book.year}` : ''}
+                  </span>
+                </span>
+                <span className="reading-item-status">{statusLabel(book.status)}</span>
+              </Link>
+            );
+          })}
         </div>
       )}
     </div>

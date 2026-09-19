@@ -1,5 +1,6 @@
 import { Link, useOutletContext, useParams } from 'react-router-dom';
 import { statusLabel } from '../utils/status.js';
+import { paletteSwatch } from '../utils/palette.js';
 
 export default function BookProfile() {
   const { list } = useOutletContext();
@@ -15,8 +16,12 @@ export default function BookProfile() {
     );
   }
 
+  const colorIndex = list.books.findIndex((entry) => entry.id === book.id);
+  const swatch = paletteSwatch(colorIndex);
+
   return (
     <div className="book-profile">
+      <div className="book-profile-band" style={{ background: swatch.bg }} aria-hidden="true" />
       <Link to={`/list/${list.id}`} className="back-link">
         &larr; Back to {list.title}
       </Link>
