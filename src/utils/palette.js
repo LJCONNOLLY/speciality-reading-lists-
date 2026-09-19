@@ -56,7 +56,9 @@ function hslToHex(h, s, l) {
 
 // Builds `count` swatches at a single hue, light-to-dark, each paired with
 // whichever text color (white or dark ink) contrasts better against it.
-export function hueRamp(hue, count, { saturation = 45, lMax = 82, lMin = 26 } = {}) {
+// Kept to a light, muted band (lightness 62-82 at modest saturation) so
+// every step reads as pastel and black text always wins the contrast pick.
+export function hueRamp(hue, count, { saturation = 35, lMax = 82, lMin = 62 } = {}) {
   const total = Math.max(count, 1);
   return Array.from({ length: total }, (_, i) => {
     const t = total === 1 ? 0 : i / (total - 1);

@@ -75,34 +75,63 @@ function NodeContent({ x, y, width, lines, countText, swatch }) {
   );
 }
 
+// Anchor point on a positioned node that a connector line should touch,
+// per side: the middle of its inward-facing edge for left/right, the
+// top-center for bottom.
+function nodeAnchor(item) {
+  const { x, y, height: h, side, width: w } = item;
+  if (side === 'left') return { x: x + w, y: y + h / 2 };
+  if (side === 'right') return { x, y: y + h / 2 };
+  return { x: x + w / 2, y };
+}
+
+function nodeFarEdge(item) {
+  const { x, y, height: h, side, width: w } = item;
+  if (side === 'bottom') return { x: x + w / 2, y: y + h };
+  return { x: x + w / 2, y: y + h / 2 };
+}
+
 function WideLayout({ list, activeSection, onSelect, counts }) {
   const { width, circleR, boxW, sideX } = WIDE;
   const rightX = width - sideX - boxW;
   const gap = 22;
+  const topMargin = 30;
+  const bottomGap = 40;
 
-  const rightItems = list.sections.filter((_, i) => i % 2 === 0);
-  const leftItems = list.sections.filter((_, i) => i % 2 === 1);
+  // Round-robin sections across three positions so they "flow" around the
+  // hub — right, left, bottom — one per side before doubling up on any.
+  const rightItems = list.sections.filter((_, i) => i % 3 === 0);
+  const leftItems = list.sections.filter((_, i) => i % 3 === 1);
+  const bottomItems = list.sections.filter((_, i) => i % 3 === 2);
 
-  function columnLayout(items, x) {
-    const laidOut = items.map((section) => ({ section, x, ...layoutNode(section, 20) }));
+  function columnLayout(items, x, side, maxChars) {
+    const laidOut = items.map((section) => ({ section, x, width: boxW, side, ...layoutNode(section, maxChars) }));
     const totalHeight = laidOut.reduce((sum, item) => sum + item.height, 0) + gap * (laidOut.length - 1);
     return { laidOut, totalHeight };
   }
 
-  const right = columnLayout(rightItems, rightX);
-  const left = columnLayout(leftItems, sideX);
-  const height = Math.max(WIDE.height, right.totalHeight + 60, left.totalHeight + 60);
-  const center = { x: width / 2, y: height / 2 };
+  const right = columnLayout(rightItems, rightX, 'right', 20);
+  const left = columnLayout(leftItems, sideX, 'left', 20);
+  const bottom = columnLayout(bottomItems, width / 2 - boxW / 2, 'bottom', 20);
 
-  function stack(laidOut, totalHeight, side) {
-    const startY = center.y - totalHeight / 2;
+  const topHeight = Math.max(right.totalHeight, left.totalHeight, circleR * 2);
+  const center = { x: width / 2, y: topMargin + topHeight / 2 };
+  const height = bottomItems.length
+    ? center.y + circleR + bottomGap + bottom.totalHeight + topMargin
+    : center.y + topHeight / 2 + topMargin;
+
+  function stackSide(laidOut, totalHeight, startY) {
     return laidOut.reduce((acc, item) => {
       const prevBottom = acc.length ? acc[acc.length - 1].y + acc[acc.length - 1].height + gap : startY;
-      return [...acc, { ...item, y: prevBottom, side }];
+      return [...acc, { ...item, y: prevBottom }];
     }, []);
   }
 
-  const positioned = [...stack(right.laidOut, right.totalHeight, 'right'), ...stack(left.laidOut, left.totalHeight, 'left')];
+  const positioned = [
+    ...stackSide(right.laidOut, right.totalHeight, center.y - right.totalHeight / 2),
+    ...stackSide(left.laidOut, left.totalHeight, center.y - left.totalHeight / 2),
+    ...stackSide(bottom.laidOut, bottom.totalHeight, center.y + circleR + bottomGap),
+  ];
 
   function circleEdgePoint(targetX, targetY) {
     const dx = targetX - center.x;
@@ -117,20 +146,22 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
 
   return (
     <svg className="section-map" viewBox={`0 0 ${width} ${height}`} role="group" aria-label="Browse by section">
-      {positioned.map(({ section, x, y, height: h, side }) => {
-        const anchor = side === 'left' ? { x: x + boxW, y: y + h / 2 } : { x, y: y + h / 2 };
-        const edge = circleEdgePoint(anchor.x, anchor.y);
+      {positioned.map((item, i) => {
+        const anchor = nodeAnchor(item);
+        const bottomChain = item.side === 'bottom' && i > 0 && positioned[i - 1].side === 'bottom';
+        const from = bottomChain ? nodeFarEdge(positioned[i - 1]) : circleEdgePoint(anchor.x, anchor.y);
         return (
-          <line key={`line-${section.id}`} className="section-map-line" x1={anchor.x} y1={anchor.y} x2={edge.x} y2={edge.y} />
+          <line key={`line-${item.section.id}`} className="section-map-line" x1={anchor.x} y1={anchor.y} x2={from.x} y2={from.y} />
         );
       })}
-      {positioned.map(({ section, x, y, height: h, side }) => {
-        const anchor = side === 'left' ? { x: x + boxW, y: y + h / 2 } : { x, y: y + h / 2 };
-        const edge = circleEdgePoint(anchor.x, anchor.y);
+      {positioned.map((item, i) => {
+        const anchor = nodeAnchor(item);
+        const bottomChain = item.side === 'bottom' && i > 0 && positioned[i - 1].side === 'bottom';
+        const from = bottomChain ? nodeFarEdge(positioned[i - 1]) : circleEdgePoint(anchor.x, anchor.y);
         return (
-          <g key={`dots-${section.id}`}>
+          <g key={`dots-${item.section.id}`}>
             <circle className="section-map-dot" cx={anchor.x} cy={anchor.y} r={4} />
-            <circle className="section-map-dot" cx={edge.x} cy={edge.y} r={4} />
+            <circle className="section-map-dot" cx={from.x} cy={from.y} r={4} />
           </g>
         );
       })}
