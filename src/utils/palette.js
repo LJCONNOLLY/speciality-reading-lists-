@@ -66,15 +66,16 @@ export function hueRamp(hue, count, { saturation = 45, lMax = 82, lMin = 26 } = 
   });
 }
 
-// A wider spread of distinct, muted greens (olive/chartreuse through pure
-// green to seafoam/mint) — hue varies across the whole ramp instead of just
-// lightness, so adjacent swatches read as different named greens rather
-// than steps of a single gradient. Saturation/lightness wobble slightly per
-// item so it doesn't read as a smooth fade either.
+// A wider spread of distinct, muted greens — hue varies across the ramp
+// instead of just lightness, so adjacent swatches read as different named
+// greens rather than steps of a single gradient. Saturation/lightness
+// wobble slightly per item so it doesn't read as a smooth fade either.
+// Kept to 100-148 so neither end drifts into yellow/olive or teal/cyan —
+// it should read as "green," full stop, at every step.
 export function softGreenRamp(count) {
   const total = Math.max(count, 1);
-  const hueStart = 65; // olive/chartreuse
-  const hueEnd = 175; // seafoam/mint
+  const hueStart = 100;
+  const hueEnd = 148;
   return Array.from({ length: total }, (_, i) => {
     const t = total === 1 ? 0.5 : i / (total - 1);
     const hue = hueStart + t * (hueEnd - hueStart);
