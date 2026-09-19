@@ -35,6 +35,17 @@ export default function BookProfile() {
         {book.year} {book.publisher ? `· ${book.publisher}` : ''}
       </p>
       <span className={`status status-${book.status}`}>{statusLabel(book.status)}</span>
+      {book.pdf ? (
+        <a
+          href={`${import.meta.env.BASE_URL}${book.pdf}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pdf-link"
+          style={{ background: swatch.bg, color: swatch.text }}
+        >
+          Read the PDF &rarr;
+        </a>
+      ) : null}
       {book.tags?.length ? (
         <div className="tag-row">
           {book.tags.map((tag) => (

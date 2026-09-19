@@ -47,6 +47,16 @@ all read from that one list.
 The three sample entries in each file are placeholders — replace or
 delete them once you add your real lists.
 
+## Attaching a PDF
+
+Add a `"pdf"` field pointing at a file under `public/pdfs/`, e.g.
+`"pdf": "pdfs/some-id.pdf"` for a file at `public/pdfs/some-id.pdf`.
+The book's page then shows a "Read the PDF" button, colored to match
+that book, linking straight to the file. Files must live under
+`public/` — anywhere else (like the repo root) is invisible to the
+build and won't be served on the live site. There's no field for
+books without a PDF; the button just doesn't render.
+
 ## Sections (subfolders) and list intros
 
 A list can optionally be split into named sections — a second,

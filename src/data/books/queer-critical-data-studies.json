@@ -2,10 +2,16 @@
   {
     "id": "guyan-constructing-a-queer-population",
     "title": "Constructing a Queer Population? Asking About Sexual Orientation in Scotland's 2022 Census",
-    "author": ["Kevin Guyan"],
+    "author": [
+      "Kevin Guyan"
+    ],
     "year": 2022,
     "publisher": "Journal of Gender Studies (Taylor & Francis)",
-    "tags": ["census", "sexual orientation", "data collection"],
+    "tags": [
+      "census",
+      "sexual orientation",
+      "data collection"
+    ],
     "status": "printed-ready",
     "section": "classification-critique",
     "notes": "Journal of Gender Studies, 31(6), 782–792. DOI: 10.1080/09589236.2020.1866513"
@@ -13,10 +19,17 @@
   {
     "id": "collier-cowan-queer-conflicts-concept-capture",
     "title": "Queer Conflicts, Concept Capture and Category Co-Option: The Importance of Context in the State Collection and Recording of Sex/Gender Data",
-    "author": ["Ben Collier", "Sharon Cowan"],
+    "author": [
+      "Ben Collier",
+      "Sharon Cowan"
+    ],
     "year": 2022,
     "publisher": "Social & Legal Studies (SAGE)",
-    "tags": ["sex/gender data", "state data collection", "concept capture"],
+    "tags": [
+      "sex/gender data",
+      "state data collection",
+      "concept capture"
+    ],
     "status": "printed-ready",
     "section": "classification-critique",
     "notes": "Social & Legal Studies, 31(5), 746–772. DOI: 10.1177/09646639211061409"
@@ -24,10 +37,19 @@
   {
     "id": "simeoni-querying-the-quantification-of-the-queer",
     "title": "Querying the Quantification of the Queer: Data-Driven Visualisations of the Gender Spectrum",
-    "author": ["Fe Simeoni", "María Menéndez-Blanco", "Rupesh Vyas", "Antonella De Angeli"],
+    "author": [
+      "Fe Simeoni",
+      "María Menéndez-Blanco",
+      "Rupesh Vyas",
+      "Antonella De Angeli"
+    ],
     "year": 2024,
     "publisher": "ACM (DIS '24)",
-    "tags": ["gender spectrum", "data visualisation", "nonbinary"],
+    "tags": [
+      "gender spectrum",
+      "data visualisation",
+      "nonbinary"
+    ],
     "status": "printed-ready",
     "section": "contemporary-applications",
     "notes": "Designing Interactive Systems Conference (DIS '24), IT University of Copenhagen. DOI: 10.1145/3643834.3660695"
@@ -35,122 +57,186 @@
   {
     "id": "foucault-history-of-sexuality-vol-1",
     "title": "The History of Sexuality, Vol. 1: An Introduction",
-    "author": ["Michel Foucault"],
+    "author": [
+      "Michel Foucault"
+    ],
     "year": 1978,
     "publisher": "Pantheon Books",
-    "tags": ["discourse", "biopower"],
+    "tags": [
+      "discourse",
+      "biopower"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/foucault-history-of-sexuality-vol-1.pdf",
     "notes": "It argues that \"sex\" is produced by the discourses and institutions that claim to describe it."
   },
   {
     "id": "keller-gender-and-science",
     "title": "Gender and Science",
-    "author": ["Evelyn Fox Keller"],
+    "author": [
+      "Evelyn Fox Keller"
+    ],
     "year": 1978,
     "publisher": "Psychoanalysis and Contemporary Thought",
-    "tags": ["objectivity", "feminist science studies"],
+    "tags": [
+      "objectivity",
+      "feminist science studies"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/keller-gender-and-science.pdf",
     "notes": "It traces how objectivity came to be coded as masculine."
   },
   {
     "id": "collins-learning-from-the-outsider-within",
     "title": "Learning from the Outsider Within",
-    "author": ["Patricia Hill Collins"],
+    "author": [
+      "Patricia Hill Collins"
+    ],
     "year": 1986,
     "publisher": "Social Problems",
-    "tags": ["standpoint theory", "epistemology"],
+    "tags": [
+      "standpoint theory",
+      "epistemology"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/collins-learning-from-the-outsider-within.pdf",
     "notes": "It treats marginal social positions as sources of knowledge."
   },
   {
     "id": "foucault-power-knowledge",
     "title": "Power/Knowledge: Selected Interviews and Other Writings, 1972-1977",
-    "author": ["Michel Foucault"],
+    "author": [
+      "Michel Foucault"
+    ],
     "year": 1980,
     "publisher": "Pantheon Books",
-    "tags": ["power/knowledge"],
+    "tags": [
+      "power/knowledge"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/foucault-power-knowledge.pdf",
     "notes": "It supplies the working concept of power/knowledge."
   },
   {
     "id": "butler-subjects-of-sex-gender-desire",
     "title": "Subjects of Sex/Gender/Desire (ch. 1 of Gender Trouble)",
-    "author": ["Judith Butler"],
+    "author": [
+      "Judith Butler"
+    ],
     "year": 1990,
     "publisher": "Routledge",
-    "tags": ["sex/gender", "performativity"],
+    "tags": [
+      "sex/gender",
+      "performativity"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/butler-subjects-of-sex-gender-desire.pdf",
     "notes": "It contests the idea that sex comes before gender."
   },
   {
     "id": "mackinnon-difference-and-dominance",
     "title": "Difference and Dominance: On Sex Discrimination",
-    "author": ["Catharine A. MacKinnon"],
+    "author": [
+      "Catharine A. MacKinnon"
+    ],
     "year": 1984,
     "publisher": "Feminism Unmodified: Discourses on Life and Law (Harvard University Press)",
-    "tags": ["sex discrimination", "power"],
+    "tags": [
+      "sex discrimination",
+      "power"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/mackinnon-difference-and-dominance.pdf",
     "notes": "It moves the sex question from sameness and difference to power. Publisher is a best-guess from the most commonly cited edition — double-check against your assigned printing."
   },
   {
     "id": "crenshaw-mapping-the-margins",
     "title": "Mapping the Margins: Intersectionality, Identity Politics, and Violence Against Women of Color",
-    "author": ["Kimberlé Crenshaw"],
+    "author": [
+      "Kimberlé Crenshaw"
+    ],
     "year": 1991,
     "publisher": "Stanford Law Review",
-    "tags": ["intersectionality"],
+    "tags": [
+      "intersectionality"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/crenshaw-mapping-the-margins.pdf",
     "notes": "It shows how single-category classification misses the people at the intersections."
   },
   {
     "id": "butler-gender-trouble",
     "title": "Gender Trouble",
-    "author": ["Judith Butler"],
+    "author": [
+      "Judith Butler"
+    ],
     "year": 1990,
     "publisher": "Routledge",
-    "tags": ["performativity", "gender"],
+    "tags": [
+      "performativity",
+      "gender"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/butler-gender-trouble.pdf",
     "notes": "It is the full argument that gender is performative."
   },
   {
     "id": "longino-science-as-social-knowledge",
     "title": "Science as Social Knowledge, ch. 1: \"Good Science, Bad Science\"",
-    "author": ["Helen Longino"],
+    "author": [
+      "Helen Longino"
+    ],
     "year": 1990,
     "publisher": "Princeton University Press",
-    "tags": ["objectivity", "philosophy of science"],
+    "tags": [
+      "objectivity",
+      "philosophy of science"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/longino-science-as-social-knowledge.pdf",
     "notes": "It frames objectivity as a social and critical practice."
   },
   {
     "id": "harding-rethinking-standpoint-epistemology",
     "title": "Rethinking Standpoint Epistemology: What Is \"Strong Objectivity?\"",
-    "author": ["Sandra Harding"],
+    "author": [
+      "Sandra Harding"
+    ],
     "year": 1992,
     "publisher": "The Centennial Review (Michigan State University Press)",
-    "tags": ["standpoint epistemology", "objectivity"],
+    "tags": [
+      "standpoint epistemology",
+      "objectivity"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/harding-rethinking-standpoint-epistemology.pdf",
     "notes": "It argues that starting from marginalized lives yields stronger objectivity. The Centennial Review, Fall 1992, 36(3), 437–470."
   },
   {
     "id": "butler-bodies-that-matter",
     "title": "Bodies That Matter",
-    "author": ["Judith Butler"],
+    "author": [
+      "Judith Butler"
+    ],
     "year": 1993,
     "publisher": "Routledge",
-    "tags": ["materialization", "norms"],
+    "tags": [
+      "materialization",
+      "norms"
+    ],
     "status": "read",
     "section": "theoretical-foundations",
+    "pdf": "pdfs/butler-bodies-that-matter.pdf",
     "notes": "It follows the sex question into how norms make bodies materialize."
   }
 ]
