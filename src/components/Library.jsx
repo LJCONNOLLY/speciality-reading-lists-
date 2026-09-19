@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link, useOutletContext } from 'react-router-dom';
 import { STATUSES, statusLabel } from '../utils/status.js';
-import { paletteSwatch } from '../utils/palette.js';
+import { bookSwatches } from '../utils/palette.js';
 import SectionMap from './SectionMap.jsx';
 
 function matches(book, query) {
@@ -55,6 +55,8 @@ export default function Library() {
     }
     return books;
   }, [list.books, query, folder, section]);
+
+  const swatchByBookId = useMemo(() => bookSwatches(list), [list]);
 
   return (
     <div className="library">
@@ -114,8 +116,7 @@ export default function Library() {
       ) : (
         <div className="reading-list">
           {results.map((book, i) => {
-            const colorIndex = list.books.findIndex((b) => b.id === book.id);
-            const swatch = paletteSwatch(colorIndex);
+            const swatch = swatchByBookId[book.id];
             return (
               <Link
                 key={book.id}

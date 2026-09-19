@@ -20,7 +20,9 @@ export const lists = [
     accent: '#6d4aa0',
     intro:
       "These texts built the foundation the rest of this list stands on. Foucault established that sex is produced by the discourses and institutions claiming to describe it, and that knowledge and power are one formation rather than two, which is the move that makes any counting of queer people a question of governance rather than accuracy. Butler extended this to sex itself, showing that the category presumed to precede gender is its effect, so there is no pre-classificatory body waiting to be recorded correctly. Keller, Longino, Collins, and Harding dismantled the other half of the problem, the assumption that measurement is a neutral vantage point, and replaced it with an account of objectivity as socially produced and strongest when it begins from marginalized lives. MacKinnon and Crenshaw supplied the structural argument: that sex is a question of power rather than difference, and that any single-axis category will fail the people standing at the intersections. Together they make the field's core claim available, that classification systems constitute what they claim to find, and that queer lives are where this becomes impossible to ignore.",
-    sections: [{ id: 'theoretical-foundations', title: 'Theoretical Foundations' }],
+    // hue: when a section sets this, its books render in shades of that
+    // one hue (light -> dark) instead of the multicolor categorical cycle.
+    sections: [{ id: 'theoretical-foundations', title: 'Theoretical Foundations', hue: 145 }],
     books: queerCriticalDataStudies,
   },
 ];

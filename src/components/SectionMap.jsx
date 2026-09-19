@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { paletteSwatch } from '../utils/palette.js';
+import { sectionSwatch } from '../utils/palette.js';
 
 const WIDE = { width: 800, height: 420, circleR: 100, boxW: 240, boxH: 60, sideX: 24 };
 const NARROW = { width: 360, height: 0, circleR: 66, boxW: 300, boxH: 56, gap: 18 };
@@ -86,7 +86,7 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
       })}
       {positioned.map(({ section, x, y }) => {
         const originalIndex = list.sections.findIndex((s) => s.id === section.id);
-        const swatch = paletteSwatch(originalIndex);
+        const swatch = sectionSwatch(section, originalIndex);
         const isActive = activeSection === section.id;
         return (
           <g
@@ -166,7 +166,7 @@ function NarrowLayout({ list, activeSection, onSelect, counts }) {
       })}
       {list.sections.map((section, i) => {
         const y = firstBoxY + i * (boxH + gap);
-        const swatch = paletteSwatch(i);
+        const swatch = sectionSwatch(section, i);
         const isActive = activeSection === section.id;
         return (
           <g

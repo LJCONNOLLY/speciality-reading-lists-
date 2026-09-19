@@ -1,6 +1,6 @@
 import { Link, useOutletContext, useParams } from 'react-router-dom';
 import { statusLabel } from '../utils/status.js';
-import { paletteSwatch } from '../utils/palette.js';
+import { bookSwatches } from '../utils/palette.js';
 
 export default function BookProfile() {
   const { list } = useOutletContext();
@@ -16,8 +16,7 @@ export default function BookProfile() {
     );
   }
 
-  const colorIndex = list.books.findIndex((entry) => entry.id === book.id);
-  const swatch = paletteSwatch(colorIndex);
+  const swatch = bookSwatches(list)[book.id];
 
   return (
     <div className="book-profile">
