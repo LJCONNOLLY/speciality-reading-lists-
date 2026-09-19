@@ -66,11 +66,35 @@ export function hueRamp(hue, count, { saturation = 45, lMax = 82, lMin = 26 } = 
   });
 }
 
-// A single representative swatch for a section's spoke box: a mid-tone of
-// its `hue` if it has one, else the categorical palette at `fallbackIndex`.
+// A wider spread of distinct, muted greens (olive/chartreuse through pure
+// green to seafoam/mint) — hue varies across the whole ramp instead of just
+// lightness, so adjacent swatches read as different named greens rather
+// than steps of a single gradient. Saturation/lightness wobble slightly per
+// item so it doesn't read as a smooth fade either.
+export function softGreenRamp(count) {
+  const total = Math.max(count, 1);
+  const hueStart = 65; // olive/chartreuse
+  const hueEnd = 175; // seafoam/mint
+  return Array.from({ length: total }, (_, i) => {
+    const t = total === 1 ? 0.5 : i / (total - 1);
+    const hue = hueStart + t * (hueEnd - hueStart);
+    const saturation = 34 + (i % 3) * 6;
+    const lightness = 56 + ((i + 1) % 3) * 7;
+    const bg = hslToHex(hue, saturation, lightness);
+    return { bg, text: pickTextColor(bg) };
+  });
+}
+
+function resolveRamp(hue, count) {
+  return hue === 'soft-green' ? softGreenRamp(count) : hueRamp(hue, count);
+}
+
+// A single representative swatch for a section's spoke box: a mid-tone from
+// its `hue` ramp if it has one, else the categorical palette at
+// `fallbackIndex`.
 export function sectionSwatch(section, fallbackIndex) {
   if (section?.hue != null) {
-    return hueRamp(section.hue, 3)[1];
+    return resolveRamp(section.hue, 3)[1];
   }
   return paletteSwatch(fallbackIndex);
 }
@@ -91,7 +115,7 @@ export function bookSwatches(list) {
   Object.entries(bookIdsBySection).forEach(([sectionId, bookIds]) => {
     const sectionDef = list.sections?.find((s) => s.id === sectionId);
     if (sectionDef?.hue != null) {
-      const ramp = hueRamp(sectionDef.hue, bookIds.length);
+      const ramp = resolveRamp(sectionDef.hue, bookIds.length);
       bookIds.forEach((id, i) => {
         map[id] = ramp[i];
       });
