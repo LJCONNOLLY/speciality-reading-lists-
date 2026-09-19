@@ -185,7 +185,30 @@ a {
   font-size: 1.05rem;
 }
 
+/* ---- List intro ---- */
+
+.list-intro {
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--border));
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 6%, white);
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
 /* ---- Folders ---- */
+
+.tab-group-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
 
 .folder-tabs {
   display: flex;
@@ -282,6 +305,16 @@ a {
   transform: translateY(-2px);
   background: color-mix(in srgb, var(--accent) 10%, white);
   box-shadow: 0 10px 20px color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+.section-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
 }
 
 .book-card h3 {

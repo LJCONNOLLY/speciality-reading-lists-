@@ -3,7 +3,7 @@
 A small site that splits into two independent reading lists, each browsed on its own:
 
 - **Rhetoric in/of Technical Communication**
-- **Queer & Critical Data Studies**
+- **Classification and Datafication of Queer Bodies**
 
 The home page just links out to each list. Once inside a list, everything
 (library grid, search, book pages) is scoped to that list only — search never
@@ -46,6 +46,26 @@ all read from that one list.
 
 The three sample entries in each file are placeholders — replace or
 delete them once you add your real lists.
+
+## Sections (subfolders) and list intros
+
+A list can optionally be split into named sections — a second,
+independent filter alongside the status folders (e.g. grouping by
+theme rather than read-status). To add one:
+
+1. Give the list a `sections` array in `src/data/lists.js`, e.g.
+   `sections: [{ id: 'theoretical-foundations', title: 'Theoretical Foundations' }]`.
+2. Tag any book that belongs to it with `"section": "theoretical-foundations"`
+   in its JSON entry.
+
+The list page then shows a "Filter by section" tab row above the
+existing "Filter by status" row, and book cards/pages show a small
+section label. A list with no `sections` array (like Rhetoric in/of
+Technical Communication) shows no section row at all.
+
+A list can also carry an `intro` string in `src/data/lists.js`, shown
+as a highlighted block at the top of that list's page — useful for
+explaining why a section exists or what ties a list together.
 
 ## Adding a third list
 

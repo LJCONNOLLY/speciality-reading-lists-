@@ -20,6 +20,11 @@ export default function BookProfile() {
       <Link to={`/list/${list.id}`} className="back-link">
         &larr; Back to {list.title}
       </Link>
+      {book.section ? (
+        <span className="section-badge">
+          {list.sections?.find((section) => section.id === book.section)?.title || book.section}
+        </span>
+      ) : null}
       <h2>{book.title}</h2>
       <p className="book-card-author">{(book.author || []).join(', ')}</p>
       <p className="book-card-meta">
