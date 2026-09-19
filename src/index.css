@@ -307,7 +307,6 @@ a {
 }
 
 .section-map-hub-circle {
-  fill: var(--accent);
   stroke: color-mix(in srgb, var(--ink) 15%, transparent);
   stroke-width: 2;
 }
@@ -316,7 +315,6 @@ a {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 700;
   font-size: 19px;
-  fill: white;
 }
 
 .section-map-hub-title-narrow {
@@ -329,7 +327,7 @@ a {
 
 .section-map-hub:hover .section-map-hub-circle,
 .section-map-hub.active .section-map-hub-circle {
-  stroke: white;
+  stroke: var(--ink);
   stroke-width: 3;
 }
 

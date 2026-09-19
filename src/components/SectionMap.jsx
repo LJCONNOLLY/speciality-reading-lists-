@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { sectionSwatch } from '../utils/palette.js';
+import { sectionSwatch, pastelize } from '../utils/palette.js';
 
 const WIDE = { width: 800, height: 420, circleR: 100, boxW: 240, sideX: 24 };
 const NARROW = { width: 360, circleR: 66, boxW: 300, gap: 18 };
@@ -143,6 +143,7 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
   const titleLines = wrapText(list.title, 15).slice(0, 4);
   const lineHeight = 19;
   const titleStartY = center.y - ((titleLines.length - 1) * lineHeight) / 2;
+  const hubSwatch = pastelize(list.accent);
 
   return (
     <svg className="section-map" viewBox={`0 0 ${width} ${height}`} role="group" aria-label="Browse by section">
@@ -204,9 +205,9 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
           }
         }}
       >
-        <circle cx={center.x} cy={center.y} r={circleR} className="section-map-hub-circle" />
+        <circle cx={center.x} cy={center.y} r={circleR} className="section-map-hub-circle" fill={hubSwatch.bg} />
         {titleLines.map((line, i) => (
-          <text key={i} x={center.x} y={titleStartY + i * lineHeight} textAnchor="middle" className="section-map-hub-title">
+          <text key={i} x={center.x} y={titleStartY + i * lineHeight} textAnchor="middle" fill={hubSwatch.text} className="section-map-hub-title">
             {line}
           </text>
         ))}
@@ -233,6 +234,7 @@ function NarrowLayout({ list, activeSection, onSelect, counts }) {
   const titleLines = wrapText(list.title, 12).slice(0, 4);
   const lineHeight = 16;
   const titleStartY = hubCy - ((titleLines.length - 1) * lineHeight) / 2;
+  const hubSwatch = pastelize(list.accent);
 
   return (
     <svg className="section-map section-map-narrow" viewBox={`0 0 ${width} ${height}`} role="group" aria-label="Browse by section">
@@ -284,9 +286,16 @@ function NarrowLayout({ list, activeSection, onSelect, counts }) {
           }
         }}
       >
-        <circle cx={centerX} cy={hubCy} r={circleR} className="section-map-hub-circle" />
+        <circle cx={centerX} cy={hubCy} r={circleR} className="section-map-hub-circle" fill={hubSwatch.bg} />
         {titleLines.map((line, i) => (
-          <text key={i} x={centerX} y={titleStartY + i * lineHeight} textAnchor="middle" className="section-map-hub-title section-map-hub-title-narrow">
+          <text
+            key={i}
+            x={centerX}
+            y={titleStartY + i * lineHeight}
+            textAnchor="middle"
+            fill={hubSwatch.text}
+            className="section-map-hub-title section-map-hub-title-narrow"
+          >
             {line}
           </text>
         ))}

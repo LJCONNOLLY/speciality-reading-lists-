@@ -54,6 +54,38 @@ function hslToHex(h, s, l) {
   return `#${toHex(f(0))}${toHex(f(8))}${toHex(f(4))}`;
 }
 
+function hexToHsl(hex) {
+  const [r, g, b] = hexToRgb(hex).map((v) => v / 255);
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const l = (max + min) / 2;
+  if (max === min) return { h: 0, s: 0, l: l * 100 };
+  const d = max - min;
+  const s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+  let h;
+  switch (max) {
+    case r:
+      h = (g - b) / d + (g < b ? 6 : 0);
+      break;
+    case g:
+      h = (b - r) / d + 2;
+      break;
+    default:
+      h = (r - g) / d + 4;
+  }
+  return { h: h * 60, s: s * 100, l: l * 100 };
+}
+
+// A soft pastel version of any hex color, keeping its hue but flattening
+// saturation and lifting lightness — used for diagram "heading" areas
+// (spoke boxes, hub) that should stay soft no matter how bold the color
+// they're derived from is.
+export function pastelize(hex, { saturation = 26, lightness = 87 } = {}) {
+  const { h } = hexToHsl(hex);
+  const bg = hslToHex(h, saturation, lightness);
+  return { bg, text: pickTextColor(bg) };
+}
+
 // Builds `count` swatches at a single hue, light-to-dark, each paired with
 // whichever text color (white or dark ink) contrasts better against it.
 // Kept to a light, muted band (lightness 62-82 at modest saturation) so
@@ -70,10 +102,11 @@ export function hueRamp(hue, count, { saturation = 35, lMax = 82, lMin = 62 } = 
 
 // A wider spread of distinct, muted greens — hue varies across the ramp
 // instead of just lightness, so adjacent swatches read as different named
-// greens rather than steps of a single gradient. Saturation/lightness
-// wobble slightly per item so it doesn't read as a smooth fade either.
-// Kept to 100-148 so neither end drifts into yellow/olive or teal/cyan —
-// it should read as "green," full stop, at every step.
+// greens rather than steps of a single gradient. Kept to 100-148 so neither
+// end drifts into yellow/olive or teal/cyan — it should read as "green,"
+// full stop, at every step. Saturation and lightness each cycle on their
+// own out-of-phase period (3 and 4) so adjacent items land in clearly
+// different light/medium/dark bands instead of all clustering at "medium."
 export function softGreenRamp(count) {
   const total = Math.max(count, 1);
   const hueStart = 100;
@@ -81,8 +114,8 @@ export function softGreenRamp(count) {
   return Array.from({ length: total }, (_, i) => {
     const t = total === 1 ? 0.5 : i / (total - 1);
     const hue = hueStart + t * (hueEnd - hueStart);
-    const saturation = 34 + (i % 3) * 6;
-    const lightness = 56 + ((i + 1) % 3) * 7;
+    const saturation = 26 + (i % 3) * 15;
+    const lightness = 40 + ((i + 2) % 4) * 13;
     const bg = hslToHex(hue, saturation, lightness);
     return { bg, text: pickTextColor(bg) };
   });
@@ -112,13 +145,14 @@ function resolveRamp(hue, count) {
   return hueRamp(hue, count);
 }
 
-// A single representative swatch for a section's spoke box: a mid-tone from
-// its `hue` ramp if it has one, else the categorical palette at
-// `fallbackIndex`.
+// A section's spoke-box swatch: always a soft pastel in that section's hue
+// family, independent of however bold/varied its books' own ramp is — the
+// "heading" areas (spoke boxes, hub) stay soft even when the reading
+// buttons underneath them are more saturated for distinctness.
 export function sectionSwatch(section, fallbackIndex) {
-  if (section?.hue != null) {
-    return resolveRamp(section.hue, 3)[1];
-  }
+  if (section?.hue === 'soft-green') return pastelize('#3aa050');
+  if (section?.hue === 'soft-earth') return pastelize('#a15c38');
+  if (typeof section?.hue === 'number') return pastelize(hslToHex(section.hue, 45, 45));
   return paletteSwatch(fallbackIndex);
 }
 
