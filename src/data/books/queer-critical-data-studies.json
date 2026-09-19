@@ -45,7 +45,7 @@
     "title": "Gender and Science",
     "author": ["Evelyn Fox Keller"],
     "year": 1978,
-    "publisher": "Psychoanalysis and Contemporary Thought (verify exact citation)",
+    "publisher": "Psychoanalysis and Contemporary Thought",
     "tags": ["objectivity", "feminist science studies"],
     "status": "read",
     "section": "theoretical-foundations",
@@ -89,11 +89,11 @@
     "title": "Difference and Dominance: On Sex Discrimination",
     "author": ["Catharine A. MacKinnon"],
     "year": 1984,
-    "publisher": "verify exact citation",
+    "publisher": "Feminism Unmodified: Discourses on Life and Law (Harvard University Press)",
     "tags": ["sex discrimination", "power"],
     "status": "read",
     "section": "theoretical-foundations",
-    "notes": "It moves the sex question from sameness and difference to power."
+    "notes": "It moves the sex question from sameness and difference to power. Publisher is a best-guess from the most commonly cited edition — double-check against your assigned printing."
   },
   {
     "id": "crenshaw-mapping-the-margins",
@@ -133,11 +133,11 @@
     "title": "Rethinking Standpoint Epistemology: What Is \"Strong Objectivity?\"",
     "author": ["Sandra Harding"],
     "year": 1992,
-    "publisher": "The Centennial Review (verify exact citation)",
+    "publisher": "The Centennial Review (Michigan State University Press)",
     "tags": ["standpoint epistemology", "objectivity"],
     "status": "read",
     "section": "theoretical-foundations",
-    "notes": "It argues that starting from marginalized lives yields stronger objectivity."
+    "notes": "It argues that starting from marginalized lives yields stronger objectivity. The Centennial Review, Fall 1992, 36(3), 437–470."
   },
   {
     "id": "butler-bodies-that-matter",
