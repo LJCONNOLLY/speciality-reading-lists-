@@ -86,16 +86,22 @@ export function pastelize(hex, { saturation = 26, lightness = 87 } = {}) {
   return { bg, text: pickTextColor(bg) };
 }
 
-// Builds `count` swatches at a single hue, light-to-dark, each paired with
-// whichever text color (white or dark ink) contrasts better against it.
-// Kept to a light, muted band (lightness 62-82 at modest saturation) so
-// every step reads as pastel and black text always wins the contrast pick.
-export function hueRamp(hue, count, { saturation = 35, lMax = 82, lMin = 62 } = {}) {
+// Builds `count` swatches around a single hue, each paired with whichever
+// text color (white or dark ink) contrasts better against it. A narrow hue
+// band (base +/- spread/2) plus out-of-phase saturation/lightness cycles
+// (periods 3 and 4, same trick as softGreenRamp) keep every step reading as
+// "that color family" while still landing in clearly different light/
+// medium/dark bands — a plain lightness fade goes muddy once a section has
+// more than a handful of books, since the whole range gets divided into
+// slivers too small to tell apart.
+export function hueRamp(hue, count, { spread = 24, saturation = 34, lMax = 80, lMin = 46 } = {}) {
   const total = Math.max(count, 1);
   return Array.from({ length: total }, (_, i) => {
-    const t = total === 1 ? 0 : i / (total - 1);
-    const lightness = lMax - t * (lMax - lMin);
-    const bg = hslToHex(hue, saturation, lightness);
+    const t = total === 1 ? 0.5 : i / (total - 1);
+    const h = hue - spread / 2 + t * spread;
+    const s = saturation + (i % 3) * 13;
+    const l = lMax - ((i + 2) % 4) * ((lMax - lMin) / 3);
+    const bg = hslToHex(h, s, l);
     return { bg, text: pickTextColor(bg) };
   });
 }
