@@ -185,6 +185,450 @@
     "notes": "It follows the sex question into how norms make bodies materialize."
   },
   {
+    "id": "ahmed-queer-phenomenology",
+    "title": "Queer Phenomenology: Orientations, Objects, Others",
+    "author": [
+      "Sara Ahmed"
+    ],
+    "year": 2006,
+    "publisher": "Duke University Press",
+    "tags": [
+      "phenomenology",
+      "orientation"
+    ],
+    "status": "unread-unprinted",
+    "section": "theoretical-foundations",
+    "notes": "It treats queerness as a matter of orientation — which bodies are \"in line\" and which are turned away from the paths they're expected to follow."
+  },
+  {
+    "id": "stone-the-empire-strikes-back",
+    "title": "The Empire Strikes Back: A Posttranssexual Manifesto",
+    "author": [
+      "Sandy Stone"
+    ],
+    "year": 1991,
+    "publisher": "Body Guards: The Cultural Politics of Gender Ambiguity, ed. Julia Epstein & Kristina Straub (Routledge, 1991)",
+    "tags": [
+      "trans studies",
+      "manifesto"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It answers Janice Raymond's anti-trans polemic by calling on trans people to refuse passing and instead write themselves into visibility as trans."
+  },
+  {
+    "id": "bowker-star-sorting-things-out",
+    "title": "Sorting Things Out: Classification and Its Consequences",
+    "author": [
+      "Geoffrey C. Bowker",
+      "Susan Leigh Star"
+    ],
+    "year": 1999,
+    "publisher": "MIT Press",
+    "tags": [
+      "classification systems",
+      "infrastructure studies"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It shows classification systems are never neutral — they encode political and moral choices that disappear once naturalized as infrastructure."
+  },
+  {
+    "id": "nobles-shades-of-citizenship",
+    "title": "Shades of Citizenship: Race and the Census in Modern Politics",
+    "author": [
+      "Melissa Nobles"
+    ],
+    "year": 2000,
+    "publisher": "Stanford University Press",
+    "tags": [
+      "census",
+      "race",
+      "state classification"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It compares U.S. and Brazilian census race categories to show that state classification schemes construct racial identity rather than simply record it."
+  },
+  {
+    "id": "alexander-wallace-the-queer-turn-in-composition-studies",
+    "title": "The Queer Turn in Composition Studies: Reviewing and Assessing an Emerging Scholarship",
+    "author": [
+      "Jonathan Alexander",
+      "David Wallace"
+    ],
+    "year": 2009,
+    "publisher": "College Composition and Communication, 61(1)",
+    "tags": [
+      "composition studies",
+      "queer rhetoric"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It surveys roughly fifteen years of queer scholarship in composition studies, tracing a shift from confronting homophobia to queering the hetero/homo binary itself. Exact page range is reported inconsistently across secondary sources — pull it from the journal/DOI directly if needed."
+  },
+  {
+    "id": "browne-k-queer-quantification",
+    "title": "Queer Quantification or Queer(y)ing Quantification: Creating Lesbian, Gay, Bisexual or Heterosexual Citizens through Governmental Social Research",
+    "author": [
+      "Kath Browne"
+    ],
+    "year": 2010,
+    "publisher": "Queer Methods and Methodologies, ed. Kath Browne & Catherine J. Nash (Ashgate, 2010)",
+    "tags": [
+      "quantification",
+      "LGBT statistics",
+      "governmentality"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It argues that counting sexual identity for government statistics is itself a political act that produces the very categories of \"citizen\" it claims to measure."
+  },
+  {
+    "id": "spade-normal-life",
+    "title": "Normal Life: Administrative Violence, Critical Trans Politics, and the Limits of Law",
+    "author": [
+      "Dean Spade"
+    ],
+    "year": 2011,
+    "publisher": "South End Press",
+    "tags": [
+      "administrative violence",
+      "trans politics",
+      "law"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It argues the deeper harm to trans people comes not from overt discrimination but from the mundane sorting built into IDs, benefits, and other administrative systems. A revised/expanded edition was published by Duke University Press in 2015 — confirm which edition you're reading."
+  },
+  {
+    "id": "boyd-crawford-critical-questions-for-big-data",
+    "title": "Critical Questions for Big Data: Provocations for a Cultural, Technological, and Scholarly Phenomenon",
+    "author": [
+      "danah boyd",
+      "Kate Crawford"
+    ],
+    "year": 2012,
+    "publisher": "Information, Communication & Society, 15(5), 662–679",
+    "tags": [
+      "big data",
+      "critical data studies"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It lays out early cautions against treating \"big data\" as simply objective, flagging the ethical and epistemological problems that come with scale."
+  },
+  {
+    "id": "gitelman-raw-data-is-an-oxymoron",
+    "title": "\"Raw Data\" Is an Oxymoron",
+    "author": [
+      "Lisa Gitelman"
+    ],
+    "year": 2013,
+    "publisher": "MIT Press",
+    "tags": [
+      "data studies",
+      "infrastructure"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It argues there is no such thing as raw, unmediated data — all data is already shaped by the assumptions and infrastructures used to collect it."
+  },
+  {
+    "id": "samuels-fantasies-of-identification",
+    "title": "Fantasies of Identification: Disability, Gender, Race",
+    "author": [
+      "Ellen Samuels"
+    ],
+    "year": 2014,
+    "publisher": "New York University Press",
+    "tags": [
+      "disability studies",
+      "identity verification"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It traces the belief that identity can be verified through visible or scientific proof — fingerprints, blood, sex tests — across disability, gender, and race."
+  },
+  {
+    "id": "browne-s-dark-matters",
+    "title": "Dark Matters: On the Surveillance of Blackness",
+    "author": [
+      "Simone Browne"
+    ],
+    "year": 2015,
+    "publisher": "Duke University Press",
+    "tags": [
+      "surveillance studies",
+      "blackness"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It roots contemporary biometric surveillance in the historical surveillance of enslaved and free Black people, making anti-Blackness foundational to surveillance itself."
+  },
+  {
+    "id": "hoffmann-data-technology-and-gender",
+    "title": "Data, Technology, and Gender: Thinking About (and From) Trans Lives",
+    "author": [
+      "Anna Lauren Hoffmann"
+    ],
+    "year": 2017,
+    "publisher": "Spaces for the Future: A Companion to Philosophy of Technology, ed. Ashley Shew & Joseph C. Pitt (Routledge, 2017)",
+    "tags": [
+      "trans studies",
+      "data & technology"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It uses trans experience and theory as a starting point for critiquing how data and technology systems assume gender is fixed and binary."
+  },
+  {
+    "id": "keyes-the-misgendering-machines",
+    "title": "The Misgendering Machines: Trans/HCI Implications of Automatic Gender Recognition",
+    "author": [
+      "Os Keyes"
+    ],
+    "year": 2018,
+    "publisher": "Proceedings of the ACM on Human-Computer Interaction, 2(CSCW). DOI: 10.1145/3274357",
+    "tags": [
+      "automatic gender recognition",
+      "HCI"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It shows automatic gender recognition systems consistently misgender trans people because they encode a binary, cis-normative model of gender."
+  },
+  {
+    "id": "gill-peterson-histories-of-the-transgender-child",
+    "title": "Histories of the Transgender Child",
+    "author": [
+      "Jules Gill-Peterson"
+    ],
+    "year": 2018,
+    "publisher": "University of Minnesota Press",
+    "tags": [
+      "trans childhood",
+      "medicalization"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It uncovers a decades-long archive of medical treatment of trans children to argue the medicalization of childhood gender variance has always been entangled with race."
+  },
+  {
+    "id": "cox-working-closets",
+    "title": "Working Closets: Mapping Queer Professional Discourses and Why Professional Communication Studies Need Queer Rhetorics",
+    "author": [
+      "Matthew B. Cox"
+    ],
+    "year": 2019,
+    "publisher": "Journal of Business and Technical Communication, 33(1), 1–25",
+    "tags": [
+      "workplace communication",
+      "queer rhetoric"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It introduces \"working closets\" as a framework for how LGBTQ professionals selectively reveal or conceal identity at work, and argues technical communication needs queer rhetorical theory."
+  },
+  {
+    "id": "edenfield-holmes-colton-queering-tactical-technical-communication",
+    "title": "Queering Tactical Technical Communication: DIY HRT",
+    "author": [
+      "Avery C. Edenfield",
+      "Steve Holmes",
+      "Jared S. Colton"
+    ],
+    "year": 2019,
+    "publisher": "Technical Communication Quarterly, 28(3), 177–191",
+    "tags": [
+      "technical communication",
+      "DIY medicine"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It reads user-generated DIY hormone-therapy instructions as tactical technical communication that routes around inaccessible medical gatekeeping."
+  },
+  {
+    "id": "beauchamp-going-stealth",
+    "title": "Going Stealth: Transgender Politics and U.S. Surveillance Practices",
+    "author": [
+      "Toby Beauchamp"
+    ],
+    "year": 2019,
+    "publisher": "Duke University Press",
+    "tags": [
+      "surveillance",
+      "trans politics"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It argues state surveillance practices produce and police \"transgender\" as a security threat tied to racialized and ableist logics, not just a gender-identity issue."
+  },
+  {
+    "id": "ruberg-ruelos-data-for-queer-lives",
+    "title": "Data for Queer Lives: How LGBTQ Gender and Sexuality Identities Challenge Norms of Demographics",
+    "author": [
+      "Bonnie Ruberg",
+      "Spencer Ruelos"
+    ],
+    "year": 2020,
+    "publisher": "Big Data & Society, 7(1)",
+    "tags": [
+      "demographics",
+      "LGBTQ data"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "Drawing on LGBTQ survey data, it argues fixed, single-choice demographic fields fail to capture how queer identities are actually multiple and change over time. Exact article/page locator wasn't confirmable — SAGE open-access journals typically use article numbers rather than page ranges."
+  },
+  {
+    "id": "hoffmann-terms-of-inclusion",
+    "title": "Terms of Inclusion: Data, Discourse, Violence",
+    "author": [
+      "Anna Lauren Hoffmann"
+    ],
+    "year": 2021,
+    "publisher": "New Media & Society, 23(12), 3539–3556",
+    "tags": [
+      "data violence",
+      "discourse"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It argues that framing data harms as mere \"inclusion\" problems obscures the discursive violence built into data systems themselves."
+  },
+  {
+    "id": "moeggenberg-edenfield-holmes-trans-oppression-through-technical-rhetorics",
+    "title": "Trans Oppression Through Technical Rhetorics: A Queer Phenomenological Analysis of Institutional Documents",
+    "author": [
+      "Zarah C. Moeggenberg",
+      "Avery C. Edenfield",
+      "Steve Holmes"
+    ],
+    "year": 2022,
+    "publisher": "Journal of Business and Technical Communication, 36(4), 403–439",
+    "tags": [
+      "queer phenomenology",
+      "institutional rhetoric"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It applies Ahmed's queer phenomenology to government forms to show how their design produces bureaucratic \"failed orientations\" specifically for trans people."
+  },
+  {
+    "id": "rhodes-alexander-routledge-handbook-of-queer-rhetoric",
+    "title": "The Routledge Handbook of Queer Rhetoric",
+    "author": [
+      "Jacqueline Rhodes",
+      "Jonathan Alexander"
+    ],
+    "year": 2022,
+    "publisher": "Routledge",
+    "tags": [
+      "queer rhetoric",
+      "reference"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "A wide-ranging reference handbook mapping queer rhetorical studies across composition, media, activism, and pedagogy."
+  },
+  {
+    "id": "keilty-introduction-queer-data-studies",
+    "title": "Introduction (to Queer Data Studies)",
+    "author": [
+      "Patrick Keilty"
+    ],
+    "year": 2023,
+    "publisher": "Queer Data Studies, ed. Patrick Keilty (University of Washington Press)",
+    "tags": [
+      "queer data studies",
+      "introduction"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It frames the volume's core claim that the collection and categorization of data is never neutral with respect to sexuality and gender. Some official records list the volume's publication date as Jan. 2024 rather than 2023 — most citation databases still give 2023."
+  },
+  {
+    "id": "mcglotten-black-data",
+    "title": "Black Data",
+    "author": [
+      "Shaka McGlotten"
+    ],
+    "year": 2023,
+    "publisher": "Queer Data Studies, ed. Patrick Keilty (University of Washington Press)",
+    "tags": [
+      "blackness",
+      "data"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It explores what it means to be rendered as, and through, data for Black queer subjects."
+  },
+  {
+    "id": "shepard-to-fight-for-an-end-to-intrusions",
+    "title": "\"To Fight for an End to Intrusions into the Sex Lives of Americans\": Gay and Lesbian Resistance to Sexual Surveillance and Data Gathering, 1945–1972",
+    "author": [
+      "Nikita Shepard"
+    ],
+    "year": 2023,
+    "publisher": "Queer Data Studies, ed. Patrick Keilty (University of Washington Press)",
+    "tags": [
+      "sexual surveillance",
+      "history"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It traces mid-20th-century gay and lesbian activist resistance to being counted and surveilled by government sex research. The subtitle appears in some sources as \"...Data Collection...\" rather than \"...Data Gathering...\" — a minor, unresolved discrepancy."
+  },
+  {
+    "id": "molldrem-hiv-data-as-queer-data",
+    "title": "HIV Data as Queer Data: Biomedical Sexualities, Treatment-as-Prevention, and the New Sex Hierarchy for People Living with HIV",
+    "author": [
+      "Stephen Molldrem"
+    ],
+    "year": 2023,
+    "publisher": "Queer Data Studies, ed. Patrick Keilty (University of Washington Press)",
+    "tags": [
+      "HIV",
+      "biomedicalization"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It argues HIV surveillance and treatment data create new queer subject positions and a new hierarchy of sexual respectability."
+  },
+  {
+    "id": "conrad-generating-vulnerability",
+    "title": "Generating Vulnerability: Male Sex Workers, Third-Party Platforms, and Data Security",
+    "author": [
+      "Ryan Conrad"
+    ],
+    "year": 2023,
+    "publisher": "Queer Data Studies, ed. Patrick Keilty (University of Washington Press)",
+    "tags": [
+      "sex work",
+      "data security"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It examines how male sex workers' reliance on third-party data platforms exposes them to heightened surveillance rather than the safety those platforms promise."
+  },
+  {
+    "id": "kornstein-homobiles",
+    "title": "Homobiles: Queering Data through Ephemerality and Intimacy",
+    "author": [
+      "Harris Kornstein"
+    ],
+    "year": 2023,
+    "publisher": "Queer Data Studies, ed. Patrick Keilty (University of Washington Press)",
+    "tags": [
+      "ride-sharing",
+      "queer alternatives to data"
+    ],
+    "status": "unread-unprinted",
+    "section": "classification-critique",
+    "notes": "It studies Homobiles, an informal LGBTQ ride-share service, as a low-tech, non-data-hoarding alternative to Silicon Valley's data-driven gig economy."
+  },
+  {
     "id": "guyan-constructing-a-queer-population",
     "title": "Constructing a Queer Population? Asking About Sexual Orientation in Scotland's 2022 Census",
     "author": [
@@ -198,7 +642,7 @@
       "data collection"
     ],
     "status": "printed-ready",
-    "section": "classification-critique",
+    "section": "contemporary-applications",
     "notes": "Journal of Gender Studies, 31(6), 782–792. DOI: 10.1080/09589236.2020.1866513"
   },
   {
@@ -216,8 +660,25 @@
       "concept capture"
     ],
     "status": "printed-ready",
-    "section": "classification-critique",
+    "section": "contemporary-applications",
     "notes": "Social & Legal Studies, 31(5), 746–772. DOI: 10.1177/09646639211061409"
+  },
+  {
+    "id": "currah-sex-is-as-sex-does",
+    "title": "Sex Is as Sex Does: Governing Transgender Identity",
+    "author": [
+      "Paisley Currah"
+    ],
+    "year": 2022,
+    "publisher": "New York University Press",
+    "tags": [
+      "state classification",
+      "trans identity",
+      "law"
+    ],
+    "status": "unread-unprinted",
+    "section": "contemporary-applications",
+    "notes": "It argues the state's definitions of \"sex\" on official documents shift depending on bureaucratic purpose rather than reflecting any fixed truth, explaining the contradictory rules trans people face across agencies."
   },
   {
     "id": "simeoni-querying-the-quantification-of-the-queer",
