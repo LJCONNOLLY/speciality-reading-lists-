@@ -1,8 +1,7 @@
 import { useMemo, useState } from 'react';
-import { Link, useOutletContext } from 'react-router-dom';
+import { Link, useOutletContext, useSearchParams } from 'react-router-dom';
 import { STATUSES, statusLabel } from '../utils/status.js';
 import { bookSwatches } from '../utils/palette.js';
-import SectionMap from './SectionMap.jsx';
 
 function matches(book, query) {
   const haystack = [
@@ -21,7 +20,10 @@ export default function Library() {
   const { list } = useOutletContext();
   const [query, setQuery] = useState('');
   const [folder, setFolder] = useState('all');
-  const [section, setSection] = useState('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const section = searchParams.get('section') || 'all';
+  const setSection = (id) =>
+    setSearchParams(id === 'all' ? { view: 'readings' } : { view: 'readings', section: id }, { replace: true });
 
   const hasSections = list.sections?.length > 0;
 
@@ -60,12 +62,23 @@ export default function Library() {
 
   return (
     <div className="library">
-      {list.intro ? <p className="list-intro">{list.intro}</p> : null}
-
       {hasSections ? (
         <>
-          <div className="tab-group-label">Browse by section</div>
-          <SectionMap list={list} activeSection={section} onSelect={setSection} counts={sectionCounts} />
+          <div className="tab-group-label">Section</div>
+          <div className="folder-tabs" role="tablist" aria-label="Filter by section">
+            {[{ id: 'all', title: 'All sections' }, ...list.sections].map((sec) => (
+              <button
+                key={sec.id}
+                type="button"
+                role="tab"
+                aria-selected={section === sec.id}
+                className={`folder-tab${section === sec.id ? ' active' : ''}`}
+                onClick={() => setSection(sec.id)}
+              >
+                {sec.title} <span className="folder-count">{sectionCounts[sec.id] || 0}</span>
+              </button>
+            ))}
+          </div>
         </>
       ) : null}
 

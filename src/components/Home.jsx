@@ -12,7 +12,7 @@ export default function Home() {
         {lists.map((list) => (
           <Link
             key={list.id}
-            to={`/list/${list.id}`}
+            to={`/${list.slug}`}
             className="home-card"
             style={{ '--accent': list.accent }}
           >

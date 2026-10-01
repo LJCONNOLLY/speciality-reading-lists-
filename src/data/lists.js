@@ -8,6 +8,7 @@ import queerCriticalDataStudies from './books/queer-critical-data-studies.json';
 export const lists = [
   {
     id: 'rhetoric-tech-comm',
+    slug: 'rhetoric',
     title: 'Rhetoric in/of Technical Communication',
     tagline: 'How rhetoric shapes, and is shaped by, technical and professional communication.',
     accent: '#2f6f5e',
@@ -15,6 +16,7 @@ export const lists = [
   },
   {
     id: 'queer-critical-data-studies',
+    slug: 'queer-data',
     title: 'Classification and Datafication of Queer Bodies',
     tagline: 'Queer theory in conversation with critical approaches to data, algorithms, and infrastructure.',
     accent: '#8d5235',
@@ -38,7 +40,7 @@ export const lists = [
 ];
 
 export function getList(listId) {
-  return lists.find((list) => list.id === listId);
+  return lists.find((list) => list.slug === listId || list.id === listId);
 }
 
 export function getBook(listId, bookId) {

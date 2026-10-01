@@ -11,7 +11,7 @@ export default function BookProfile() {
     return (
       <div className="book-profile">
         <p>No entry found for &ldquo;{bookId}&rdquo; in {list.title}.</p>
-        <Link to={`/list/${list.id}`}>&larr; Back to {list.title}</Link>
+        <Link to={`/${list.slug}?view=readings`}>&larr; Back to {list.title}</Link>
       </div>
     );
   }
@@ -21,7 +21,7 @@ export default function BookProfile() {
   return (
     <div className="book-profile">
       <div className="book-profile-band" style={{ background: swatch.bg }} aria-hidden="true" />
-      <Link to={`/list/${list.id}`} className="back-link">
+      <Link to={`/${list.slug}?view=readings`} className="back-link">
         &larr; Back to {list.title}
       </Link>
       {book.section ? (
