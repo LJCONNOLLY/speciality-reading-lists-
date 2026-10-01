@@ -108,8 +108,8 @@ TERMS = [
                 'Power is a field of relations rather than a possession, and resistance arises inside it rather than outside.', 'defines',
                 'Power becomes everywhere and productive, not only repressive.'),
             'keller-gender-and-science': (4, 'History reveals a most complex relation between the two, as complex perhaps as the interrelation between the dual constitutive motives for knowledge those of transcendence and power.',
-                'Knowledge is driven partly by a wish for power, the domination of nature.', 'in passing',
-                'Ties the will to know to the will to dominate.'),
+                'Keller names power, alongside transcendence, as one of the two motives that drive the pursuit of knowledge.', 'in passing',
+                'Ties the will to know to the will to power.'),
             'foucault-power-knowledge': (131, 'In defining the effects of power as repression, one adopts a purely juridical conception of such power, one identifies power with a law which says no, power is taken above all as carrying the force of a prohibition.',
                 'Treating power only as prohibition (a law that says no) misses how it produces knowledge and discourse.', 'critiques',
                 "Spells out why 'power says no' is too thin."),
@@ -283,7 +283,7 @@ LINKS = [
     ('collins-learning-from-the-outsider-within', 'Keller', 8, 'They note that there is an implicit belief in the duality of culture and nature.',
      "Collins cites Keller (1983) on the dualistic, gendered thinking that also structures racial and sexual oppression."),
     ('crenshaw-mapping-the-margins', 'MacKinnon', 5, 'citing Catharine MacKinnon, Feminism, Marxism, Method, and the State',
-     'A footnote: Crenshaw borrows a point about naming groups from MacKinnon. A citation, not an argument.'),
+     'A footnote: Crenshaw cites MacKinnon on capitalizing "Black" because Black people form a specific cultural group. A citation, not an argument.'),
 ]
 
 AUTHOR_BOOKS = {
@@ -299,10 +299,10 @@ AUTHOR_RX = {'Foucault': r'\bFoucault', 'MacKinnon': r'\bMac ?Kinnon', 'Collins'
 ESSAY = {
     'title': 'Talking to Each Other: How the Foundations Use Each Other',
     'paragraphs': [
-        "Within the eleven foundational texts indexed so far, the conversation runs in two separate streams that barely touch. The first is the Foucault-to-Butler line on sex, power, and discourse. The second is the feminist epistemology line on objectivity and standpoint, running from Keller through Collins and Longino to Harding. Crenshaw and MacKinnon sit between them, cited by both streams but answering neither directly.",
+        "Within the eleven foundational texts indexed so far, the conversation runs in two separate streams that barely touch. The first is the Foucault-to-Butler line on sex, power, and discourse. The second is the feminist epistemology line on objectivity and standpoint, running from Keller through Collins and Longino to Harding. MacKinnon and Crenshaw stand somewhat apart: Butler argues with MacKinnon at length, Crenshaw cites her only in footnotes, and none of the other indexed texts cites Crenshaw.",
         "Butler is the heaviest borrower by far. Foucault is named on dozens of pages of Gender Trouble and Bodies That Matter, and his idea that power produces the subjects it claims to describe is the engine of both books. MacKinnon gets the most pointed engagement: Butler credits her account of gender hierarchy as close to her own, then argues it quietly presumes heterosexuality. This is the move that opens room for queer theory to separate from, and argue with, structural feminism.",
         "Harding works as the hub of the epistemology stream. She takes Collins as a central example of thinking from marginal lives, treats Longino as a respected rival (a feminist empiricist whose ideas overlap with standpoint theory), and builds on Keller's critique of 'objectivism'. Longino, in turn, sets out Keller's argument that scientific language carries an ideology of domination. Collins cites Keller on the dualistic thinking that links gender, race, and sexual oppression.",
-        "The missing link is the most telling one. None of the epistemologists cite Foucault, and Butler mentions Keller and Harding only in footnotes. Together the two streams make the claim this list rests on, that classification systems constitute what they claim to find. But in these texts the claim is assembled by the reader, not by the authors. The Classification and Datafication Critique readings are where the two streams finally meet: Bowker and Star, Spade, and Hoffmann pair Foucault's productive power with standpoint's attention to who does the counting.",
+        "The missing link is the most telling one. None of the epistemologists cite Foucault, and in Gender Trouble Butler mentions Keller and Harding only in acknowledgments and endnotes. Together the two streams make the claim this list rests on, that classification systems constitute what they claim to find. But in these texts the claim is assembled by the reader, not by the authors. Whether and how the Classification and Datafication Critique readings bring the two streams together can be mapped here once their PDFs are added.",
     ],
 }
 
@@ -329,7 +329,7 @@ GALLERY = [
     ('racializing-surveillance', 'Racializing Surveillance', 'Surveillance practices that produce and enforce racial categories; Browne roots biometric technologies in the surveillance of Blackness.', 'browne-s-dark-matters', None),
     ('automatic-gender-recognition', 'Automatic Gender Recognition', 'Software that infers gender from faces or bodies. Keyes shows it encodes a binary, physiological model of gender that misgenders trans people.', 'keyes-the-misgendering-machines', 'gender'),
     ('working-closets', 'Working Closets', 'How LGBTQ professionals selectively disclose or conceal identity in workplace communication.', 'cox-working-closets', 'identity'),
-    ('tactical-technical-communication', 'Tactical Technical Communication', 'User-made instructions that route around institutions, such as trans people sharing DIY hormone protocols outside medical gatekeeping.', 'edenfield-holmes-colton-queering-tactical-technical-communication', None),
+    ('tactical-technical-communication', 'Tactical Technical Communication', 'Instructions people make for each other to route around institutions. Edenfield, Holmes, and Colton queer this existing concept through trans people sharing DIY hormone protocols outside medical gatekeeping.', 'edenfield-holmes-colton-queering-tactical-technical-communication', None),
     ('discursive-violence', 'Discursive Violence', "Harm built into how data systems name and frame people, which 'inclusion' alone cannot fix.", 'hoffmann-terms-of-inclusion', 'discourse'),
     ('concept-capture', 'Concept Capture', 'When a contested concept, such as "gender identity" in state data, is co-opted or reshaped by the institutions that collect it.', 'collier-cowan-queer-conflicts-concept-capture', 'category'),
 ]

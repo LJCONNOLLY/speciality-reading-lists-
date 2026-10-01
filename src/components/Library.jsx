@@ -8,6 +8,8 @@ function matches(book, query) {
     book.title,
     ...(book.author || []),
     ...(book.tags || []),
+    ...(book.keyTerms || []),
+    book.thesis,
     book.notes,
   ]
     .filter(Boolean)

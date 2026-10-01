@@ -6,12 +6,13 @@ export default function BookProfile() {
   const { list } = useOutletContext();
   const { bookId } = useParams();
   const book = list.books.find((entry) => entry.id === bookId);
+  const back = `/${list.slug}?view=readings`;
 
   if (!book) {
     return (
       <div className="book-profile">
         <p>No entry found for &ldquo;{bookId}&rdquo; in {list.title}.</p>
-        <Link to={`/${list.slug}?view=readings`}>&larr; Back to {list.title}</Link>
+        <Link to={back}>&larr; Back to {list.title}</Link>
       </div>
     );
   }
@@ -19,9 +20,9 @@ export default function BookProfile() {
   const swatch = bookSwatches(list)[book.id];
 
   return (
-    <div className="book-profile">
+    <div className="book-profile" style={{ '--swatch': swatch.bg }}>
       <div className="book-profile-band" style={{ background: swatch.bg }} aria-hidden="true" />
-      <Link to={`/${list.slug}?view=readings`} className="back-link">
+      <Link to={back} className="back-link">
         &larr; Back to {list.title}
       </Link>
       {book.section ? (
@@ -46,6 +47,55 @@ export default function BookProfile() {
           Read the PDF &rarr;
         </a>
       ) : null}
+
+      {book.thesis ? (
+        <section className="bp-section">
+          <h3>Thesis</h3>
+          <p className="bp-thesis">{book.thesis}</p>
+        </section>
+      ) : null}
+
+      {book.researchQuestions?.length ? (
+        <section className="bp-section">
+          <h3>Research questions</h3>
+          <ol className="bp-questions">
+            {book.researchQuestions.map((item) => (
+              <li key={item.q} className={item.page ? 'quoted' : ''}>
+                {item.page ? `“${item.q}”` : item.q}
+                {item.page ? <cite>PDF p. {item.page}</cite> : null}
+              </li>
+            ))}
+          </ol>
+        </section>
+      ) : null}
+
+      {book.keyTerms?.length ? (
+        <section className="bp-section">
+          <h3>Key terms</h3>
+          <div className="bp-terms">
+            {book.keyTerms.map((term) => (
+              <span key={term} className="bp-term">
+                {term}
+              </span>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {book.approach ? (
+        <section className="bp-section">
+          <h3>Approach</h3>
+          <p>{book.approach}</p>
+        </section>
+      ) : null}
+
+      {book.notes ? (
+        <section className="bp-section">
+          <h3>Notes</h3>
+          <p className="book-notes">{book.notes}</p>
+        </section>
+      ) : null}
+
       {book.tags?.length ? (
         <div className="tag-row">
           {book.tags.map((tag) => (
@@ -55,7 +105,8 @@ export default function BookProfile() {
           ))}
         </div>
       ) : null}
-      {book.notes ? <p className="book-notes">{book.notes}</p> : null}
+
+      {book.summarySource ? <p className="bp-source">{book.summarySource}</p> : null}
     </div>
   );
 }

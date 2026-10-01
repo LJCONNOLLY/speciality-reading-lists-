@@ -508,7 +508,7 @@ a {
 /* ---- Book profile ---- */
 
 .book-profile {
-  max-width: 640px;
+  max-width: 860px;
   padding: 2rem;
   border-radius: 14px;
   background: color-mix(in srgb, var(--accent) 5%, white);
@@ -1113,8 +1113,8 @@ a.progress-row:hover {
   position: relative;
   display: block;
   width: 100%;
-  max-width: 720px;
-  height: 340px;
+  max-width: 760px;
+  height: 400px;
   margin: 0.5rem 0 1.25rem;
   padding: 0;
   border: 0;
@@ -1167,9 +1167,14 @@ a.progress-row:hover {
   line-height: 1.25;
 }
 
+.fc-back {
+  overflow-y: auto;
+  justify-content: safe center;
+}
+
 .fc-small {
   font-family: inherit;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -1288,4 +1293,70 @@ a.progress-row:hover {
   border: 0;
   cursor: pointer;
   font-family: inherit;
+}
+
+/* ---- Book profile: argument sections ---- */
+
+.bp-section {
+  margin-top: 1.75rem;
+}
+
+.bp-section h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.bp-thesis {
+  padding: 1rem 1.25rem;
+  border-left: 5px solid var(--swatch, var(--accent));
+  background: color-mix(in srgb, var(--accent) 6%, white);
+  border-radius: 0 10px 10px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.bp-questions {
+  padding-left: 1.4rem;
+  display: grid;
+  gap: 0.6rem;
+  line-height: 1.55;
+}
+
+.bp-questions li.quoted {
+  font-style: italic;
+}
+
+.bp-questions cite {
+  margin-left: 0.5rem;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.bp-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bp-term {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 2px solid var(--swatch, var(--accent));
+  background: white;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.bp-source {
+  margin-top: 1.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
 }

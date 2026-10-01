@@ -127,9 +127,9 @@ export default function FlashCards({ study }) {
       : list.books.filter(inSection).map((b) => ({
           id: b.id,
           swatch: swatches[b.id],
-          prompt: 'Who wrote it, when, and what is its argument?',
+          prompt: 'What is its thesis?',
           front: b.title,
-          back: b.notes?.split(/(?<=\.)\s/)[0],
+          back: b.thesis || b.notes?.split(/(?<=\.)\s/)[0],
           source: `${b.author.join(', ')} · ${b.year} · ${sectionTitle(b.section)}`,
         }));
 

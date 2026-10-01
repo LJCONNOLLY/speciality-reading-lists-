@@ -46,6 +46,10 @@
      "changed": "Adds the governance angle: sex is the hinge between bodies and populations, which is exactly where counting and data enter later."
     },
     {
+     "bookId": "collins-learning-from-the-outsider-within",
+     "uses": 6
+    },
+    {
      "bookId": "mackinnon-difference-and-dominance",
      "uses": 95,
      "page": 1,
@@ -53,10 +57,6 @@
      "definition": "MacKinnon describes the legal view that sex is a neutral difference in order to reject it: sex is a question of power.",
      "stance": "critiques",
      "changed": "Moves sex from difference to dominance."
-    },
-    {
-     "bookId": "collins-learning-from-the-outsider-within",
-     "uses": 6
     },
     {
      "bookId": "butler-subjects-of-sex-gender-desire",
@@ -132,15 +132,6 @@
      "uses": 1
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 37,
-     "page": 4,
-     "quote": "But if gender is an inequality first, constructed as a socially relevant differentiation in order to keep that inequality in place, then sex inequality questions are questions of systematic dominance, of male supremacy, which is not at all abstract and is anything but a mistake.",
-     "definition": "Gender is inequality first; \"difference\" is the story told to keep that inequality in place.",
-     "stance": "defines",
-     "changed": "Gender becomes a hierarchy, not a trait."
-    },
-    {
      "bookId": "collins-learning-from-the-outsider-within",
      "uses": 14,
      "page": 6,
@@ -148,6 +139,15 @@
      "definition": "Gender never works alone; it interlocks with race in specific modes of domination.",
      "stance": "in passing",
      "changed": "Gender as one axis in interlocking systems."
+    },
+    {
+     "bookId": "mackinnon-difference-and-dominance",
+     "uses": 37,
+     "page": 4,
+     "quote": "But if gender is an inequality first, constructed as a socially relevant differentiation in order to keep that inequality in place, then sex inequality questions are questions of systematic dominance, of male supremacy, which is not at all abstract and is anything but a mistake.",
+     "definition": "Gender is inequality first; \"difference\" is the story told to keep that inequality in place.",
+     "stance": "defines",
+     "changed": "Gender becomes a hierarchy, not a trait."
     },
     {
      "bookId": "butler-subjects-of-sex-gender-desire",
@@ -224,9 +224,9 @@
      "uses": 1,
      "page": 4,
      "quote": "History reveals a most complex relation between the two, as complex perhaps as the interrelation between the dual constitutive motives for knowledge those of transcendence and power.",
-     "definition": "Knowledge is driven partly by a wish for power, the domination of nature.",
+     "definition": "Keller names power, alongside transcendence, as one of the two motives that drive the pursuit of knowledge.",
      "stance": "in passing",
-     "changed": "Ties the will to know to the will to dominate."
+     "changed": "Ties the will to know to the will to power."
     },
     {
      "bookId": "foucault-power-knowledge",
@@ -238,15 +238,6 @@
      "changed": "Spells out why 'power says no' is too thin."
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 11,
-     "page": 2,
-     "quote": "The difference approach misses the fact that hierarchy of power produces real as well as fantasied differences, differences that are also inequalities.",
-     "definition": "Power produces sex differences, not the other way round.",
-     "stance": "defines",
-     "changed": "Power comes before difference."
-    },
-    {
      "bookId": "collins-learning-from-the-outsider-within",
      "uses": 10,
      "page": 5,
@@ -254,6 +245,15 @@
      "definition": "Power includes the power to define who someone is; accuracy is the wrong question.",
      "stance": "defines",
      "changed": "The power to define becomes the issue, which is the core of later classification critique."
+    },
+    {
+     "bookId": "mackinnon-difference-and-dominance",
+     "uses": 11,
+     "page": 2,
+     "quote": "The difference approach misses the fact that hierarchy of power produces real as well as fantasied differences, differences that are also inequalities.",
+     "definition": "Power produces sex differences, not the other way round.",
+     "stance": "defines",
+     "changed": "Power comes before difference."
     },
     {
      "bookId": "butler-subjects-of-sex-gender-desire",
@@ -329,15 +329,6 @@
      "changed": "Ties discourse explicitly to power's strategies."
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 3,
-     "page": 1,
-     "quote": "My concern is not with which of these paths to sex equality is preferable in the long run or more appropriate to any particular issue, although most discourse on sex discrimination revolves about these questions as if that were all there is.",
-     "definition": "Legal discourse frames sex equality so narrowly that other questions cannot be asked.",
-     "stance": "critiques",
-     "changed": "Discourse as a frame that limits the options."
-    },
-    {
      "bookId": "collins-learning-from-the-outsider-within",
      "uses": 1,
      "page": 3,
@@ -345,6 +336,15 @@
      "definition": "A discipline's discourse can be changed by those at its margins.",
      "stance": "in passing",
      "changed": "Disciplinary discourse is open to marginal knowers."
+    },
+    {
+     "bookId": "mackinnon-difference-and-dominance",
+     "uses": 3,
+     "page": 1,
+     "quote": "My concern is not with which of these paths to sex equality is preferable in the long run or more appropriate to any particular issue, although most discourse on sex discrimination revolves about these questions as if that were all there is.",
+     "definition": "Legal discourse frames sex equality so narrowly that other questions cannot be asked.",
+     "stance": "critiques",
+     "changed": "Discourse as a frame that limits the options."
     },
     {
      "bookId": "butler-subjects-of-sex-gender-desire",
@@ -410,12 +410,12 @@
      "uses": 19
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 0
-    },
-    {
      "bookId": "collins-learning-from-the-outsider-within",
      "uses": 2
+    },
+    {
+     "bookId": "mackinnon-difference-and-dominance",
+     "uses": 0
     },
     {
      "bookId": "butler-subjects-of-sex-gender-desire",
@@ -476,15 +476,6 @@
      "uses": 7
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 2,
-     "page": 4,
-     "quote": "The dominance approach, in that it sees the inequalities of the social world from the standpoint of the subordination of women to men, is feminist.",
-     "definition": "Seeing inequality from the position of women's subordination is what makes an approach feminist.",
-     "stance": "defines",
-     "changed": "Standpoint becomes a feminist method."
-    },
-    {
      "bookId": "collins-learning-from-the-outsider-within",
      "uses": 18,
      "page": 4,
@@ -492,6 +483,15 @@
      "definition": "Black women's standpoint is a site of knowledge that Black women intellectuals articulate.",
      "stance": "defines",
      "changed": "Black women's standpoint as knowledge."
+    },
+    {
+     "bookId": "mackinnon-difference-and-dominance",
+     "uses": 2,
+     "page": 4,
+     "quote": "The dominance approach, in that it sees the inequalities of the social world from the standpoint of the subordination of women to men, is feminist.",
+     "definition": "Seeing inequality from the position of women's subordination is what makes an approach feminist.",
+     "stance": "defines",
+     "changed": "Standpoint becomes a feminist method."
     },
     {
      "bookId": "butler-subjects-of-sex-gender-desire",
@@ -562,15 +562,6 @@
      "changed": "Categories as institutional tools."
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 3,
-     "page": 3,
-     "quote": "The goal of this dissident approach is not to make legal categories trace and trap the way things are.",
-     "definition": "Legal categories should not just mirror, and so lock in, an unequal reality.",
-     "stance": "critiques",
-     "changed": "Categories that trace reality also trap it."
-    },
-    {
      "bookId": "collins-learning-from-the-outsider-within",
      "uses": 2,
      "page": 2,
@@ -578,6 +569,15 @@
      "definition": "Census categories are used as evidence about Black women's labor.",
      "stance": "in passing",
      "changed": "The census enters the story."
+    },
+    {
+     "bookId": "mackinnon-difference-and-dominance",
+     "uses": 3,
+     "page": 3,
+     "quote": "The goal of this dissident approach is not to make legal categories trace and trap the way things are.",
+     "definition": "Legal categories should not just mirror, and so lock in, an unequal reality.",
+     "stance": "critiques",
+     "changed": "Categories that trace reality also trap it."
     },
     {
      "bookId": "butler-subjects-of-sex-gender-desire",
@@ -648,11 +648,11 @@
      "uses": 6
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
+     "bookId": "collins-learning-from-the-outsider-within",
      "uses": 0
     },
     {
-     "bookId": "collins-learning-from-the-outsider-within",
+     "bookId": "mackinnon-difference-and-dominance",
      "uses": 0
     },
     {
@@ -711,10 +711,10 @@
   "essay": {
    "title": "Talking to Each Other: How the Foundations Use Each Other",
    "paragraphs": [
-    "Within the eleven foundational texts indexed so far, the conversation runs in two separate streams that barely touch. The first is the Foucault-to-Butler line on sex, power, and discourse. The second is the feminist epistemology line on objectivity and standpoint, running from Keller through Collins and Longino to Harding. Crenshaw and MacKinnon sit between them, cited by both streams but answering neither directly.",
+    "Within the eleven foundational texts indexed so far, the conversation runs in two separate streams that barely touch. The first is the Foucault-to-Butler line on sex, power, and discourse. The second is the feminist epistemology line on objectivity and standpoint, running from Keller through Collins and Longino to Harding. MacKinnon and Crenshaw stand somewhat apart: Butler argues with MacKinnon at length, Crenshaw cites her only in footnotes, and none of the other indexed texts cites Crenshaw.",
     "Butler is the heaviest borrower by far. Foucault is named on dozens of pages of Gender Trouble and Bodies That Matter, and his idea that power produces the subjects it claims to describe is the engine of both books. MacKinnon gets the most pointed engagement: Butler credits her account of gender hierarchy as close to her own, then argues it quietly presumes heterosexuality. This is the move that opens room for queer theory to separate from, and argue with, structural feminism.",
     "Harding works as the hub of the epistemology stream. She takes Collins as a central example of thinking from marginal lives, treats Longino as a respected rival (a feminist empiricist whose ideas overlap with standpoint theory), and builds on Keller's critique of 'objectivism'. Longino, in turn, sets out Keller's argument that scientific language carries an ideology of domination. Collins cites Keller on the dualistic thinking that links gender, race, and sexual oppression.",
-    "The missing link is the most telling one. None of the epistemologists cite Foucault, and Butler mentions Keller and Harding only in footnotes. Together the two streams make the claim this list rests on, that classification systems constitute what they claim to find. But in these texts the claim is assembled by the reader, not by the authors. The Classification and Datafication Critique readings are where the two streams finally meet: Bowker and Star, Spade, and Hoffmann pair Foucault's productive power with standpoint's attention to who does the counting."
+    "The missing link is the most telling one. None of the epistemologists cite Foucault, and in Gender Trouble Butler mentions Keller and Harding only in acknowledgments and endnotes. Together the two streams make the claim this list rests on, that classification systems constitute what they claim to find. But in these texts the claim is assembled by the reader, not by the authors. Whether and how the Classification and Datafication Critique readings bring the two streams together can be mapped here once their PDFs are added."
    ]
   },
   "links": [
@@ -840,7 +840,7 @@
     "pages": 2,
     "page": 5,
     "quote": "citing Catharine MacKinnon, Feminism, Marxism, Method, and the State",
-    "how": "A footnote: Crenshaw borrows a point about naming groups from MacKinnon. A citation, not an argument."
+    "how": "A footnote: Crenshaw cites MacKinnon on capitalizing \"Black\" because Black people form a specific cultural group. A citation, not an argument."
    }
   ]
  },
@@ -995,7 +995,7 @@
   {
    "id": "tactical-technical-communication",
    "term": "Tactical Technical Communication",
-   "definition": "User-made instructions that route around institutions, such as trans people sharing DIY hormone protocols outside medical gatekeeping.",
+   "definition": "Instructions people make for each other to route around institutions. Edenfield, Holmes, and Colton queer this existing concept through trans people sharing DIY hormone protocols outside medical gatekeeping.",
    "bookId": "edenfield-holmes-colton-queering-tactical-technical-communication",
    "termId": null
   },

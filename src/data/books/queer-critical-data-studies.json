@@ -6,7 +6,7 @@
       "Michel Foucault"
     ],
     "year": 1978,
-    "publisher": "Pantheon Books",
+    "publisher": "Pantheon Books (trans. Robert Hurley)",
     "tags": [
       "discourse",
       "biopower"
@@ -14,7 +14,36 @@
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/foucault-history-of-sexuality-vol-1.pdf",
-    "notes": "It argues that \"sex\" is produced by the discourses and institutions that claim to describe it."
+    "notes": "It argues that \"sex\" is produced by the discourses and institutions that claim to describe it.",
+    "thesis": "Modern Western societies did not silence sex; they multiplied discourses about it. Confession, medicine, psychiatry, and population science made sex the hidden truth of the self, and through this 'deployment of sexuality' power came to manage both individual bodies and whole populations (biopower).",
+    "researchQuestions": [
+      {
+        "q": "Why do we say, with so much passion and so much resentment against our most recent past, against our present, and against ourselves, that we are repressed?",
+        "page": 12
+      },
+      {
+        "q": "Is sexual repression truly an established historical fact?",
+        "page": 14
+      },
+      {
+        "q": "Do the workings of power, and in particular those mechanisms that are brought into play in societies such as ours, really belong primarily to the category of repression?",
+        "page": 14
+      },
+      {
+        "q": "Did the critical discourse that addresses itself to repression come to act as a roadblock to a power mechanism that had operated unchallenged up to that point, or is it not in fact part of the same historical network as the thing it denounces (and doubtless misrepresents) by calling it \"repression\"?",
+        "page": 14
+      }
+    ],
+    "keyTerms": [
+      "repressive hypothesis",
+      "deployment of sexuality",
+      "scientia sexualis",
+      "confession",
+      "biopower",
+      "resistance"
+    ],
+    "approach": "Genealogical history of discourses about sex in Europe, 17th to 19th centuries. Translated by Robert Hurley; French original 1976.",
+    "summarySource": "Drawn from the attached PDF. Quoted questions are the author's own words."
   },
   {
     "id": "keller-gender-and-science",
@@ -23,7 +52,7 @@
       "Evelyn Fox Keller"
     ],
     "year": 1978,
-    "publisher": "Psychoanalysis and Contemporary Thought",
+    "publisher": "Psychoanalysis and Contemporary Thought 1(3)",
     "tags": [
       "objectivity",
       "feminist science studies"
@@ -31,7 +60,28 @@
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/keller-gender-and-science.pdf",
-    "notes": "It traces how objectivity came to be coded as masculine."
+    "notes": "It traces how objectivity came to be coded as masculine.",
+    "thesis": "The common equation of objectivity with masculinity is a myth that shapes science and deserves serious analysis rather than dismissal. Drawing on psychoanalytic and developmental theory (Freud, Piaget), Keller traces it to how boys come to define autonomy and selfhood through separation, which feeds science's ideal of a detached, dominating knower.",
+    "researchQuestions": [
+      {
+        "q": "How is it that formal criticism in the philosophy and sociology of science has failed to see here a topic requiring analysis?",
+        "page": 1
+      },
+      {
+        "q": "What is it doing there? From where does it come?",
+        "page": 2
+      }
+    ],
+    "keyTerms": [
+      "objectivity",
+      "masculinity",
+      "autonomy",
+      "separation",
+      "domination",
+      "myth of science"
+    ],
+    "approach": "Psychoanalytic and developmental account of cognition applied to the ideology of science. First published in Psychoanalysis and Contemporary Thought (1978); the PDF is the reprint in Harding & Hintikka, eds., Discovering Reality (2nd ed., Kluwer, 2003).",
+    "summarySource": "Drawn from the attached PDF. Quoted questions are the author's own words."
   },
   {
     "id": "collins-learning-from-the-outsider-within",
@@ -40,7 +90,7 @@
       "Patricia Hill Collins"
     ],
     "year": 1986,
-    "publisher": "Social Problems",
+    "publisher": "Social Problems 33(6), S14–S32",
     "tags": [
       "standpoint theory",
       "epistemology"
@@ -48,7 +98,29 @@
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/collins-learning-from-the-outsider-within.pdf",
-    "notes": "It treats marginal social positions as sources of knowledge."
+    "notes": "It treats marginal social positions as sources of knowledge.",
+    "thesis": "Black women intellectuals have made creative use of their marginal 'outsider within' status to produce Black feminist thought with a distinctive standpoint. Its three themes (self-definition and self-valuation, the interlocking nature of oppression, and the importance of Afro-American women's culture) can enrich sociology, and other sociologists would gain by trusting their own personal and cultural biographies.",
+    "researchQuestions": [
+      {
+        "q": "What has Black women's marginal 'outsider within' position allowed them to see about self, family, and society?"
+      },
+      {
+        "q": "What are the characteristic themes of Black feminist thought?"
+      },
+      {
+        "q": "How could those themes give a distinctive standpoint on existing sociological paradigms?"
+      }
+    ],
+    "keyTerms": [
+      "outsider within",
+      "standpoint",
+      "self-definition",
+      "self-valuation",
+      "interlocking oppression",
+      "controlling images"
+    ],
+    "approach": "Theoretical essay in the sociology of knowledge drawing on Black women's writing and experience. Social Problems 33(6), S14–S32.",
+    "summarySource": "Drawn from the attached PDF and the article's own abstract. Research questions are paraphrased from the abstract."
   },
   {
     "id": "foucault-power-knowledge",
@@ -57,14 +129,37 @@
       "Michel Foucault"
     ],
     "year": 1980,
-    "publisher": "Pantheon Books",
+    "publisher": "Pantheon Books (ed. Colin Gordon)",
     "tags": [
       "power/knowledge"
     ],
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/foucault-power-knowledge.pdf",
-    "notes": "It supplies the working concept of power/knowledge."
+    "notes": "It supplies the working concept of power/knowledge.",
+    "thesis": "Power is not only repressive: it produces knowledge, discourse, and truth, and knowledge in turn extends power. Every society has a 'regime of truth' (rules for what counts as true and who may say it), so critique should analyze how effects of truth are produced rather than try to free truth from power.",
+    "researchQuestions": [
+      {
+        "q": "Once the question of what we call 'power' is re-opened in this way, can one adopt a political standpoint regarding power?",
+        "page": 201
+      },
+      {
+        "q": "If power is not simply a law that says no, how does it actually operate?"
+      },
+      {
+        "q": "How are effects of truth produced within discourses that are in themselves neither true nor false?"
+      }
+    ],
+    "keyTerms": [
+      "power/knowledge",
+      "regime of truth",
+      "disciplinary power",
+      "genealogy",
+      "subjugated knowledges",
+      "specific intellectual"
+    ],
+    "approach": "Collected interviews and lectures, 1972–1977, edited by Colin Gordon.",
+    "summarySource": "Drawn from the attached PDF. Quoted questions are the author's own words. The first question is quoted; the others are paraphrased."
   },
   {
     "id": "butler-subjects-of-sex-gender-desire",
@@ -81,7 +176,28 @@
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/butler-subjects-of-sex-gender-desire.pdf",
-    "notes": "It contests the idea that sex comes before gender."
+    "notes": "It contests the idea that sex comes before gender.",
+    "thesis": "Feminism cannot rest on a stable category of 'women', and the sex/gender distinction does not hold: sex may be as culturally constructed as gender. Gender identity is an effect of regulatory practices (compulsory heterosexuality), not an inner core that gender expresses.",
+    "researchQuestions": [
+      {
+        "q": "And what is 'sex' anyway? Is it natural, anatomical, chromosomal, or hormonal, and how is a feminist critic to assess the scientific discourses which purport to establish such facts for us?",
+        "page": 3
+      },
+      {
+        "q": "What can be meant by 'identity', then, and what grounds the presumption that identities are self-identical, persisting through time as the same, unified and internally coherent?",
+        "page": 5
+      }
+    ],
+    "keyTerms": [
+      "'women' as the subject of feminism",
+      "sex/gender distinction",
+      "compulsory heterosexuality",
+      "metaphysics of substance",
+      "gender intelligibility",
+      "performativity"
+    ],
+    "approach": "Theoretical critique engaging Beauvoir, Irigaray, Wittig, and Foucault. The PDF is an abridged reprint of chapter 1 (some passages are cut with [...]).",
+    "summarySource": "Drawn from the attached PDF. Quoted questions are the author's own words."
   },
   {
     "id": "mackinnon-difference-and-dominance",
@@ -89,8 +205,8 @@
     "author": [
       "Catharine A. MacKinnon"
     ],
-    "year": 1984,
-    "publisher": "Feminism Unmodified: Discourses on Life and Law (Harvard University Press)",
+    "year": 1987,
+    "publisher": "Feminism Unmodified: Discourses on Life and Law (Harvard University Press, 1987)",
     "tags": [
       "sex discrimination",
       "power"
@@ -98,7 +214,24 @@
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/mackinnon-difference-and-dominance.pdf",
-    "notes": "It moves the sex question from sameness and difference to power. Publisher is a best-guess from the most commonly cited edition — double-check against your assigned printing."
+    "notes": "It moves the sex question from sameness and difference to power. First delivered as a lecture in 1984 and published in Feminism Unmodified (1987); the PDF is a reprint in an anthology section titled \"The Dominance Approach\" (starting p. 244).",
+    "thesis": "The mainstream sameness/difference approach to sex equality holds women to a male standard. Gender is a question of power (male dominance and female subordination), so equality law should ask whether a practice takes part in women's subordination, not whether women are like or unlike men.",
+    "researchQuestions": [
+      {
+        "q": "What is a gender question a question of? What is an inequality question a question of?",
+        "page": 1
+      }
+    ],
+    "keyTerms": [
+      "difference approach",
+      "dominance approach",
+      "sameness/difference",
+      "gender neutrality (single standard)",
+      "special protection (double standard)",
+      "male standard"
+    ],
+    "approach": "Feminist legal theory; a critique of US sex discrimination doctrine.",
+    "summarySource": "Drawn from the attached PDF. Quoted questions are the author's own words."
   },
   {
     "id": "crenshaw-mapping-the-margins",
@@ -107,14 +240,36 @@
       "Kimberlé Crenshaw"
     ],
     "year": 1991,
-    "publisher": "Stanford Law Review",
+    "publisher": "Stanford Law Review 43(6), 1241–1299",
     "tags": [
       "intersectionality"
     ],
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/crenshaw-mapping-the-margins.pdf",
-    "notes": "It shows how single-category classification misses the people at the intersections."
+    "notes": "It shows how single-category classification misses the people at the intersections.",
+    "thesis": "The problem with identity politics is not that it fails to transcend difference but that it ignores differences within groups. Using violence against women of color, Crenshaw shows how race and gender intersect structurally (in services such as shelters), politically (in feminist and antiracist strategies), and representationally (in cultural images).",
+    "researchQuestions": [
+      {
+        "q": "How do race and gender combine to shape the violence women of color experience, and the responses available to them?"
+      },
+      {
+        "q": "Why do feminist and antiracist politics, each organized around one axis, leave women of color without a place?"
+      },
+      {
+        "q": "How do cultural representations of women of color compound these harms?"
+      }
+    ],
+    "keyTerms": [
+      "intersectionality",
+      "structural intersectionality",
+      "political intersectionality",
+      "representational intersectionality",
+      "identity politics",
+      "intragroup difference"
+    ],
+    "approach": "Critical race legal scholarship, including a brief field study of battered women's shelters. Stanford Law Review 43(6), 1241–1299.",
+    "summarySource": "Drawn from the attached PDF. Research questions are paraphrased from the introduction."
   },
   {
     "id": "butler-gender-trouble",
@@ -131,16 +286,37 @@
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/butler-gender-trouble.pdf",
-    "notes": "It is the full argument that gender is performative."
+    "notes": "It is the full argument that gender is performative.",
+    "thesis": "Gender is performative: 'There is no gender identity behind the expressions of gender; that identity is performatively constituted by the very \"expressions\" that are said to be its results.' The apparent naturalness of binary sex and gender is produced by a heterosexual matrix, and parodic repetition (such as drag) can expose and unsettle it.",
+    "researchQuestions": [
+      {
+        "q": "What configuration of power constructs the subject and the Other, that binary relation between \"men\" and \"women,\" and the internal stability of those terms?",
+        "page": 29
+      },
+      {
+        "q": "What happens to the subject and to the stability of gender categories when the epistemic regime of presumptive heterosexuality is unmasked as that which produces and reifies these ostensible categories of ontology?",
+        "page": 29
+      }
+    ],
+    "keyTerms": [
+      "performativity",
+      "heterosexual matrix",
+      "genealogy",
+      "compulsory heterosexuality",
+      "drag and parody",
+      "subversion"
+    ],
+    "approach": "Genealogical critique (after Foucault) of feminist, psychoanalytic, and structuralist theory. The PDF is the 1999 anniversary edition, with a new preface, so its page numbers differ from the 1990 first edition.",
+    "summarySource": "Drawn from the attached PDF. Quoted questions are the author's own words."
   },
   {
     "id": "longino-science-as-social-knowledge",
-    "title": "Science as Social Knowledge, ch. 1: \"Good Science, Bad Science\"",
+    "title": "Science as Social Knowledge, ch. 1: \"Introduction: Good Science, Bad Science\"",
     "author": [
       "Helen Longino"
     ],
     "year": 1990,
-    "publisher": "Princeton University Press",
+    "publisher": "Science as Social Knowledge: Values and Objectivity in Scientific Inquiry (Princeton University Press)",
     "tags": [
       "objectivity",
       "philosophy of science"
@@ -148,7 +324,28 @@
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/longino-science-as-social-knowledge.pdf",
-    "notes": "It frames objectivity as a social and critical practice."
+    "notes": "It frames objectivity as a social and critical practice.",
+    "thesis": "Science is shaped by social values, but that does not make it arbitrary. Distinguishing constitutive values (from science's own goals) from contextual values (personal, social, cultural), the book argues that objectivity is secured socially, by communities that expose background assumptions to criticism.",
+    "researchQuestions": [
+      {
+        "q": "How do we judge the claims of science?",
+        "page": 2
+      },
+      {
+        "q": "How should these demonstrations and allegations of the interaction of science and social values affect our conception of scientific knowledge?",
+        "page": 2
+      }
+    ],
+    "keyTerms": [
+      "constitutive values",
+      "contextual values",
+      "value-freedom",
+      "background assumptions",
+      "objectivity",
+      "social constructionism"
+    ],
+    "approach": "Philosophy of science. This chapter is the book's introduction and maps the debates the book takes up.",
+    "summarySource": "Drawn from the attached PDF. Quoted questions are the author's own words."
   },
   {
     "id": "harding-rethinking-standpoint-epistemology",
@@ -165,7 +362,28 @@
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/harding-rethinking-standpoint-epistemology.pdf",
-    "notes": "It argues that starting from marginalized lives yields stronger objectivity. The Centennial Review, Fall 1992, 36(3), 437–470."
+    "notes": "It argues that starting from marginalized lives yields stronger objectivity. The Centennial Review, Fall 1992, 36(3), 437–470.",
+    "thesis": "Standpoint epistemology is neither old-style objectivism nor relativism. Starting thought from marginalized lives, and placing the knower on the same critical plane as what is known, yields 'strong objectivity': higher standards than the 'weak' objectivity of value-neutrality.",
+    "researchQuestions": [
+      {
+        "q": "How should one explain the surprising fact that politically guided research projects have been able to produce less partial and distorted results of research than those supposedly guided by the goal of value-neutrality?",
+        "page": 2
+      },
+      {
+        "q": "How can feminists create research that is for women in the sense that it provides less partial and distorted answers to questions that arise from women's lives and are not only about those lives but also about the rest of nature and social relations?",
+        "page": 2
+      }
+    ],
+    "keyTerms": [
+      "standpoint epistemology",
+      "strong objectivity",
+      "weak objectivity",
+      "situated knowledges",
+      "strong reflexivity",
+      "judgmental relativism"
+    ],
+    "approach": "Feminist epistemology and philosophy of science. The Centennial Review 36(3), 437–470.",
+    "summarySource": "Drawn from the attached PDF. Quoted questions are the author's own words."
   },
   {
     "id": "butler-bodies-that-matter",
@@ -182,7 +400,28 @@
     "status": "read",
     "section": "theoretical-foundations",
     "pdf": "pdfs/butler-bodies-that-matter.pdf",
-    "notes": "It follows the sex question into how norms make bodies materialize."
+    "notes": "It follows the sex question into how norms make bodies materialize.",
+    "thesis": "The materiality of sex is itself produced through the forcible reiteration of regulatory norms. Performativity is not a single deliberate act but 'the reiterative and citational practice by which discourse produces the effects that it names', and the bodies that fail to materialize under those norms form the abject 'constitutive outside' that defines the bodies that matter.",
+    "researchQuestions": [
+      {
+        "q": "Through what regulatory norms is sex itself materialized?",
+        "page": 21
+      },
+      {
+        "q": "And how is it that treating the materiality of sex as a given presupposes and consolidates the normative conditions of its own emergence?",
+        "page": 21
+      }
+    ],
+    "keyTerms": [
+      "materialization",
+      "performativity as citation",
+      "regulatory norms",
+      "abjection",
+      "constitutive outside",
+      "resignification"
+    ],
+    "approach": "Theoretical critique with readings of Plato, Freud, Lacan, Nella Larsen, Willa Cather, and the film Paris Is Burning.",
+    "summarySource": "Drawn from the attached PDF. Quoted questions are the author's own words."
   },
   {
     "id": "ahmed-queer-phenomenology",
@@ -198,7 +437,29 @@
     ],
     "status": "unread-unprinted",
     "section": "theoretical-foundations",
-    "notes": "It treats queerness as a matter of orientation — which bodies are \"in line\" and which are turned away from the paths they're expected to follow."
+    "notes": "It treats queerness as a matter of orientation — which bodies are \"in line\" and which are turned away from the paths they're expected to follow.",
+    "thesis": "Sexual orientation is a matter of how bodies are oriented in space, toward some objects and others and away from others. Heterosexuality works as a 'straight line' that bodies are directed along; queer bodies are 'out of line', and phenomenology can show how orientations depend on what is already within reach (whiteness, Ahmed argues, is also an orientation).",
+    "researchQuestions": [
+      {
+        "q": "What does it mean to be oriented?"
+      },
+      {
+        "q": "What is the relation between sexual orientation and orientation in space?"
+      },
+      {
+        "q": "What happens when bodies fail to follow the lines they are given?"
+      }
+    ],
+    "keyTerms": [
+      "orientation",
+      "straight lines",
+      "disorientation",
+      "reach",
+      "queer phenomenology",
+      "whiteness as orientation"
+    ],
+    "approach": "Queer phenomenology, reading Husserl, Heidegger, Merleau-Ponty, and Fanon.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "stone-the-empire-strikes-back",
@@ -214,7 +475,26 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It answers Janice Raymond's anti-trans polemic by calling on trans people to refuse passing and instead write themselves into visibility as trans."
+    "notes": "It answers Janice Raymond's anti-trans polemic by calling on trans people to refuse passing and instead write themselves into visibility as trans.",
+    "thesis": "Trans people should stop 'passing' (erasing their histories to fit seamlessly into one binary sex) and instead speak from their own embodied, mixed histories. Accounts written about transsexuals, by medical gatekeepers and by Janice Raymond's The Transsexual Empire, must give way to trans people's own counter-discourses.",
+    "researchQuestions": [
+      {
+        "q": "Who has had the authority to define the transsexual, and how?"
+      },
+      {
+        "q": "What would it mean for transsexuals to speak for themselves instead of passing?"
+      }
+    ],
+    "keyTerms": [
+      "posttranssexual",
+      "passing",
+      "counter-discourse",
+      "medical gatekeeping",
+      "transsexual autobiography",
+      "genre"
+    ],
+    "approach": "Manifesto; critical reading of transsexual autobiographies, clinical literature, and Raymond's The Transsexual Empire.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "bowker-star-sorting-things-out",
@@ -231,7 +511,29 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It shows classification systems are never neutral — they encode political and moral choices that disappear once naturalized as infrastructure."
+    "notes": "It shows classification systems are never neutral — they encode political and moral choices that disappear once naturalized as infrastructure.",
+    "thesis": "Classification systems are invisible infrastructures that carry moral and political choices. Every category valorizes some points of view and silences others, and people whose lives do not fit the categories bear real consequences.",
+    "researchQuestions": [
+      {
+        "q": "How are classification systems built and maintained?"
+      },
+      {
+        "q": "What work do they do, and what and whom do they make invisible?"
+      },
+      {
+        "q": "What happens to people whose lives do not fit the categories?"
+      }
+    ],
+    "keyTerms": [
+      "classification",
+      "infrastructure",
+      "boundary objects",
+      "residual categories",
+      "torque",
+      "naturalization"
+    ],
+    "approach": "Historical and ethnographic case studies, including the International Classification of Diseases, nursing classifications, tuberculosis, and race classification under apartheid.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "nobles-shades-of-citizenship",
@@ -248,7 +550,26 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It compares U.S. and Brazilian census race categories to show that state classification schemes construct racial identity rather than simply record it."
+    "notes": "It compares U.S. and Brazilian census race categories to show that state classification schemes construct racial identity rather than simply record it.",
+    "thesis": "Censuses do not simply count races; they help make them. Comparing the United States and Brazil, Nobles shows that census race categories are political decisions that both reflect and shape racial discourse, citizenship, and policy.",
+    "researchQuestions": [
+      {
+        "q": "How were census race categories decided in the US and Brazil, and by whom?"
+      },
+      {
+        "q": "How do census categories shape racial identity and politics, and how have movements contested them?"
+      }
+    ],
+    "keyTerms": [
+      "census",
+      "racial categorization",
+      "racial discourse",
+      "color categories (Brazil)",
+      "multiracial category",
+      "citizenship"
+    ],
+    "approach": "Comparative historical political science.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "alexander-wallace-the-queer-turn-in-composition-studies",
@@ -265,7 +586,26 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It surveys roughly fifteen years of queer scholarship in composition studies, tracing a shift from confronting homophobia to queering the hetero/homo binary itself. Exact page range is reported inconsistently across secondary sources — pull it from the journal/DOI directly if needed."
+    "notes": "It surveys roughly fifteen years of queer scholarship in composition studies, tracing a shift from confronting homophobia to queering the hetero/homo binary itself. Exact page range is reported inconsistently across secondary sources — pull it from the journal/DOI directly if needed.",
+    "thesis": "Nearly fifteen years of queer and LGBT scholarship in composition studies make three moves: confronting homophobia, becoming inclusive, and queering the homo/hetero binary. Attending to queerness lets teachers engage students with how the most personal parts of life are bound up in larger narratives that organize desire.",
+    "researchQuestions": [
+      {
+        "q": "How has queer and LGBT scholarship developed within composition studies?"
+      },
+      {
+        "q": "What do its three moves offer composition, and what remains to be done?"
+      }
+    ],
+    "keyTerms": [
+      "queer turn",
+      "homophobia",
+      "inclusion",
+      "homo/hetero binary",
+      "heteronormativity",
+      "composition pedagogy"
+    ],
+    "approach": "Review essay. College Composition and Communication 61(1), September 2009.",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "browne-k-queer-quantification",
@@ -282,7 +622,26 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It argues that counting sexual identity for government statistics is itself a political act that produces the very categories of \"citizen\" it claims to measure."
+    "notes": "It argues that counting sexual identity for government statistics is itself a political act that produces the very categories of \"citizen\" it claims to measure.",
+    "thesis": "Counting people as 'lesbian, gay, bisexual or heterosexual' in government social research is not neutral measurement: it produces and legitimates certain identities and lives. Browne holds deconstruction and identity politics in tension, weighing what such categories enable against what they fix.",
+    "researchQuestions": [
+      {
+        "q": "What does counting sexual identity in government research do?"
+      },
+      {
+        "q": "Can quantification itself be queered?"
+      }
+    ],
+    "keyTerms": [
+      "queer quantification",
+      "governmentality",
+      "identity categories",
+      "deconstruction",
+      "identity politics",
+      "government social research"
+    ],
+    "approach": "Critical analysis of UK government social research on sexual identity.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "spade-normal-life",
@@ -299,7 +658,29 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It argues the deeper harm to trans people comes not from overt discrimination but from the mundane sorting built into IDs, benefits, and other administrative systems. A revised/expanded edition was published by Duke University Press in 2015 — confirm which edition you're reading."
+    "notes": "It argues the deeper harm to trans people comes not from overt discrimination but from the mundane sorting built into IDs, benefits, and other administrative systems. A revised/expanded edition was published by Duke University Press in 2015 — confirm which edition you're reading.",
+    "thesis": "Trans people are harmed less by individual discriminators than by administrative systems (ID documents, prisons, welfare, health care, shelters) that sort people by gender and distribute life chances. Legal equality reforms cannot fix this, so Spade calls for a critical trans politics grounded in Foucault's analysis of power and in mass mobilization.",
+    "researchQuestions": [
+      {
+        "q": "Why have legal equality strategies done so little for trans people's lives?"
+      },
+      {
+        "q": "How do administrative systems distribute security and vulnerability?"
+      },
+      {
+        "q": "What would a critical trans politics look like?"
+      }
+    ],
+    "keyTerms": [
+      "administrative violence",
+      "critical trans politics",
+      "population management",
+      "law reform critique",
+      "biopolitics",
+      "mass mobilization"
+    ],
+    "approach": "Critical legal and political theory grounded in movement work.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "boyd-crawford-critical-questions-for-big-data",
@@ -316,7 +697,26 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It lays out early cautions against treating \"big data\" as simply objective, flagging the ethical and epistemological problems that come with scale."
+    "notes": "It lays out early cautions against treating \"big data\" as simply objective, flagging the ethical and epistemological problems that come with scale.",
+    "thesis": "Big Data is a cultural, technological, and scholarly phenomenon that must be critically interrogated. Six provocations: it changes the definition of knowledge; claims to objectivity and accuracy are misleading; bigger data are not always better data; taken out of context, data lose meaning; accessible does not mean ethical; and limited access creates new digital divides.",
+    "researchQuestions": [
+      {
+        "q": "What assumptions and biases come with Big Data?"
+      },
+      {
+        "q": "What does it change about knowledge, research ethics, and who gets access?"
+      }
+    ],
+    "keyTerms": [
+      "Big Data",
+      "objectivity",
+      "context",
+      "research ethics",
+      "digital divides",
+      "provocations"
+    ],
+    "approach": "Critical essay. Information, Communication & Society 15(5), 662–679.",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "gitelman-raw-data-is-an-oxymoron",
@@ -332,7 +732,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It argues there is no such thing as raw, unmediated data — all data is already shaped by the assumptions and infrastructures used to collect it."
+    "notes": "It argues there is no such thing as raw, unmediated data — all data is already shaped by the assumptions and infrastructures used to collect it.",
+    "thesis": "Data are never raw: they must be imagined as data to exist and function as such, and they are always shaped by disciplinary, historical, and technological conventions. The essays historicize data practices from early modern record-keeping to present-day databases.",
+    "researchQuestions": [
+      {
+        "q": "What counts as data, and how did it come to count?"
+      },
+      {
+        "q": "How do the conventions of collection shape what data can say?"
+      }
+    ],
+    "keyTerms": [
+      "raw data",
+      "cooked data",
+      "data imagination",
+      "database",
+      "archive"
+    ],
+    "approach": "Edited collection of historical and theoretical essays.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "samuels-fantasies-of-identification",
@@ -348,7 +766,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It traces the belief that identity can be verified through visible or scientific proof — fingerprints, blood, sex tests — across disability, gender, and race."
+    "notes": "It traces the belief that identity can be verified through visible or scientific proof — fingerprints, blood, sex tests — across disability, gender, and race.",
+    "thesis": "From the mid-nineteenth century, US culture developed 'fantasies of identification': the belief that disability, gender, and race can be definitively verified through bodily marks and then through science (fingerprints, blood, DNA, sex testing). These fantasies shaped law and policy and remain powerful today.",
+    "researchQuestions": [
+      {
+        "q": "How did US culture come to believe identity could be proven through the body?"
+      },
+      {
+        "q": "How did those beliefs link disability, gender, and race?"
+      }
+    ],
+    "keyTerms": [
+      "fantasies of identification",
+      "biocertification",
+      "disability fakery",
+      "embodied identity",
+      "verification"
+    ],
+    "approach": "Cultural history drawing on literature, law, and popular culture.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "browne-s-dark-matters",
@@ -364,7 +800,26 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It roots contemporary biometric surveillance in the historical surveillance of enslaved and free Black people, making anti-Blackness foundational to surveillance itself."
+    "notes": "It roots contemporary biometric surveillance in the historical surveillance of enslaved and free Black people, making anti-Blackness foundational to surveillance itself.",
+    "thesis": "Surveillance is not new to Black life. Practices from transatlantic slavery (branding, slave passes, lantern laws, the Book of Negroes) prefigure contemporary surveillance, making anti-Blackness foundational to surveillance itself; Browne also traces 'dark sousveillance', Black practices of evading and resisting being watched.",
+    "researchQuestions": [
+      {
+        "q": "How is surveillance shaped by the history of slavery and Blackness?"
+      },
+      {
+        "q": "How have Black people resisted being watched?"
+      }
+    ],
+    "keyTerms": [
+      "racializing surveillance",
+      "dark sousveillance",
+      "prototypical whiteness",
+      "digital epidermalization",
+      "lantern laws",
+      "biometrics"
+    ],
+    "approach": "Surveillance studies using archival history, biometrics, and art.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "hoffmann-data-technology-and-gender",
@@ -380,7 +835,24 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It uses trans experience and theory as a starting point for critiquing how data and technology systems assume gender is fixed and binary."
+    "notes": "It uses trans experience and theory as a starting point for critiquing how data and technology systems assume gender is fixed and binary.",
+    "thesis": "Data and the technologies built on them are made, not given. Thinking about, and from, trans lives shows how data systems build in fixed, binary assumptions about gender, with disproportionate harms for trans people.",
+    "researchQuestions": [
+      {
+        "q": "What do data technologies assume about gender?"
+      },
+      {
+        "q": "What changes when we start from trans lives?"
+      }
+    ],
+    "keyTerms": [
+      "trans lives",
+      "big data",
+      "gender categories",
+      "data harms"
+    ],
+    "approach": "Philosophy of technology. Chapter 1 of Spaces for the Future (Routledge, 2017), pp. 3–13.",
+    "summarySource": "Drawn from short published summaries only; check against the chapter once you read it."
   },
   {
     "id": "keyes-the-misgendering-machines",
@@ -389,14 +861,35 @@
       "Os Keyes"
     ],
     "year": 2018,
-    "publisher": "Proceedings of the ACM on Human-Computer Interaction, 2(CSCW). DOI: 10.1145/3274357",
+    "publisher": "Proceedings of the ACM on Human-Computer Interaction 2(CSCW), article 88. DOI: 10.1145/3274357",
     "tags": [
       "automatic gender recognition",
       "HCI"
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It shows automatic gender recognition systems consistently misgender trans people because they encode a binary, cis-normative model of gender."
+    "notes": "It shows automatic gender recognition systems consistently misgender trans people because they encode a binary, cis-normative model of gender.",
+    "thesis": "Automatic gender recognition (AGR), which infers gender from photos or video, consistently operationalizes gender in a trans-exclusive way and so carries disproportionate risk for trans people. HCI research rarely questions this; Keyes recommends alternatives and a trans-inclusive treatment of gender.",
+    "researchQuestions": [
+      {
+        "q": "How does HCI research use AGR and operationalize gender?"
+      },
+      {
+        "q": "What risks does that create for trans people?"
+      },
+      {
+        "q": "What should HCI do instead?"
+      }
+    ],
+    "keyTerms": [
+      "automatic gender recognition (AGR)",
+      "operationalizing gender",
+      "misgendering",
+      "trans-exclusion",
+      "facial recognition"
+    ],
+    "approach": "Content analysis of HCI research that uses AGR. PACM HCI 2(CSCW), article 88.",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "gill-peterson-histories-of-the-transgender-child",
@@ -412,7 +905,26 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It uncovers a decades-long archive of medical treatment of trans children to argue the medicalization of childhood gender variance has always been entangled with race."
+    "notes": "It uncovers a decades-long archive of medical treatment of trans children to argue the medicalization of childhood gender variance has always been entangled with race.",
+    "thesis": "Trans children are not new. Medical archives from the 1930s to 1970s show trans children shaping modern endocrinology and the idea of gender itself. Doctors treated children's bodies as 'plastic', and that plasticity was racialized: extended to white children and denied to Black and brown ones.",
+    "researchQuestions": [
+      {
+        "q": "When and how did trans children first appear in medicine?"
+      },
+      {
+        "q": "How did race shape who was seen as treatable?"
+      }
+    ],
+    "keyTerms": [
+      "plasticity",
+      "medicalization",
+      "endocrinology",
+      "race",
+      "intersex",
+      "trans childhood"
+    ],
+    "approach": "Archival history of medicine.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "cox-working-closets",
@@ -428,7 +940,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It introduces \"working closets\" as a framework for how LGBTQ professionals selectively reveal or conceal identity at work, and argues technical communication needs queer rhetorical theory."
+    "notes": "It introduces \"working closets\" as a framework for how LGBTQ professionals selectively reveal or conceal identity at work, and argues technical communication needs queer rhetorical theory.",
+    "thesis": "'Working closets' names how LGBT professionals navigate disclosure and concealment in order to work and succeed. Professional communication studies needs queer rhetorics, cultural rhetorics, and social justice frameworks to understand this.",
+    "researchQuestions": [
+      {
+        "q": "How do LGBT professionals navigate identity at work?"
+      },
+      {
+        "q": "What does that mean for professional communication studies?"
+      }
+    ],
+    "keyTerms": [
+      "working closets",
+      "queer rhetorics",
+      "cultural rhetorics",
+      "disclosure",
+      "LGBT professionals"
+    ],
+    "approach": "Case studies of LGBT employees at the headquarters of a national discount retail company. JBTC 33(1), 1–25 (online 2018).",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "edenfield-holmes-colton-queering-tactical-technical-communication",
@@ -446,7 +976,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It reads user-generated DIY hormone-therapy instructions as tactical technical communication that routes around inaccessible medical gatekeeping."
+    "notes": "It reads user-generated DIY hormone-therapy instructions as tactical technical communication that routes around inaccessible medical gatekeeping.",
+    "thesis": "Because of the barriers trans people face to affordable transition care, user-made online instructions for self-administered hormone therapy have spread. These ethical forms of tactical technical communication call for a new materialist queer theory that does not tie queer agency to stable identities.",
+    "researchQuestions": [
+      {
+        "q": "What do DIY hormone therapy instructions show about tactical technical communication?"
+      },
+      {
+        "q": "What would a queer, tactical technical communication look like?"
+      }
+    ],
+    "keyTerms": [
+      "tactical technical communication",
+      "DIY HRT",
+      "new materialism",
+      "queer agency",
+      "user-generated instructions"
+    ],
+    "approach": "Analysis of online DIY hormone therapy instruction sets. TCQ 28(3), 177–191. Won the 2020 Nell Ann Pickett Award.",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "beauchamp-going-stealth",
@@ -462,7 +1010,26 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It argues state surveillance practices produce and police \"transgender\" as a security threat tied to racialized and ableist logics, not just a gender-identity issue."
+    "notes": "It argues state surveillance practices produce and police \"transgender\" as a security threat tied to racialized and ableist logics, not just a gender-identity issue.",
+    "thesis": "US surveillance practices (identity documents, airport security, bathroom policies, the case of Chelsea Manning) constitute 'transgender' as a category of deception and threat. Gender nonconformity is policed through security logics that are also racialized, ableist, and nationalist, so visibility politics carries real risks.",
+    "researchQuestions": [
+      {
+        "q": "How does state surveillance produce and police gender nonconformity?"
+      },
+      {
+        "q": "What are the costs of trans visibility under surveillance?"
+      }
+    ],
+    "keyTerms": [
+      "going stealth",
+      "surveillance",
+      "deception",
+      "security",
+      "visibility",
+      "gender nonconformity"
+    ],
+    "approach": "Cultural and political analysis of US surveillance practices.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "ruberg-ruelos-data-for-queer-lives",
@@ -479,7 +1046,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "Drawing on LGBTQ survey data, it argues fixed, single-choice demographic fields fail to capture how queer identities are actually multiple and change over time. Exact article/page locator wasn't confirmable — SAGE open-access journals typically use article numbers rather than page ranges."
+    "notes": "Drawing on LGBTQ survey data, it argues fixed, single-choice demographic fields fail to capture how queer identities are actually multiple and change over time. Exact article/page locator wasn't confirmable — SAGE open-access journals typically use article numbers rather than page ranges.",
+    "thesis": "Standard demographic data imagines identity as fixed, singular, and discrete, but LGBTQ gender and sexual identities are often multiple and in flux. Identity-based data should be reimagined as 'data for queer lives', with more inclusive survey questions.",
+    "researchQuestions": [
+      {
+        "q": "How do LGBTQ people answer demographic questions about gender and sexuality?"
+      },
+      {
+        "q": "What do their answers show about the norms of demographic data?"
+      }
+    ],
+    "keyTerms": [
+      "demographic data",
+      "queer data",
+      "identity in flux",
+      "survey design",
+      "critical data studies"
+    ],
+    "approach": "Survey of 178 non-heterosexual or non-cisgender respondents. Big Data & Society 7(1).",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "hoffmann-terms-of-inclusion",
@@ -495,7 +1080,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It argues that framing data harms as mere \"inclusion\" problems obscures the discursive violence built into data systems themselves."
+    "notes": "It argues that framing data harms as mere \"inclusion\" problems obscures the discursive violence built into data systems themselves.",
+    "thesis": "'Inclusion' has become a cornerstone of data ethics, but it is no cure for the threats of pervasive data collection. Through the lens of discursive violence, Hoffmann shows how inclusion discourses can sit alongside, and even serve, the violent potential of data science.",
+    "researchQuestions": [
+      {
+        "q": "What do discourses of inclusion in data ethics do?"
+      },
+      {
+        "q": "How is inclusion related to the violent potential of data technologies?"
+      }
+    ],
+    "keyTerms": [
+      "inclusion",
+      "data ethics",
+      "discursive violence",
+      "data violence",
+      "bias"
+    ],
+    "approach": "Critical theory of data ethics. New Media & Society 23(12), 3539–3556.",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "moeggenberg-edenfield-holmes-trans-oppression-through-technical-rhetorics",
@@ -513,7 +1116,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It applies Ahmed's queer phenomenology to government forms to show how their design produces bureaucratic \"failed orientations\" specifically for trans people."
+    "notes": "It applies Ahmed's queer phenomenology to a federal policy proposal to show how institutional documents produce failures specifically for trans people.",
+    "thesis": "Technical documents can be oppressive. A queer phenomenological analysis of a federal policy proposal shows how institutional documents produce failures specifically for trans people, and the authors suggest ways to redress them.",
+    "researchQuestions": [
+      {
+        "q": "How do institutional documents produce harm for trans people?"
+      },
+      {
+        "q": "What can technical communicators do about it?"
+      }
+    ],
+    "keyTerms": [
+      "queer phenomenology",
+      "technical rhetorics",
+      "institutional documents",
+      "trans oppression",
+      "orientation"
+    ],
+    "approach": "Queer phenomenological document analysis (after Ahmed). JBTC 36(4), 403–439.",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "rhodes-alexander-routledge-handbook-of-queer-rhetoric",
@@ -530,7 +1151,22 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "A wide-ranging reference handbook mapping queer rhetorical studies across composition, media, activism, and pedagogy."
+    "notes": "A wide-ranging reference handbook mapping queer rhetorical studies across composition, media, activism, and pedagogy.",
+    "thesis": "A reference collection that maps queer rhetoric as a field, gathering work across rhetorical theory, composition, media, activism, and pedagogy.",
+    "researchQuestions": [
+      {
+        "q": "What is queer rhetoric, and what does it study?"
+      }
+    ],
+    "keyTerms": [
+      "queer rhetoric",
+      "rhetorical studies",
+      "queer theory",
+      "pedagogy",
+      "activism"
+    ],
+    "approach": "Edited handbook. Note which chapters you are assigned; the thesis will depend on them.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "keilty-introduction-queer-data-studies",
@@ -546,7 +1182,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It frames the volume's core claim that the collection and categorization of data is never neutral with respect to sexuality and gender. Some official records list the volume's publication date as Jan. 2024 rather than 2023 — most citation databases still give 2023."
+    "notes": "It frames the volume's claim that the collection and categorization of data is never neutral with respect to sexuality and gender. The University of Washington Press dates the volume January 2024; your syllabus and many databases use 2023.",
+    "thesis": "Queerness has often been transmitted covertly, because leaving a trace exposed queer people to attack. Queer approaches to data are 'messy, non-innocent, contradictory', yet crucial for autonomy, survival, and critique; the volume asks how data's extraction, circulation, modeling, and governance affect queer subjects, and how data might serve queer ethics.",
+    "researchQuestions": [
+      {
+        "q": "How do the extraction, circulation, modeling, governance, and use of data affect queer subjects?"
+      },
+      {
+        "q": "How might the power of data be harnessed in the service of queer ethics?"
+      }
+    ],
+    "keyTerms": [
+      "queer data",
+      "data sovereignty",
+      "covert transmission",
+      "non-innocence",
+      "queer ethics"
+    ],
+    "approach": "Edited-volume introduction drawing on archival studies, media studies, and science and technology studies.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "mcglotten-black-data",
@@ -562,11 +1216,30 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It explores what it means to be rendered as, and through, data for Black queer subjects."
+    "notes": "It explores how Black queer people are rendered as data, and how opacity can resist surveillance. Reprinted from No Tea, No Shade: New Writings in Black Queer Studies (Duke, 2016). The University of Washington Press dates the volume January 2024; your syllabus and many databases use 2023.",
+    "thesis": "'Black data' is an associative heuristic linking technological black boxes, black sites, black bloc politics, and the long history of technological mastery over people of African descent. Black queer people, rendered as data points rather than persons, use opacity, defacement, and encryption to resist calls for surveillance and transparency.",
+    "researchQuestions": [
+      {
+        "q": "How are Black queer people rendered as data?"
+      },
+      {
+        "q": "How might opacity work as resistance to big data?"
+      }
+    ],
+    "keyTerms": [
+      "black data",
+      "opacity",
+      "black boxes",
+      "encryption",
+      "surveillance",
+      "queer of color critique"
+    ],
+    "approach": "Cultural analysis of everyday life and artistic practice. First published in E. Patrick Johnson, ed., No Tea, No Shade (Duke, 2016).",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "shepard-to-fight-for-an-end-to-intrusions",
-    "title": "\"To Fight for an End to Intrusions into the Sex Lives of Americans\": Gay and Lesbian Resistance to Sexual Surveillance and Data Gathering, 1945–1972",
+    "title": "\"To Fight for an End to Intrusions into the Sex Lives of Americans\": Gay and Lesbian Resistance to Sexual Surveillance and Data Collection, 1945–1972",
     "author": [
       "Nikita Shepard"
     ],
@@ -578,7 +1251,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It traces mid-20th-century gay and lesbian activist resistance to being counted and surveilled by government sex research. The subtitle appears in some sources as \"...Data Collection...\" rather than \"...Data Gathering...\" — a minor, unresolved discrepancy."
+    "notes": "It traces mid-20th-century gay and lesbian resistance to being counted and surveilled. Subtitle confirmed against the publisher's record (De Gruyter/UW Press). The University of Washington Press dates the volume January 2024; your syllabus and many databases use 2023.",
+    "thesis": "Between 1945 and 1972, American gay and lesbian organizers resisted the quantification and surveillance of their sex lives by government and researchers, an early history of queer resistance to data collection.",
+    "researchQuestions": [
+      {
+        "q": "How did gay and lesbian activists respond to sexual surveillance and data collection?"
+      },
+      {
+        "q": "What does that history show about queer politics and data?"
+      }
+    ],
+    "keyTerms": [
+      "sexual surveillance",
+      "data collection",
+      "privacy",
+      "resistance to quantification",
+      "gay and lesbian activism"
+    ],
+    "approach": "Archival history. Won the 2022 Gregory Sprague Prize (AHA Committee on LGBT History).",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "molldrem-hiv-data-as-queer-data",
@@ -594,7 +1285,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It argues HIV surveillance and treatment data create new queer subject positions and a new hierarchy of sexual respectability."
+    "notes": "It argues HIV surveillance and treatment data create new queer subject positions and a new hierarchy of sexual respectability. The University of Washington Press dates the volume January 2024; your syllabus and many databases use 2023.",
+    "thesis": "Clinical and public-health HIV data carries unusually high stakes: an HIV diagnosis in a record can alter the course of a life. Molldrem reads that data as queer data and, as the subtitle signals, connects treatment-as-prevention to a new sex hierarchy among people living with HIV.",
+    "researchQuestions": [
+      {
+        "q": "What makes HIV data queer data?"
+      },
+      {
+        "q": "How has treatment-as-prevention reshaped hierarchies among people living with HIV?"
+      }
+    ],
+    "keyTerms": [
+      "HIV data",
+      "biomedical sexualities",
+      "treatment-as-prevention",
+      "sex hierarchy",
+      "medical records"
+    ],
+    "approach": "Chapter, pp. 128–154.",
+    "summarySource": "Drawn from the chapter title and a short publisher preview; check against the chapter once you read it."
   },
   {
     "id": "conrad-generating-vulnerability",
@@ -610,7 +1319,25 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It examines how male sex workers' reliance on third-party data platforms exposes them to heightened surveillance rather than the safety those platforms promise."
+    "notes": "It examines how male sex workers' reliance on corporate advertising platforms exposes them to surveillance, contrasting a sex worker-owned cooperative. The University of Washington Press dates the volume January 2024; your syllabus and many databases use 2023.",
+    "thesis": "Corporate, for-profit advertising platforms generate vulnerability for male sex workers. After the 2015 federal raid on Rentboy.com exposed users' data, Conrad compares Rentmen.com's thin privacy protections with a sex worker-owned cooperative (Ottawa Independent Companions), whose local, democratic model is demonstrably more secure.",
+    "researchQuestions": [
+      {
+        "q": "How do third-party platforms manage sex workers' data privacy?"
+      },
+      {
+        "q": "What vulnerabilities does the corporate model generate, and what are the alternatives?"
+      }
+    ],
+    "keyTerms": [
+      "data security",
+      "third-party platforms",
+      "Rentboy.com raid",
+      "sex worker cooperatives",
+      "privacy policies"
+    ],
+    "approach": "Comparative analysis of platform privacy policies and terms of service.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "kornstein-homobiles",
@@ -626,7 +1353,26 @@
     ],
     "status": "unread-unprinted",
     "section": "classification-critique",
-    "notes": "It studies Homobiles, an informal LGBTQ ride-share service, as a low-tech, non-data-hoarding alternative to Silicon Valley's data-driven gig economy."
+    "notes": "It studies Homobiles, an informal LGBTQ ride-share service, as a low-tech, non-data-hoarding alternative to Silicon Valley's data-driven gig economy. The University of Washington Press dates the volume January 2024; your syllabus and many databases use 2023.",
+    "thesis": "Homobiles, a San Francisco car service founded in 2010 by and for LGBTQ people, offers a queer alternative to Silicon Valley ride-hailing. Its affective intimacy, ephemeral data retention, and small scale built trust without algorithmic optimization or biased rating systems.",
+    "researchQuestions": [
+      {
+        "q": "What can a low-tech, community ride service show about queer approaches to data?"
+      },
+      {
+        "q": "How can platforms run on care and solidarity instead of data extraction?"
+      }
+    ],
+    "keyTerms": [
+      "ephemerality",
+      "intimacy",
+      "data retention",
+      "care",
+      "gig economy",
+      "low-tech"
+    ],
+    "approach": "Case study of the Homobiles ride service.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "guyan-constructing-a-queer-population",
@@ -643,7 +1389,26 @@
     ],
     "status": "printed-ready",
     "section": "contemporary-applications",
-    "notes": "Journal of Gender Studies, 31(6), 782–792. DOI: 10.1080/09589236.2020.1866513"
+    "notes": "Journal of Gender Studies, 31(6), 782–792 (published online January 2021). DOI: 10.1080/09589236.2020.1866513",
+    "thesis": "Building on Foucault's critique of population knowledge, Guyan frames the census as a tool of governance. Decisions in designing Scotland's first sexual orientation question, including excluding non-binary identities and using predictive text, constructed a queer population that 'made sense' to the heteronormative majority and 'designed out' queer lives the state did not wish to bring into being.",
+    "researchQuestions": [
+      {
+        "q": "How was the sexual orientation question for Scotland's 2022 census decided?"
+      },
+      {
+        "q": "Who is counted when we count LGBTQ people?"
+      }
+    ],
+    "keyTerms": [
+      "census",
+      "population knowledge",
+      "governmentality",
+      "designing out",
+      "non-binary exclusion",
+      "predictive text"
+    ],
+    "approach": "Analysis of correspondence among National Records of Scotland, a Scottish Parliament committee, and campaign groups, informed by the author's own part in the design process.",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "collier-cowan-queer-conflicts-concept-capture",
@@ -661,7 +1426,25 @@
     ],
     "status": "printed-ready",
     "section": "contemporary-applications",
-    "notes": "Social & Legal Studies, 31(5), 746–772. DOI: 10.1177/09646639211061409"
+    "notes": "Social & Legal Studies, 31(5), 746–772. DOI: 10.1177/09646639211061409",
+    "thesis": "State collection of sex/gender data has become a site of wider conflict over sex and gender in UK and Scottish public life. Governments should not adopt one unitary definition; lobbying to record 'sex not gender' is a strategy of concept capture that reimposes a binary, biological model excluding trans and non-binary people. Categories should follow each context's needs.",
+    "researchQuestions": [
+      {
+        "q": "What forms of power and harm are at play in quantifying queer people through state data collection?"
+      },
+      {
+        "q": "Should governments adopt one definition of sex or gender in their data?"
+      }
+    ],
+    "keyTerms": [
+      "concept capture",
+      "category co-option",
+      "sex/gender data",
+      "administrative data",
+      "context"
+    ],
+    "approach": "Socio-legal analysis of UK and Scottish data collection debates.",
+    "summarySource": "Drawn from the published abstract."
   },
   {
     "id": "currah-sex-is-as-sex-does",
@@ -678,7 +1461,25 @@
     ],
     "status": "unread-unprinted",
     "section": "contemporary-applications",
-    "notes": "It argues the state's definitions of \"sex\" on official documents shift depending on bureaucratic purpose rather than reflecting any fixed truth, explaining the contradictory rules trans people face across agencies."
+    "notes": "It argues the state's definitions of \"sex\" on official documents shift depending on bureaucratic purpose rather than reflecting any fixed truth, explaining the contradictory rules trans people face across agencies.",
+    "thesis": "There is no single legal definition of sex in the United States; what sex is depends on what the state is doing with it (issuing IDs, incarcerating, marrying, counting). Instead of asking what sex is, Currah asks what sex classification does, linking it to the distribution of resources and the reproduction of gender inequality.",
+    "researchQuestions": [
+      {
+        "q": "Why do US agencies define sex so inconsistently?"
+      },
+      {
+        "q": "What work does sex classification do for the state?"
+      }
+    ],
+    "keyTerms": [
+      "sex classification",
+      "the state",
+      "identity documents",
+      "sex is as sex does",
+      "gender inequality"
+    ],
+    "approach": "Political and legal analysis of US state practices.",
+    "summarySource": "Drawn from the publisher's description and published summaries."
   },
   {
     "id": "simeoni-querying-the-quantification-of-the-queer",
@@ -690,7 +1491,7 @@
       "Antonella De Angeli"
     ],
     "year": 2024,
-    "publisher": "ACM (DIS '24)",
+    "publisher": "ACM (DIS '24), pp. 3243–3256",
     "tags": [
       "gender spectrum",
       "data visualisation",
@@ -698,6 +1499,24 @@
     ],
     "status": "printed-ready",
     "section": "contemporary-applications",
-    "notes": "Designing Interactive Systems Conference (DIS '24), IT University of Copenhagen. DOI: 10.1145/3643834.3660695"
+    "notes": "Designing Interactive Systems Conference (DIS '24), IT University of Copenhagen. DOI: 10.1145/3643834.3660695",
+    "thesis": "Heteronormative formalizations of sex/gender obscure queer lives in datasets and computation. Because sex/gender categories cannot convey nonbinarity and multiplicity, the authors design anticategorical, data-driven visualizations of the gender spectrum to work with the tension between queerness and systematization.",
+    "researchQuestions": [
+      {
+        "q": "Can sex/gender data be represented without fixed categories?"
+      },
+      {
+        "q": "How can visualization convey nonbinarity and multiplicity?"
+      }
+    ],
+    "keyTerms": [
+      "gender spectrum",
+      "anticategorical",
+      "data visualization",
+      "nonbinary",
+      "formalization"
+    ],
+    "approach": "Design research. DIS '24, pp. 3243–3256.",
+    "summarySource": "Drawn from the published abstract."
   }
 ]
