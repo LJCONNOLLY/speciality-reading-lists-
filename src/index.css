@@ -691,3 +691,601 @@ a.progress-row:hover {
   vertical-align: -1px;
   margin-right: 0.3rem;
 }
+
+.view-tabs {
+  flex-wrap: wrap;
+}
+
+.view-tab {
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+}
+
+/* ---- Study pages (shared) ---- */
+
+.study-title {
+  font-size: 1.8rem;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.study-sub {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.study-note {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.te-muted {
+  color: var(--muted);
+}
+
+/* ---- How terms evolved ---- */
+
+.te-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.te-summary {
+  font-size: 1.05rem;
+  max-width: 780px;
+  margin-bottom: 1.5rem;
+}
+
+.te-timeline {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding: 1rem 0.5rem 0.5rem;
+  margin: 0 0 1rem;
+  background: color-mix(in srgb, var(--accent) 5%, white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.te-stop {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 0 auto;
+}
+
+.te-stop button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: 64px;
+  padding: 0.3rem;
+  border: 0;
+  border-radius: 10px;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.te-stop button:hover {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.te-dot {
+  display: block;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+.te-dot-box {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.te-stop-short {
+  max-width: 92px;
+  font-size: 0.72rem;
+  font-style: italic;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.te-stop.on .te-dot {
+  box-shadow: 0 0 0 3px var(--ink);
+}
+
+.te-stop.faint .te-stop-name,
+.te-stop.faint .te-stop-year {
+  opacity: 0.55;
+}
+
+.te-stop-year {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.te-stop-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.te-stop.on .te-stop-name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.te-line {
+  flex: 1 0 12px;
+  height: 2px;
+  margin-top: calc(0.6rem + 20px);
+  background: var(--border);
+}
+
+.te-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.te-nav {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: white;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.te-nav:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.te-nav.on {
+  background: var(--ink);
+  color: white;
+  border-color: var(--ink);
+}
+
+.te-pos {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.te-pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.te-card {
+  position: relative;
+  padding: 1.5rem 1.75rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: white;
+}
+
+.te-card-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
+  color: white;
+  font-weight: 700;
+}
+
+.te-card-title {
+  font-family: var(--serif, Georgia, serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.te-card-meta {
+  color: var(--muted);
+  margin: 0.2rem 0 0.8rem;
+}
+
+.te-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.te-stance {
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.te-stance-defines { background: #dbeee0; color: #24563a; }
+.te-stance-critiques { background: #f6e0d3; color: #8a3f1c; }
+.te-stance-in-passing { background: #e6e4f1; color: #45407a; }
+
+.te-uses {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.te-def {
+  font-size: 1.08rem;
+  margin-bottom: 1rem;
+}
+
+.te-quote {
+  margin: 0 0 1rem;
+  padding: 0.9rem 1.2rem;
+  border-left: 4px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, white);
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.te-quote cite {
+  display: block;
+  margin-top: 0.4rem;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.te-changed {
+  font-size: 0.98rem;
+}
+
+/* ---- Talking to each other ---- */
+
+.tt-grid-wrap {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.tt-grid {
+  border-collapse: separate;
+  border-spacing: 4px;
+  font-size: 0.9rem;
+}
+
+.tt-grid caption {
+  text-align: left;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.tt-grid th {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem;
+  white-space: nowrap;
+}
+
+.tt-grid thead th {
+  text-align: center;
+}
+
+.tt-cell {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--accent) var(--fill), white);
+}
+
+.tt-empty {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  color: var(--border);
+}
+
+.tt-group {
+  margin-bottom: 1.75rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid var(--border);
+  border-left: 8px solid var(--swatch);
+}
+
+.tt-group h3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.tt-group h3 a {
+  color: var(--ink);
+}
+
+.tt-group h3 span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.tt-mention + .tt-mention {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.tt-mention-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.tt-arrow {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.tt-target {
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tt-pages {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.tt-how {
+  margin-bottom: 0.6rem;
+}
+
+.tt-essay {
+  max-width: 760px;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.tt-essay h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.tt-essay p + p {
+  margin-top: 1rem;
+}
+
+/* ---- Flash cards ---- */
+
+.fc-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.fc-controls select {
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: white;
+}
+
+.fc-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: 340px;
+  margin: 0.5rem 0 1.25rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  perspective: 1400px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.fc-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 18px;
+  backface-visibility: hidden;
+  transition: transform 0.45s ease;
+  box-shadow: 0 10px 30px rgba(60, 40, 20, 0.12);
+  text-align: center;
+}
+
+.fc-back {
+  background: white;
+  color: var(--ink);
+  transform: rotateY(180deg);
+}
+
+.fc-card.flipped .fc-front {
+  transform: rotateY(-180deg);
+}
+
+.fc-card.flipped .fc-back {
+  transform: rotateY(0deg);
+}
+
+.fc-prompt,
+.fc-hint {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.fc-big {
+  font-family: var(--serif, Georgia, serif);
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.fc-small {
+  font-family: inherit;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.fc-source {
+  padding-top: 0.75rem;
+  border-top: 3px solid;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---- Concept gallery ---- */
+
+.cg section + section {
+  margin-top: 2rem;
+}
+
+.cg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.cg-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 170px;
+  padding: 1.2rem 1.25rem;
+  border: 0;
+  border-radius: 16px;
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(60, 40, 20, 0.1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cg-card:hover,
+.cg-card.on {
+  transform: translateY(-3px) rotate(-0.4deg);
+  box-shadow: 0 10px 24px rgba(60, 40, 20, 0.18);
+}
+
+.cg-term {
+  font-family: var(--serif, Georgia, serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.cg-snippet {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  opacity: 0.92;
+}
+
+.cg-source {
+  margin-top: auto;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.cg-detail {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 1.75rem 2rem;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid var(--border);
+  border-top: 10px solid var(--swatch);
+}
+
+.cg-detail h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.cg-def {
+  font-size: 1.12rem;
+  max-width: 760px;
+  margin-bottom: 0.75rem;
+}
+
+.cg-from {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.cg-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  border: 0;
+  background: none;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.cg-cta {
+  margin-bottom: 1rem;
+}
+
+.cg-related {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.cg-related .tag {
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}

@@ -2,6 +2,17 @@ import { Link, useOutletContext, useSearchParams } from 'react-router-dom';
 import { STATUSES } from '../utils/status.js';
 import SectionMap from './SectionMap.jsx';
 import Library from './Library.jsx';
+import TermEvolution from './study/TermEvolution.jsx';
+import TalkingToEachOther from './study/TalkingToEachOther.jsx';
+import FlashCards from './study/FlashCards.jsx';
+import ConceptGallery from './study/ConceptGallery.jsx';
+
+const STUDY_VIEWS = {
+  terms: TermEvolution,
+  talking: TalkingToEachOther,
+  flashcards: FlashCards,
+  gallery: ConceptGallery,
+};
 
 function countBy(books, statusId) {
   return books.filter((book) => book.status === statusId).length;
@@ -126,5 +137,7 @@ export default function ListPage() {
 
   if (view === 'readings') return <Library />;
   if (view === 'progress') return <Progress list={list} />;
+  const StudyView = list.study && STUDY_VIEWS[view];
+  if (StudyView) return <StudyView study={list.study} />;
   return <Overview list={list} />;
 }

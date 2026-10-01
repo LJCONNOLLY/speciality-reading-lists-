@@ -1,10 +1,14 @@
 import { Link, NavLink, Outlet, useParams, useSearchParams } from 'react-router-dom';
 import { getList } from '../data/lists.js';
 
-export const VIEWS = [
+const VIEWS = [
   { id: 'overview', label: 'Overview' },
   { id: 'readings', label: 'Readings' },
   { id: 'progress', label: 'Progress' },
+  { id: 'terms', label: 'How Terms Evolved', study: true },
+  { id: 'talking', label: 'Talking to Each Other', study: true },
+  { id: 'flashcards', label: 'Flash Cards', study: true },
+  { id: 'gallery', label: 'Concept Gallery', study: true },
 ];
 
 export default function ListLayout() {
@@ -35,7 +39,7 @@ export default function ListLayout() {
           </h1>
           <p>{list.tagline}</p>
           <nav className="view-tabs" aria-label={`${list.title} pages`}>
-            {VIEWS.map((view) => (
+            {VIEWS.filter((view) => !view.study || list.study).map((view) => (
               <NavLink
                 key={view.id}
                 to={`/${list.slug}?view=${view.id}`}
