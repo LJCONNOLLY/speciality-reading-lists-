@@ -2,7 +2,7 @@
 
 A small site that splits into two independent reading lists, each browsed on its own:
 
-- **Rhetoric in/of Technical Communication**
+- **Rhetoric in Technical and Visual Communication**
 - **Classification and Datafication of Queer Bodies**
 
 The home page just links out to each list. Once inside a list, everything
@@ -75,7 +75,7 @@ status" row: the list title sits in a central circle, each section is
 a colored spoke box connected by a dashed line, and clicking the hub
 or a spoke filters the reading list below. It reflows into a stacked
 vertical layout under 640px width. A list with no `sections` array
-(like Rhetoric in/of Technical Communication) shows no diagram at all.
+(like Rhetoric in Technical and Visual Communication) shows no diagram at all.
 
 A list can also carry an `intro` string in `src/data/lists.js`, shown
 as a highlighted block at the top of that list's page — useful for

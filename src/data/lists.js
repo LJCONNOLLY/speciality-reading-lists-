@@ -10,7 +10,7 @@ export const lists = [
   {
     id: 'rhetoric-tech-comm',
     slug: 'rhetoric',
-    title: 'Rhetoric in/of Technical Communication',
+    title: 'Rhetoric in Technical and Visual Communication',
     tagline: 'How rhetoric shapes, and is shaped by, technical and professional communication.',
     accent: '#2f6f5e',
     books: rhetoricTechComm,
