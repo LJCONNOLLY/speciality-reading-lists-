@@ -44,8 +44,9 @@ per folder. To rename a folder or add a new one, edit the `STATUSES`
 array in `src/utils/status.js` — the tabs, book cards, and book pages
 all read from that one list.
 
-The three sample entries in each file are placeholders — replace or
-delete them once you add your real lists.
+PDFs uploaded through GitHub's web UI land in the repo root, where the
+build can't see them — move each one to `public/pdfs/<book-id>.pdf` and
+point that book's `"pdf"` field at it (see below).
 
 ## Attaching a PDF
 

@@ -1,32 +1,797 @@
 [
   {
-    "id": "sample-1",
-    "title": "Sample Entry — replace with a real title",
-    "author": ["Author Name"],
-    "year": 2020,
-    "publisher": "Publisher",
-    "tags": ["rhetoric", "example-tag"],
+    "id": "miller-humanistic-rationale-for-technical-writing",
+    "title": "A Humanistic Rationale for Technical Writing",
+    "author": [
+      "Carolyn R. Miller"
+    ],
+    "year": 1979,
+    "publisher": "College English",
+    "tags": [
+      "humanism",
+      "epistemology",
+      "positivism"
+    ],
     "status": "unread-unprinted",
-    "notes": "Placeholder entry. Delete once you add your real reading list to this file (src/data/books/rhetoric-tech-comm.json)."
+    "pdf": "pdfs/miller-humanistic-rationale-for-technical-writing.pdf",
+    "notes": "College English, 40(6), 610–617."
   },
   {
-    "id": "sample-2",
-    "title": "Another Sample Entry",
-    "author": ["Author One", "Author Two"],
-    "year": 2018,
-    "publisher": "Publisher",
-    "tags": ["technical communication"],
-    "status": "printed-ready",
-    "notes": "Each object in this array is one book. id must be unique within this file."
+    "id": "miller-genre-as-social-action",
+    "title": "Genre as Social Action",
+    "author": [
+      "Carolyn R. Miller"
+    ],
+    "year": 1984,
+    "publisher": "Quarterly Journal of Speech",
+    "tags": [
+      "genre",
+      "rhetorical situation",
+      "social action"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/miller-genre-as-social-action.pdf",
+    "notes": "Quarterly Journal of Speech, 70(2), 151–167. DOI: 10.1080/00335638409383686"
   },
   {
-    "id": "sample-3",
-    "title": "A Third Sample Entry",
-    "author": ["Author Name"],
+    "id": "kinross-rhetoric-of-neutrality",
+    "title": "The Rhetoric of Neutrality",
+    "author": [
+      "Robin Kinross"
+    ],
+    "year": 1985,
+    "publisher": "Design Issues (MIT Press)",
+    "tags": [
+      "information design",
+      "neutrality",
+      "visual rhetoric"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/kinross-rhetoric-of-neutrality.pdf",
+    "notes": "Design Issues (MIT Press), 2(2), 18–30."
+  },
+  {
+    "id": "bernhardt-seeing-the-text",
+    "title": "Seeing the Text",
+    "author": [
+      "Stephen A. Bernhardt"
+    ],
+    "year": 1986,
+    "publisher": "College Composition and Communication",
+    "tags": [
+      "visual rhetoric",
+      "document design",
+      "page layout"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/bernhardt-seeing-the-text.pdf",
+    "notes": "College Composition and Communication, 37(1), 66–78."
+  },
+  {
+    "id": "miller-whats-practical-about-technical-writing",
+    "title": "What's Practical about Technical Writing?",
+    "author": [
+      "Carolyn R. Miller"
+    ],
+    "year": 1989,
+    "publisher": "Modern Language Association",
+    "tags": [
+      "praxis",
+      "phronesis",
+      "humanism"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/miller-whats-practical-about-technical-writing.pdf",
+    "notes": "In Bertie E. Fearing & W. Keats Sparrow (Eds.), Technical Writing: Theory and Practice (pp. 14–24)."
+  },
+  {
+    "id": "katz-ethic-of-expediency",
+    "title": "The Ethic of Expediency: Classical Rhetoric, Technology, and the Holocaust",
+    "author": [
+      "Steven B. Katz"
+    ],
+    "year": 1992,
+    "publisher": "College English",
+    "tags": [
+      "ethics",
+      "expediency",
+      "Holocaust"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/katz-ethic-of-expediency.pdf",
+    "notes": "College English, 54(3), 255–275."
+  },
+  {
+    "id": "slack-miller-doak-technical-communicator-as-author",
+    "title": "The Technical Communicator as Author: Meaning, Power, Authority",
+    "author": [
+      "Jennifer Daryl Slack",
+      "David James Miller",
+      "Jeffrey Doak"
+    ],
+    "year": 1993,
+    "publisher": "Journal of Business and Technical Communication",
+    "tags": [
+      "authorship",
+      "power",
+      "cultural studies"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/slack-miller-doak-technical-communicator-as-author.pdf",
+    "notes": "Journal of Business and Technical Communication, 7(1), 12–36."
+  },
+  {
+    "id": "sauer-sense-and-sensibility",
+    "title": "Sense and Sensibility in Technical Documentation: How Feminist Interpretation Strategies Can Save Lives in the Nation's Mines",
+    "author": [
+      "Beverly A. Sauer"
+    ],
+    "year": 1993,
+    "publisher": "Journal of Business and Technical Communication",
+    "tags": [
+      "feminism",
+      "risk",
+      "mine safety"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/sauer-sense-and-sensibility.pdf",
+    "notes": "Journal of Business and Technical Communication, 7(1), 63–83."
+  },
+  {
+    "id": "barton-barton-modes-of-power",
+    "title": "Modes of Power in Technical and Professional Visuals",
+    "author": [
+      "Ben F. Barton",
+      "Marthalee S. Barton"
+    ],
+    "year": 1993,
+    "publisher": "Journal of Business and Technical Communication",
+    "tags": [
+      "visual rhetoric",
+      "power",
+      "Foucault"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/barton-barton-modes-of-power.pdf",
+    "notes": "Journal of Business and Technical Communication, 7(1), 138–162."
+  },
+  {
+    "id": "herndl-teaching-discourse-and-reproducing-culture",
+    "title": "Teaching Discourse and Reproducing Culture: A Critique of Research and Pedagogy in Professional and Non-Academic Writing",
+    "author": [
+      "Carl G. Herndl"
+    ],
+    "year": 1993,
+    "publisher": "College Composition and Communication",
+    "tags": [
+      "cultural reproduction",
+      "critical pedagogy",
+      "ideology"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/herndl-teaching-discourse-and-reproducing-culture.pdf",
+    "notes": "College Composition and Communication, 44(3), 349–363."
+  },
+  {
+    "id": "schryer-records-as-genre",
+    "title": "Records as Genre",
+    "author": [
+      "Catherine F. Schryer"
+    ],
+    "year": 1993,
+    "publisher": "Written Communication",
+    "tags": [
+      "genre",
+      "records",
+      "veterinary medicine"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/schryer-records-as-genre.pdf",
+    "notes": "Written Communication, 10(2), 200–234."
+  },
+  {
+    "id": "selfe-selfe-politics-of-the-interface",
+    "title": "The Politics of the Interface: Power and Its Exercise in Electronic Contact Zones",
+    "author": [
+      "Cynthia L. Selfe",
+      "Richard J. Selfe, Jr."
+    ],
+    "year": 1994,
+    "publisher": "College Composition and Communication",
+    "tags": [
+      "interface",
+      "power",
+      "contact zones"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/selfe-selfe-politics-of-the-interface.pdf",
+    "notes": "College Composition and Communication, 45(4), 480–504."
+  },
+  {
+    "id": "durack-gender-technology-and-history",
+    "title": "Gender, Technology, and the History of Technical Communication",
+    "author": [
+      "Katherine T. Durack"
+    ],
+    "year": 1997,
+    "publisher": "Technical Communication Quarterly",
+    "tags": [
+      "gender",
+      "history",
+      "feminism"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/durack-gender-technology-and-history.pdf",
+    "notes": "Technical Communication Quarterly, 6(3), 249–260."
+  },
+  {
+    "id": "longo-cultural-study-theory",
+    "title": "An Approach for Applying Cultural Study Theory to Technical Writing Research",
+    "author": [
+      "Bernadette Longo"
+    ],
+    "year": 1998,
+    "publisher": "Technical Communication Quarterly",
+    "tags": [
+      "cultural studies",
+      "methodology",
+      "power/knowledge"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/longo-cultural-study-theory.pdf",
+    "notes": "Technical Communication Quarterly, 7(1), 53–73."
+  },
+  {
+    "id": "dragga-voss-cruel-pies",
+    "title": "Cruel Pies: The Inhumanity of Technical Illustrations",
+    "author": [
+      "Sam Dragga",
+      "Dan Voss"
+    ],
+    "year": 2001,
+    "publisher": "Technical Communication",
+    "tags": [
+      "visual ethics",
+      "humanism",
+      "data visualization"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/dragga-voss-cruel-pies.pdf",
+    "notes": "Technical Communication, 48(3), 265–274."
+  },
+  {
+    "id": "berkenkotter-genre-systems-at-work",
+    "title": "Genre Systems at Work: DSM-IV and Rhetorical Recontextualization in Psychotherapy Paperwork",
+    "author": [
+      "Carol Berkenkotter"
+    ],
+    "year": 2001,
+    "publisher": "Written Communication",
+    "tags": [
+      "genre systems",
+      "DSM-IV",
+      "recontextualization"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/berkenkotter-genre-systems-at-work.pdf",
+    "notes": "Written Communication, 18(3), 326–349."
+  },
+  {
+    "id": "popham-forms-as-boundary-genres",
+    "title": "Forms as Boundary Genres in Medicine, Science, and Business",
+    "author": [
+      "Susan L. Popham"
+    ],
+    "year": 2005,
+    "publisher": "Journal of Business and Technical Communication",
+    "tags": [
+      "forms",
+      "boundary genres",
+      "medicine"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/popham-forms-as-boundary-genres.pdf",
+    "notes": "Journal of Business and Technical Communication, 19(3), 279–303. DOI: 10.1177/1050651905275624"
+  },
+  {
+    "id": "brasseur-nightingale-rose-diagrams",
+    "title": "Florence Nightingale's Visual Rhetoric in the Rose Diagrams",
+    "author": [
+      "Lee Brasseur"
+    ],
+    "year": 2005,
+    "publisher": "Technical Communication Quarterly",
+    "tags": [
+      "visual rhetoric",
+      "data visualization",
+      "history"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/brasseur-nightingale-rose-diagrams.pdf",
+    "notes": "Technical Communication Quarterly, 14(2), 161–182."
+  },
+  {
+    "id": "foss-theory-of-visual-rhetoric",
+    "title": "Theory of Visual Rhetoric",
+    "author": [
+      "Sonja K. Foss"
+    ],
+    "year": 2005,
+    "publisher": "Lawrence Erlbaum",
+    "tags": [
+      "visual rhetoric",
+      "theory"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/foss-theory-of-visual-rhetoric.pdf",
+    "notes": "Chapter 9 in Ken Smith, Sandra Moriarty, Gretchen Barbatsis, & Keith Kenney (Eds.), Handbook of Visual Communication: Theory, Methods, and Media (pp. 141–152)."
+  },
+  {
+    "id": "kimball-london-through-rose-colored-graphics",
+    "title": "London Through Rose-Colored Graphics: Visual Rhetoric and Information Graphic Design in Charles Booth's Maps of London Poverty",
+    "author": [
+      "Miles A. Kimball"
+    ],
+    "year": 2006,
+    "publisher": "Journal of Technical Writing and Communication",
+    "tags": [
+      "visual rhetoric",
+      "maps",
+      "poverty"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/kimball-london-through-rose-colored-graphics.pdf",
+    "notes": "Journal of Technical Writing and Communication, 36(4), 353–381."
+  },
+  {
+    "id": "kostelnick-conundrum-of-clarity",
+    "title": "The Visual Rhetoric of Data Displays: The Conundrum of Clarity",
+    "author": [
+      "Charles Kostelnick"
+    ],
+    "year": 2008,
+    "publisher": "IEEE Transactions on Professional Communication",
+    "tags": [
+      "data visualization",
+      "clarity",
+      "visual rhetoric"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/kostelnick-conundrum-of-clarity.pdf",
+    "notes": "IEEE Transactions on Professional Communication, 51(1), 116–130."
+  },
+  {
+    "id": "rude-mapping-the-research-questions",
+    "title": "Mapping the Research Questions in Technical Communication",
+    "author": [
+      "Carolyn D. Rude"
+    ],
+    "year": 2009,
+    "publisher": "Journal of Business and Technical Communication",
+    "tags": [
+      "disciplinarity",
+      "research questions"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/rude-mapping-the-research-questions.pdf",
+    "notes": "Journal of Business and Technical Communication, 23(2), 174–215. DOI: 10.1177/1050651908329562"
+  },
+  {
+    "id": "drucker-humanities-approaches-to-graphical-display",
+    "title": "Humanities Approaches to Graphical Display",
+    "author": [
+      "Johanna Drucker"
+    ],
+    "year": 2011,
+    "publisher": "Digital Humanities Quarterly",
+    "tags": [
+      "capta",
+      "data visualization",
+      "interpretation"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/drucker-humanities-approaches-to-graphical-display.pdf",
+    "notes": "Digital Humanities Quarterly, 5(1)."
+  },
+  {
+    "id": "hullman-diakopoulos-visualization-rhetoric",
+    "title": "Visualization Rhetoric: Framing Effects in Narrative Visualization",
+    "author": [
+      "Jessica Hullman",
+      "Nicholas Diakopoulos"
+    ],
+    "year": 2011,
+    "publisher": "IEEE Transactions on Visualization and Computer Graphics",
+    "tags": [
+      "narrative visualization",
+      "framing",
+      "data visualization"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/hullman-diakopoulos-visualization-rhetoric.pdf",
+    "notes": "IEEE Transactions on Visualization and Computer Graphics, 17(12), 2231–2240."
+  },
+  {
+    "id": "haas-race-rhetoric-and-technology",
+    "title": "Race, Rhetoric, and Technology: A Case Study of Decolonial Technical Communication Theory, Methodology, and Pedagogy",
+    "author": [
+      "Angela M. Haas"
+    ],
+    "year": 2012,
+    "publisher": "Journal of Business and Technical Communication",
+    "tags": [
+      "race",
+      "decolonial",
+      "pedagogy"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/haas-race-rhetoric-and-technology.pdf",
+    "notes": "Journal of Business and Technical Communication, 26(3), 277–310. DOI: 10.1177/1050651912439539"
+  },
+  {
+    "id": "stanfill-interface-as-discourse",
+    "title": "The Interface as Discourse: The Production of Norms Through Web Design",
+    "author": [
+      "Mel Stanfill"
+    ],
     "year": 2015,
-    "publisher": "Publisher",
-    "tags": ["example-tag"],
-    "status": "read",
-    "notes": "status must be one of: unread-unprinted, printed-ready, read (see src/utils/status.js)."
+    "publisher": "New Media & Society",
+    "tags": [
+      "interface",
+      "norms",
+      "affordances"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/stanfill-interface-as-discourse.pdf",
+    "notes": "New Media & Society, 17(7), 1059–1074. DOI: 10.1177/1461444814520873"
+  },
+  {
+    "id": "frost-apparent-feminism",
+    "title": "Apparent Feminism as a Methodology for Technical Communication and Rhetoric",
+    "author": [
+      "Erin A. Frost"
+    ],
+    "year": 2016,
+    "publisher": "Journal of Business and Technical Communication",
+    "tags": [
+      "feminism",
+      "methodology"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/frost-apparent-feminism.pdf",
+    "notes": "Journal of Business and Technical Communication, 30(1), 3–28. DOI: 10.1177/1050651915602295"
+  },
+  {
+    "id": "jones-moore-walton-disrupting-the-past",
+    "title": "Disrupting the Past to Disrupt the Future: An Antenarrative of Technical Communication",
+    "author": [
+      "Natasha N. Jones",
+      "Kristen R. Moore",
+      "Rebecca Walton"
+    ],
+    "year": 2016,
+    "publisher": "Technical Communication Quarterly",
+    "tags": [
+      "social justice",
+      "antenarrative",
+      "history"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/jones-moore-walton-disrupting-the-past.pdf",
+    "notes": "Technical Communication Quarterly, 25(4), 211–229. DOI: 10.1080/10572252.2016.1224655"
+  },
+  {
+    "id": "kennedy-et-al-work-that-visualisation-conventions-do",
+    "title": "The Work That Visualisation Conventions Do",
+    "author": [
+      "Helen Kennedy",
+      "Rosemary Lucy Hill",
+      "Giorgia Aiello",
+      "William Allen"
+    ],
+    "year": 2016,
+    "publisher": "Information, Communication & Society",
+    "tags": [
+      "data visualization",
+      "conventions",
+      "objectivity"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/kennedy-et-al-work-that-visualisation-conventions-do.pdf",
+    "notes": "Information, Communication & Society, 19(6), 715–735. DOI: 10.1080/1369118X.2016.1153126"
+  },
+  {
+    "id": "kostelnick-emotional-appeals",
+    "title": "The Re-Emergence of Emotional Appeals in Interactive Data Visualization",
+    "author": [
+      "Charles Kostelnick"
+    ],
+    "year": 2016,
+    "publisher": "Technical Communication",
+    "tags": [
+      "pathos",
+      "data visualization",
+      "interactivity"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/kostelnick-emotional-appeals.pdf",
+    "notes": "Technical Communication, 63(2), 116–135."
+  },
+  {
+    "id": "jones-williams-technologies-of-disenfranchisement",
+    "title": "Technologies of Disenfranchisement: Literacy Tests and Black Voters in the US from 1890 to 1965",
+    "author": [
+      "Natasha N. Jones",
+      "Miriam F. Williams"
+    ],
+    "year": 2018,
+    "publisher": "Technical Communication",
+    "tags": [
+      "race",
+      "voting",
+      "social justice"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/jones-williams-technologies-of-disenfranchisement.pdf",
+    "notes": "Technical Communication, 65(4), 371–386."
+  },
+  {
+    "id": "sano-franchini-designing-outrage",
+    "title": "Designing Outrage, Programming Discord: A Critical Interface Analysis of Facebook as a Campaign Technology",
+    "author": [
+      "Jennifer Sano-Franchini"
+    ],
+    "year": 2018,
+    "publisher": "Technical Communication",
+    "tags": [
+      "interface",
+      "critical interface analysis",
+      "social media"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/sano-franchini-designing-outrage.pdf",
+    "notes": "Technical Communication, 65(4), 387–410."
+  },
+  {
+    "id": "novotny-hutchinson-data-our-bodies-tell",
+    "title": "Data Our Bodies Tell: Towards Critical Feminist Action in Fertility and Period Tracking Applications",
+    "author": [
+      "Maria Novotny",
+      "Les Hutchinson"
+    ],
+    "year": 2019,
+    "publisher": "Technical Communication Quarterly",
+    "tags": [
+      "feminism",
+      "health data",
+      "apps"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/novotny-hutchinson-data-our-bodies-tell.pdf",
+    "notes": "Technical Communication Quarterly, 28(4), 332–360. DOI: 10.1080/10572252.2019.1607907"
+  },
+  {
+    "id": "atherton-missing-unspecified",
+    "title": "\"Missing/Unspecified\": Demographic Data Visualization During the COVID-19 Pandemic",
+    "author": [
+      "Rachel Atherton"
+    ],
+    "year": 2021,
+    "publisher": "Journal of Business and Technical Communication",
+    "tags": [
+      "COVID-19",
+      "race",
+      "data visualization"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/atherton-missing-unspecified.pdf",
+    "notes": "Journal of Business and Technical Communication, 35(1), 80–87. DOI: 10.1177/1050651920957982"
+  },
+  {
+    "id": "atherton-toward-data-justice",
+    "title": "Toward Data Justice: Understanding Police Shooting Data Systems and Narratives",
+    "author": [
+      "Rachel Atherton"
+    ],
+    "year": 2022,
+    "publisher": "IEEE Transactions on Professional Communication",
+    "tags": [
+      "data justice",
+      "policing",
+      "critical data studies"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/atherton-toward-data-justice.pdf",
+    "notes": "IEEE Transactions on Professional Communication, 65(1), 118–134."
+  },
+  {
+    "id": "welhausen-precarious-data",
+    "title": "Precarious Data: Crack, Opioids, and Enacting a Social Justice Ethic in Data Visualization Practice",
+    "author": [
+      "Candice A. Welhausen"
+    ],
+    "year": 2022,
+    "publisher": "IEEE Transactions on Professional Communication",
+    "tags": [
+      "data visualization",
+      "social justice",
+      "drug policy"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/welhausen-precarious-data.pdf",
+    "notes": "IEEE Transactions on Professional Communication, 65(1), 50–69."
+  },
+  {
+    "id": "jones-williams-archives-rhetorical-absence",
+    "title": "Archives, Rhetorical Absence, and Critical Imagination: Examining Black Women's Mental Health Narratives at Virginia's Central State Hospital",
+    "author": [
+      "Natasha N. Jones",
+      "Miriam F. Williams"
+    ],
+    "year": 2022,
+    "publisher": "IEEE Transactions on Professional Communication",
+    "tags": [
+      "archives",
+      "race",
+      "mental health"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/jones-williams-archives-rhetorical-absence.pdf",
+    "notes": "IEEE Transactions on Professional Communication, 65(1), 179–196."
+  },
+  {
+    "id": "li-defining-the-racial-and-ethnic-other",
+    "title": "Defining the Racial and Ethnic \"Other\": Constructing an American Identity Through Visualizing Census Data in the U.S. Statistical Atlases",
+    "author": [
+      "Li Li"
+    ],
+    "year": 2022,
+    "publisher": "Journal of Technical Writing and Communication",
+    "tags": [
+      "census",
+      "race",
+      "data visualization"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/li-defining-the-racial-and-ethnic-other.pdf",
+    "notes": "Journal of Technical Writing and Communication, 52(4), 460–492. DOI: 10.1177/00472816221086523"
+  },
+  {
+    "id": "comi-it-must-be-a-system-thing",
+    "title": "\"It Must Be a System Thing\": Information Infrastructure Genres as Sites of Inequity",
+    "author": [
+      "Dana Comi"
+    ],
+    "year": 2022,
+    "publisher": "Communication Design Quarterly",
+    "tags": [
+      "infrastructure",
+      "genre",
+      "public assistance"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/comi-it-must-be-a-system-thing.pdf",
+    "notes": "Communication Design Quarterly, 10(3), 12–22. DOI: 10.1145/3507870.3507874"
+  },
+  {
+    "id": "sorapure-actionability-in-data-dashboards",
+    "title": "User Perceptions of Actionability in Data Dashboards",
+    "author": [
+      "Madeleine Sorapure"
+    ],
+    "year": 2023,
+    "publisher": "Journal of Business and Technical Communication",
+    "tags": [
+      "dashboards",
+      "COVID-19",
+      "user research"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/sorapure-actionability-in-data-dashboards.pdf",
+    "notes": "Journal of Business and Technical Communication, 37(3), 253–280. DOI: 10.1177/10506519231161611"
+  },
+  {
+    "id": "lindgren-stasis-network-methodology",
+    "title": "A Stasis Network Methodology to Reckon with the Rhetorical Process of Data: How a Data Team Qualified Meaning and Practices",
+    "author": [
+      "Chris A. Lindgren"
+    ],
+    "year": 2024,
+    "publisher": "Technical Communication Quarterly",
+    "tags": [
+      "stasis",
+      "data practices",
+      "methodology"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/lindgren-stasis-network-methodology.pdf",
+    "notes": "Technical Communication Quarterly, 33(4), 475–500. DOI: 10.1080/10572252.2024.2306259"
+  },
+  {
+    "id": "whitney-please-provide-the-following-information",
+    "title": "Please Provide the Following Information: Enthymemes and the Logics of Individual Responsibility in the Patient Medical History Form",
+    "author": [
+      "Kelly A. Whitney"
+    ],
+    "year": 2025,
+    "publisher": "Technical Communication Quarterly",
+    "tags": [
+      "forms",
+      "enthymeme",
+      "medicine"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/whitney-please-provide-the-following-information.pdf",
+    "notes": "Technical Communication Quarterly, 34(1), 1–23. DOI: 10.1080/10572252.2023.2299465"
+  },
+  {
+    "id": "hartzog-flatten-the-curve",
+    "title": "'Flatten the Curve': Rhetorical Data Visualizations of a Global Pandemic",
+    "author": [
+      "Molly Hartzog"
+    ],
+    "year": 2025,
+    "publisher": "Technical Communication Quarterly",
+    "tags": [
+      "COVID-19",
+      "data visualization",
+      "actionable metrics"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/hartzog-flatten-the-curve.pdf",
+    "notes": "Technical Communication Quarterly, 34(1), 114–129. DOI: 10.1080/10572252.2024.2374379"
+  },
+  {
+    "id": "chen-pandey-baniya-navigating-immigration-as-an-alien",
+    "title": "Navigating Immigration as an Alien: A Critical Interface Analysis of the US Citizenship and Immigration Services Website",
+    "author": [
+      "Jianfen Chen",
+      "Shyam Pandey",
+      "Sweta Baniya"
+    ],
+    "year": 2025,
+    "publisher": "IEEE Transactions on Professional Communication",
+    "tags": [
+      "critical interface analysis",
+      "immigration",
+      "multilingual UX"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/chen-pandey-baniya-navigating-immigration-as-an-alien.pdf",
+    "notes": "IEEE Transactions on Professional Communication, 68(1), 22–40."
+  },
+  {
+    "id": "green-trans-and-queer-visibility",
+    "title": "Trans and Queer Visibility in an Era of Hyper Surveillance: A User Experience Study of University Systems for Sharing Gender Pronouns",
+    "author": [
+      "McKinley Green"
+    ],
+    "year": 2026,
+    "publisher": "Journal of Technical Writing and Communication",
+    "tags": [
+      "pronouns",
+      "surveillance",
+      "user experience"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/green-trans-and-queer-visibility.pdf",
+    "notes": "Journal of Technical Writing and Communication, 56(1), 35–60. DOI: 10.1177/00472816251384913"
+  },
+  {
+    "id": "doan-brooks-charting-a-new-course",
+    "title": "Charting a New Course: An Inventory of Data Visualization Scholarship in TPC From 2013 to 2023",
+    "author": [
+      "Sara C. Doan",
+      "Steven S. Brooks"
+    ],
+    "year": 2026,
+    "publisher": "IEEE Transactions on Professional Communication",
+    "tags": [
+      "data visualization",
+      "systematic review"
+    ],
+    "status": "unread-unprinted",
+    "pdf": "pdfs/doan-brooks-charting-a-new-course.pdf",
+    "notes": "IEEE Transactions on Professional Communication, 69(2), 168–182."
   }
 ]
