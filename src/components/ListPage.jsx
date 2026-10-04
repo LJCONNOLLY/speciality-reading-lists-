@@ -56,6 +56,20 @@ function Overview({ list }) {
         <>
           <div className="tab-group-label">Sections — click one to open its readings</div>
           <SectionMap list={list} activeSection={null} onSelect={openSection} counts={sectionCounts(list)} />
+          {list.sections.some((sec) => sec.description) ? (
+            <dl className="section-descriptions">
+              {list.sections.map((sec) =>
+                sec.description ? (
+                  <div key={sec.id}>
+                    <dt>
+                      <Link to={`/${list.slug}?view=readings&section=${sec.id}`}>{sec.title}</Link>
+                    </dt>
+                    <dd>{sec.description}</dd>
+                  </div>
+                ) : null,
+              )}
+            </dl>
+          ) : null}
         </>
       ) : (
         <Link to={`/${list.slug}?view=readings`} className="overview-cta">

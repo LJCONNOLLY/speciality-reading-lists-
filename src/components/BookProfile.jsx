@@ -2,6 +2,21 @@ import { Link, useOutletContext, useParams } from 'react-router-dom';
 import { statusLabel } from '../utils/status.js';
 import { bookSwatches } from '../utils/palette.js';
 
+const MODE_LABELS = { T: 'Technical', V: 'Visual', 'T+V': 'Technical + Visual' };
+
+// Renders any http(s) URLs inside a citation as links.
+function Linkified({ text }) {
+  return text.split(/(https?:\/\/\S+)/).map((part, i) =>
+    /^https?:\/\//.test(part) ? (
+      <a key={i} href={part} target="_blank" rel="noopener noreferrer">
+        {part}
+      </a>
+    ) : (
+      part
+    ),
+  );
+}
+
 export default function BookProfile() {
   const { list } = useOutletContext();
   const { bookId } = useParams();
@@ -30,6 +45,7 @@ export default function BookProfile() {
           {list.sections?.find((section) => section.id === book.section)?.title || book.section}
         </span>
       ) : null}
+      {book.mode ? <span className="mode-badge">{MODE_LABELS[book.mode] || book.mode}</span> : null}
       <h2>{book.title}</h2>
       <p className="book-card-author">{(book.author || []).join(', ')}</p>
       <p className="book-card-meta">
@@ -46,6 +62,27 @@ export default function BookProfile() {
         >
           Read the PDF &rarr;
         </a>
+      ) : null}
+
+      {book.annotation ? (
+        <section className="bp-section">
+          <h3>Annotation</h3>
+          <p className="bp-thesis">{book.annotation}</p>
+        </section>
+      ) : null}
+
+      {book.studyType ? (
+        <section className="bp-section">
+          <h3>Study type</h3>
+          <p>{book.studyType}</p>
+        </section>
+      ) : null}
+
+      {book.rhetoricalConcept ? (
+        <section className="bp-section">
+          <h3>Rhetorical concept</h3>
+          <p>{book.rhetoricalConcept}</p>
+        </section>
       ) : null}
 
       {book.thesis ? (
@@ -86,6 +123,22 @@ export default function BookProfile() {
         <section className="bp-section">
           <h3>Approach</h3>
           <p>{book.approach}</p>
+        </section>
+      ) : null}
+
+      {book.citation ? (
+        <section className="bp-section">
+          <h3>Citation</h3>
+          <p className="bp-citation">
+            <Linkified text={book.citation} />
+          </p>
+        </section>
+      ) : null}
+
+      {book.ucf ? (
+        <section className="bp-section">
+          <h3>At UCF</h3>
+          <p>{book.ucf}</p>
         </section>
       ) : null}
 

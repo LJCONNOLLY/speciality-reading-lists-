@@ -371,6 +371,51 @@ a {
   margin-bottom: 0.5rem;
 }
 
+/* Technical / Visual / Technical + Visual marker on a book page */
+.mode-badge {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--swatch, var(--accent));
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+/* Section intro: above the readings when a section is selected, and as a
+   list under the section map on the overview */
+.section-description {
+  margin: -0.25rem 0 1.25rem;
+  padding: 0.9rem 1.2rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  background: color-mix(in srgb, var(--accent) 6%, white);
+  line-height: 1.6;
+}
+
+.section-descriptions {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.section-descriptions dt {
+  font-weight: 700;
+}
+
+.section-descriptions dt a {
+  color: var(--accent);
+}
+
+.section-descriptions dd {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 /* ---- Reading list (colorful long buttons) ---- */
 
 .reading-list {
@@ -1317,6 +1362,11 @@ a.progress-row:hover {
   border-radius: 0 10px 10px 0;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+.bp-citation {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .bp-questions {

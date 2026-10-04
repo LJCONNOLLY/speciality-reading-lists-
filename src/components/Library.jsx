@@ -11,6 +11,8 @@ function matches(book, query) {
     ...(book.keyTerms || []),
     book.thesis,
     book.notes,
+    book.annotation,
+    book.citation,
   ]
     .filter(Boolean)
     .join(' ')
@@ -84,6 +86,11 @@ export default function Library() {
         </>
       ) : null}
 
+      {(() => {
+        const description = list.sections?.find((sec) => sec.id === section)?.description;
+        return description ? <p className="section-description">{description}</p> : null;
+      })()}
+
       <div className="tab-group-label">Filter by status</div>
       <div className="folder-tabs" role="tablist" aria-label="Filter by reading status">
         <button
@@ -145,6 +152,7 @@ export default function Library() {
                   <span className="reading-item-meta">
                     {(book.author || []).join(', ')}
                     {book.year ? ` · ${book.year}` : ''}
+                    {book.mode ? ` · ${book.mode}` : ''}
                   </span>
                 </span>
                 <span className="reading-item-status">{statusLabel(book.status)}</span>

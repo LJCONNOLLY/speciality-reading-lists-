@@ -48,6 +48,12 @@ PDFs uploaded through GitHub's web UI land in the repo root, where the
 build can't see them — move each one to `public/pdfs/<book-id>.pdf` and
 point that book's `"pdf"` field at it (see below).
 
+Optional fields, all shown on the book's page when present (the
+Rhetoric list uses them): `citation` (full APA reference; URLs in it
+become links), `annotation`, `mode` (`"T"`, `"V"`, or `"T+V"` for
+technical, visual, or both), `studyType`, `rhetoricalConcept`, and
+`ucf` (where to find it at UCF).
+
 ## Attaching a PDF
 
 Add a `"pdf"` field pointing at a file under `public/pdfs/`, e.g.
@@ -75,7 +81,9 @@ status" row: the list title sits in a central circle, each section is
 a colored spoke box connected by a dashed line, and clicking the hub
 or a spoke filters the reading list below. It reflows into a stacked
 vertical layout under 640px width. A list with no `sections` array
-(like Rhetoric in Technical and Visual Communication) shows no diagram at all.
+shows no diagram at all. A section can also carry a `description`,
+shown above its readings when it's selected and under the diagram on
+the overview.
 
 A list can also carry an `intro` string in `src/data/lists.js`, shown
 as a highlighted block at the top of that list's page — useful for
