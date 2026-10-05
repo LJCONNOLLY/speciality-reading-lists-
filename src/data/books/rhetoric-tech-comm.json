@@ -43,48 +43,6 @@
     "ucf": "Catalog record"
   },
   {
-    "id": "berkenkotter-genre-systems-at-work",
-    "title": "Genre Systems at Work: DSM-IV and Rhetorical Recontextualization in Psychotherapy Paperwork",
-    "author": [
-      "Carol Berkenkotter"
-    ],
-    "year": 2001,
-    "publisher": "Written Communication",
-    "tags": [
-      "genre systems",
-      "DSM-IV",
-      "recontextualization"
-    ],
-    "status": "unread-unprinted",
-    "section": "foundations",
-    "mode": "T",
-    "pdf": "pdfs/Berkenkotter_2001_GenreSystemsAtWork.pdf",
-    "citation": "Berkenkotter, C. (2001). Genre systems at work: DSM-IV and rhetorical recontextualization in psychotherapy paperwork. Written Communication, 18(3), 326–349. https://doi.org/10.1177/0741088301018003004",
-    "annotation": "Berkenkotter follows a therapist's paperwork to show how a client's account gets rewritten in the categories of the DSM-IV. She names the process recontextualization and treats the notes, diagnosis, and billing forms as one genre system. This is the foundation closest to your project because it shows a classification system doing its work through routine forms.",
-    "ucf": "Catalog record"
-  },
-  {
-    "id": "bernhardt-seeing-the-text",
-    "title": "Seeing the Text",
-    "author": [
-      "Stephen A. Bernhardt"
-    ],
-    "year": 1986,
-    "publisher": "College Composition and Communication",
-    "tags": [
-      "visual rhetoric",
-      "document design",
-      "page layout"
-    ],
-    "status": "unread-unprinted",
-    "section": "foundations",
-    "mode": "T+V",
-    "pdf": "pdfs/Bernhardt_1986_SeeingTheText.pdf",
-    "citation": "Bernhardt, S. A. (1986). Seeing the text. College Composition and Communication, 37(1), 66–78. https://doi.org/10.58680/ccc198611248",
-    "annotation": "Bernhardt argues that headings, white space, and layout carry meaning that prose-centered writing instruction ignores. He compares a visually organized fact sheet with conventional essay text to show that readers use visible structure to find and judge information. Later document design scholarship cites it as an early case that the look of a page is a rhetorical choice.",
-    "ucf": "Catalog record"
-  },
-  {
     "id": "dragga-voss-cruel-pies",
     "title": "Cruel Pies: The Inhumanity of Technical Illustrations",
     "author": [
@@ -146,27 +104,6 @@
     "citation": "Foss, S. K. (2005). Theory of visual rhetoric. In K. Smith, S. Moriarty, G. Barbatsis, & K. Kenney (Eds.), Handbook of visual communication: Theory, methods, and media (pp. 141–152). Lawrence Erlbaum.",
     "annotation": "Foss defines visual rhetoric in two senses: a visual object that communicates, and a way of studying such objects. She sets out what a rhetorical analysis of an image should attend to, namely its nature, its function, and how well it performs that function. It is the standard short statement from rhetorical studies, and it balances the list's technical communication sources.",
     "ucf": "Print copy at the Main Library, call number P93.5 .H36. A scan of the chapter is in the Drive folder."
-  },
-  {
-    "id": "herndl-teaching-discourse-and-reproducing-culture",
-    "title": "Teaching Discourse and Reproducing Culture: A Critique of Research and Pedagogy in Professional and Non-Academic Writing",
-    "author": [
-      "Carl G. Herndl"
-    ],
-    "year": 1993,
-    "publisher": "College Composition and Communication",
-    "tags": [
-      "cultural reproduction",
-      "critical pedagogy",
-      "ideology"
-    ],
-    "status": "unread-unprinted",
-    "section": "foundations",
-    "mode": "T",
-    "pdf": "pdfs/Herndl_1993_TeachingDiscourse.pdf",
-    "citation": "Herndl, C. G. (1993). Teaching discourse and reproducing culture: A critique of research and pedagogy in professional and non-academic writing. College Composition and Communication, 44(3), 349–363. https://doi.org/10.58680/ccc19938826",
-    "annotation": "Herndl argues that research describing workplace writing without critique ends up teaching students to reproduce the dominant discourse. He asks researchers to study how professional discourse carries ideology and how writers might resist it. It marks the field's move from social description to cultural critique.",
-    "ucf": "Catalog record"
   },
   {
     "id": "katz-ethic-of-expediency",
@@ -274,27 +211,6 @@
     "ucf": "Catalog record"
   },
   {
-    "id": "miller-whats-practical-about-technical-writing",
-    "title": "What's Practical about Technical Writing?",
-    "author": [
-      "Carolyn R. Miller"
-    ],
-    "year": 1989,
-    "publisher": "Modern Language Association",
-    "tags": [
-      "praxis",
-      "phronesis",
-      "humanism"
-    ],
-    "status": "unread-unprinted",
-    "section": "foundations",
-    "mode": "T",
-    "pdf": "pdfs/Miller_1989_WhatsPractical.pdf",
-    "citation": "Miller, C. R. (1989). What's practical about technical writing? In B. E. Fearing & W. K. Sparrow (Eds.), Technical writing: Theory and practice (pp. 14–24). Modern Language Association.",
-    "annotation": "Miller asks what \"practical\" means when the field calls technical writing a practical subject. She separates the low sense of useful technique from the classical sense of practice as conduct that requires judgment about ends. The chapter belongs here because it asks whose interests workplace-defined writing serves.",
-    "ucf": "Print reprint in Peeples (2003), Professional Writing and Rhetoric: Readings from the Field. A scan of the chapter from the original MLA volume is in the Drive folder."
-  },
-  {
     "id": "sauer-sense-and-sensibility",
     "title": "Sense and Sensibility in Technical Documentation: How Feminist Interpretation Strategies Can Save Lives in the Nation's Mines",
     "author": [
@@ -313,27 +229,6 @@
     "pdf": "pdfs/Sauer_1993_SenseAndSensibility.pdf",
     "citation": "Sauer, B. A. (1993). Sense and sensibility in technical documentation: How feminist interpretation strategies can save lives in the nation's mines. Journal of Business and Technical Communication, 7(1), 63–83. https://doi.org/10.1177/1050651993007001004",
     "annotation": "Sauer reads federal mine accident reports through feminist theory. She shows that the reports' conventions exclude the embodied, local knowledge of miners and their families, and that the exclusion has consequences for safety. It is an early model of the analysis you do: a close reading of what an official document's form leaves no room to say.",
-    "ucf": "Catalog record"
-  },
-  {
-    "id": "schryer-records-as-genre",
-    "title": "Records as Genre",
-    "author": [
-      "Catherine F. Schryer"
-    ],
-    "year": 1993,
-    "publisher": "Written Communication",
-    "tags": [
-      "genre",
-      "records",
-      "veterinary medicine"
-    ],
-    "status": "unread-unprinted",
-    "section": "foundations",
-    "mode": "T",
-    "pdf": "pdfs/Schryer_1993_RecordsAsGenre.pdf",
-    "citation": "Schryer, C. F. (1993). Records as genre. Written Communication, 10(2), 200–234. https://doi.org/10.1177/0741088393010002003",
-    "annotation": "Schryer studies a new medical record system at a veterinary college and treats the record as a genre. She shows that the record's format shapes how clinicians reason and reflects tensions between research and practice. It is the foundational case for studying records and forms rhetorically.",
     "ucf": "Catalog record"
   },
   {

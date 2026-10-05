@@ -21,7 +21,7 @@ export const lists = [
         title: 'Foundations',
         hue: 172,
         description:
-          'These 18 sources, published from 1979 to 2005, established rhetoric as a way to study technical and visual communication.',
+          'These 13 sources, published from 1979 to 2005, established rhetoric as a way to study technical and visual communication.',
       },
       {
         id: 'contemporary',
