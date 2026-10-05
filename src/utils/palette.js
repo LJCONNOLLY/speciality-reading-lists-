@@ -145,10 +145,15 @@ export function softEarthRamp(count) {
   });
 }
 
-function resolveRamp(hue, count) {
+// Light pastel settings for hueRamp: every step stays light enough for dark
+// ink, and a wider hue band keeps neighbors distinct now that lightness
+// varies less.
+const PASTEL_RAMP = { spread: 40, saturation: 32, lMax: 90, lMin: 79 };
+
+function resolveRamp(hue, count, { pastel = false } = {}) {
   if (hue === 'soft-green') return softGreenRamp(count);
   if (hue === 'soft-earth') return softEarthRamp(count);
-  return hueRamp(hue, count);
+  return hueRamp(hue, count, pastel ? PASTEL_RAMP : undefined);
 }
 
 // A section's spoke-box swatch: always a soft pastel in that section's hue
@@ -183,7 +188,7 @@ export function bookSwatches(list) {
   const map = {};
   Object.entries(bookIdsBySection).forEach(([sectionId, bookIds]) => {
     const sectionDef = list.sections.find((s) => s.id === sectionId);
-    const ramp = resolveRamp(sectionDef.hue, bookIds.length);
+    const ramp = resolveRamp(sectionDef.hue, bookIds.length, { pastel: list.pastel });
     bookIds.forEach((id, i) => {
       map[id] = ramp[i];
     });

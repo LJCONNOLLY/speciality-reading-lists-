@@ -13,6 +13,9 @@ export const lists = [
     title: 'Rhetoric in Technical and Visual Communication',
     tagline: 'How rhetoric shapes, and is shaped by, technical and professional communication.',
     accent: '#2f6f5e',
+    // pastel: numeric-hue sections render their reading buttons in light
+    // pastels with dark text instead of the default medium-to-dark ramp.
+    pastel: true,
     // description: shown above a section's readings when it's selected, and
     // under the section map on the overview.
     sections: [
