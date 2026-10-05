@@ -28,7 +28,7 @@ export const lists = [
         title: 'Contemporary Discussions',
         hue: 32,
         description:
-          'These 9 sources, published from 2005 to 2021, show how the field now uses rhetoric to think about forms, interfaces, data visualization, and social justice.',
+          'These 9 sources, published from 2005 to 2021, show how the field now uses rhetoric to think about forms, data visualization, and social justice.',
       },
       {
         id: 'recent',
