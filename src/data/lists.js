@@ -12,7 +12,7 @@ export const lists = [
     slug: 'rhetoric',
     title: 'Rhetoric in Technical and Visual Communication',
     tagline: 'How rhetoric shapes, and is shaped by, technical and professional communication.',
-    accent: '#2f6f5e',
+    accent: '#1f3a6b', // navy
     // pastel: numeric-hue sections render their reading buttons in light
     // pastels with dark text instead of the default medium-to-dark ramp.
     pastel: true,
@@ -22,21 +22,21 @@ export const lists = [
       {
         id: 'foundations',
         title: 'Foundations',
-        hue: 172,
+        hue: 198, // baby blue
         description:
           'These 13 sources, published from 1979 to 2005, established rhetoric as a way to study technical and visual communication.',
       },
       {
         id: 'contemporary',
         title: 'Contemporary Discussions',
-        hue: 32,
+        hue: 220, // cornflower
         description:
           'These 9 sources, published from 2005 to 2021, show how the field now uses rhetoric to think about forms, data visualization, and social justice.',
       },
       {
         id: 'recent',
         title: 'Recent Studies',
-        hue: 330,
+        hue: 242, // periwinkle
         description:
           'These 8 peer-reviewed articles, published from 2022 on, use the concepts above in actual studies of charts, forms, interfaces, and data systems.',
       },

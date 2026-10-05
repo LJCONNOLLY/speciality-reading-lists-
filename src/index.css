@@ -15,7 +15,12 @@
 }
 
 html {
-  font-size: 19px;
+  /* Scales up on wide screens (22px max) and never drops below 15pt (20px).
+     Every other font-size below is wrapped in max(15pt, ...) so no text on
+     the site renders smaller than 15pt. The section map's SVG text is the
+     exception: it's sized in px (all 20px or larger) because the map is
+     drawn at its natural size, never scaled down. */
+  font-size: clamp(15pt, 0.6vw + 12px, 22px);
 }
 
 html, body, #root {
@@ -26,11 +31,11 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0 0 0.4em;
 }
 
@@ -45,7 +50,7 @@ a {
   min-height: 100vh;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem clamp(1rem, 4vw, 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,18 +65,18 @@ a {
 }
 
 .home-header h1 {
-  font-size: 5rem;
+  font-size: max(15pt, min(5rem, 12vw));
   line-height: 1.05;
 }
 
 .home-header p {
   color: var(--muted);
-  font-size: 1.4rem;
+  font-size: max(15pt, 1.4rem);
 }
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 2.5rem;
 }
 
@@ -79,7 +84,7 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 55vh;
-  padding: 3.5rem;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
   border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
   border-radius: 20px;
   background:
@@ -111,7 +116,8 @@ a {
 }
 
 .home-card h2 {
-  font-size: 2.75rem;
+  font-size: max(15pt, min(2.75rem, 9vw));
+  overflow-wrap: break-word;
   line-height: 1.1;
   color: var(--accent);
 }
@@ -119,7 +125,7 @@ a {
 .home-card p {
   color: var(--ink);
   opacity: 0.75;
-  font-size: 1.35rem;
+  font-size: max(15pt, 1.35rem);
   line-height: 1.5;
   margin-bottom: 1.5rem;
   flex: 1;
@@ -135,14 +141,14 @@ a {
 }
 
 .home-card-count {
-  font-size: 1rem;
+  font-size: max(15pt, 1rem);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--muted);
 }
 
 .home-card-cta {
-  font-size: 1.1rem;
+  font-size: max(15pt, 1.1rem);
   font-weight: 600;
   color: var(--accent);
   transition: transform 0.15s ease;
@@ -160,9 +166,9 @@ a {
 }
 
 .list-site-inner {
-  max-width: 1080px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
+  padding: 2.5rem clamp(1rem, 3vw, 3rem) 4rem;
 }
 
 .list-header {
@@ -174,19 +180,19 @@ a {
 .list-home-link {
   display: inline-block;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
   margin-bottom: 0.75rem;
 }
 
 .list-header h1 {
   color: var(--accent);
-  font-size: 2.25rem;
+  font-size: max(15pt, 2.25rem);
 }
 
 .list-header p {
   color: var(--muted);
-  max-width: 640px;
-  font-size: 1.05rem;
+  max-width: 960px;
+  font-size: max(15pt, 1.05rem);
 }
 
 /* ---- List intro ---- */
@@ -199,14 +205,14 @@ a {
   border-radius: 10px;
   background: color-mix(in srgb, var(--accent) 6%, white);
   color: var(--ink);
-  font-size: 1.05rem;
+  font-size: max(15pt, 1.05rem);
   line-height: 1.65;
 }
 
 /* ---- Folders ---- */
 
 .tab-group-label {
-  font-size: 0.8rem;
+  font-size: max(15pt, 0.8rem);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -231,7 +237,7 @@ a {
   background: color-mix(in srgb, var(--accent) 5%, white);
   color: var(--ink);
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: max(15pt, 0.95rem);
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
@@ -247,7 +253,7 @@ a {
 }
 
 .folder-count {
-  font-size: 0.8rem;
+  font-size: max(15pt, 0.8rem);
   opacity: 0.75;
 }
 
@@ -255,17 +261,19 @@ a {
 
 .search-bar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .search-bar input {
-  flex: 1;
+  flex: 1 1 14rem;
+  min-width: 0;
   padding: 0.85rem 1.1rem;
   border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
   border-radius: 10px;
-  font-size: 1.05rem;
+  font-size: max(15pt, 1.05rem);
   font-family: inherit;
   background: color-mix(in srgb, var(--accent) 5%, white);
 }
@@ -278,7 +286,7 @@ a {
 
 .search-count {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
   white-space: nowrap;
 }
 
@@ -289,7 +297,10 @@ a {
 /* ---- Section map (hub-and-spoke diagram) ---- */
 
 .section-map {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
   margin-bottom: 0.5rem;
   overflow: visible;
@@ -312,13 +323,13 @@ a {
 }
 
 .section-map-hub-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 26px;
 }
 
 .section-map-hub-title-narrow {
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .section-map-hub {
@@ -347,11 +358,11 @@ a {
 
 .section-map-node-title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .section-map-node-count {
-  font-size: 14px;
+  font-size: 20px;
   opacity: 0.85;
 }
 
@@ -363,7 +374,7 @@ a {
 
 .section-badge {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: max(15pt, 0.7rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -378,7 +389,7 @@ a {
   padding: 0.1rem 0.55rem;
   border-radius: 999px;
   border: 1px solid var(--swatch, var(--accent));
-  font-size: 0.7rem;
+  font-size: max(15pt, 0.7rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -448,9 +459,9 @@ a {
   height: 2.4rem;
   border-radius: 50%;
   background: color-mix(in srgb, currentColor 20%, transparent);
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: max(15pt, 1.15rem);
 }
 
 .reading-item-body {
@@ -463,18 +474,18 @@ a {
 
 .reading-item-title {
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: max(15pt, 1.2rem);
   line-height: 1.3;
 }
 
 .reading-item-meta {
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.95rem);
   opacity: 0.8;
 }
 
 .reading-item-status {
   flex: none;
-  font-size: 0.75rem;
+  font-size: max(15pt, 0.8rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -505,7 +516,7 @@ a {
 .book-card-author,
 .book-card-meta {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
   margin: 0.2rem 0;
 }
 
@@ -517,7 +528,7 @@ a {
 }
 
 .tag {
-  font-size: 0.75rem;
+  font-size: max(15pt, 0.75rem);
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
   background: color-mix(in srgb, var(--accent) 14%, white);
@@ -526,7 +537,7 @@ a {
 
 .status {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: max(15pt, 0.72rem);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -553,7 +564,7 @@ a {
 /* ---- Book profile ---- */
 
 .book-profile {
-  max-width: 860px;
+  max-width: 1200px;
   padding: 2rem;
   border-radius: 14px;
   background: color-mix(in srgb, var(--accent) 5%, white);
@@ -563,7 +574,7 @@ a {
 .back-link {
   display: inline-block;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
   margin-bottom: 1.5rem;
 }
 
@@ -580,7 +591,7 @@ a {
   padding: 0.6rem 1.1rem;
   border-radius: 999px;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: max(15pt, 0.95rem);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -608,7 +619,7 @@ a {
   border-radius: 10px 10px 0 0;
   color: var(--muted);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: max(15pt, 1rem);
   text-decoration: none;
   white-space: nowrap;
   transition: background 0.15s ease, color 0.15s ease;
@@ -649,14 +660,14 @@ a {
 .stat-tile-read { border-top-color: var(--status-read); }
 
 .stat-value {
-  font-size: 2rem;
+  font-size: max(15pt, 2rem);
   font-weight: 700;
   line-height: 1.1;
   color: var(--ink);
 }
 
 .stat-label {
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
   color: var(--muted);
 }
 
@@ -725,7 +736,7 @@ a.progress-row:hover {
   gap: 1.25rem;
   margin-top: 1.25rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
 }
 
 .progress-legend i {
@@ -743,13 +754,13 @@ a.progress-row:hover {
 
 .view-tab {
   padding: 0.6rem 1rem;
-  font-size: 0.95rem;
+  font-size: max(15pt, 0.95rem);
 }
 
 /* ---- Study pages (shared) ---- */
 
 .study-title {
-  font-size: 1.8rem;
+  font-size: max(15pt, 1.8rem);
   color: var(--ink);
   margin-bottom: 0.25rem;
 }
@@ -764,7 +775,7 @@ a.progress-row:hover {
   padding-top: 1rem;
   border-top: 1px dashed var(--border);
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
 }
 
 .te-muted {
@@ -781,7 +792,7 @@ a.progress-row:hover {
 }
 
 .te-summary {
-  font-size: 1.05rem;
+  font-size: max(15pt, 1.05rem);
   max-width: 780px;
   margin-bottom: 1.5rem;
 }
@@ -839,7 +850,7 @@ a.progress-row:hover {
 
 .te-stop-short {
   max-width: 92px;
-  font-size: 0.72rem;
+  font-size: max(15pt, 0.72rem);
   font-style: italic;
   color: var(--muted);
   text-align: center;
@@ -856,12 +867,12 @@ a.progress-row:hover {
 }
 
 .te-stop-year {
-  font-size: 0.8rem;
+  font-size: max(15pt, 0.8rem);
   color: var(--muted);
 }
 
 .te-stop-name {
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
   font-weight: 600;
   color: var(--ink);
 }
@@ -892,7 +903,7 @@ a.progress-row:hover {
   border-radius: 999px;
   background: white;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: max(15pt, 0.95rem);
   color: var(--ink);
   cursor: pointer;
 }
@@ -910,12 +921,12 @@ a.progress-row:hover {
 
 .te-pos {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
 }
 
 .te-pair {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 1rem;
 }
 
@@ -942,8 +953,8 @@ a.progress-row:hover {
 }
 
 .te-card-title {
-  font-family: var(--serif, Georgia, serif);
-  font-size: 1.35rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: max(15pt, 1.35rem);
   font-weight: 700;
   color: var(--ink);
 }
@@ -964,7 +975,7 @@ a.progress-row:hover {
 .te-stance {
   padding: 0.2rem 0.7rem;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: max(15pt, 0.8rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -976,11 +987,11 @@ a.progress-row:hover {
 
 .te-uses {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
 }
 
 .te-def {
-  font-size: 1.08rem;
+  font-size: max(15pt, 1.08rem);
   margin-bottom: 1rem;
 }
 
@@ -998,12 +1009,12 @@ a.progress-row:hover {
   display: block;
   margin-top: 0.4rem;
   font-style: normal;
-  font-size: 0.8rem;
+  font-size: max(15pt, 0.8rem);
   color: var(--muted);
 }
 
 .te-changed {
-  font-size: 0.98rem;
+  font-size: max(15pt, 0.98rem);
 }
 
 /* ---- Talking to each other ---- */
@@ -1016,7 +1027,7 @@ a.progress-row:hover {
 .tt-grid {
   border-collapse: separate;
   border-spacing: 4px;
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
 }
 
 .tt-grid caption {
@@ -1069,7 +1080,7 @@ a.progress-row:hover {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.6rem;
-  font-size: 1.2rem;
+  font-size: max(15pt, 1.2rem);
   margin-bottom: 0.75rem;
 }
 
@@ -1079,7 +1090,7 @@ a.progress-row:hover {
 
 .tt-group h3 span {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
   font-weight: 400;
 }
 
@@ -1099,7 +1110,7 @@ a.progress-row:hover {
 
 .tt-arrow {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
 }
 
 .tt-target {
@@ -1107,14 +1118,14 @@ a.progress-row:hover {
   border-radius: 999px;
   background: var(--ink);
   color: white;
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
   font-weight: 600;
   text-decoration: none;
 }
 
 .tt-pages {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
 }
 
 .tt-how {
@@ -1123,12 +1134,12 @@ a.progress-row:hover {
 
 .tt-essay {
   max-width: 760px;
-  font-size: 1.08rem;
+  font-size: max(15pt, 1.08rem);
   line-height: 1.75;
 }
 
 .tt-essay h3 {
-  font-size: 1.4rem;
+  font-size: max(15pt, 1.4rem);
   margin-bottom: 1rem;
 }
 
@@ -1146,11 +1157,12 @@ a.progress-row:hover {
 }
 
 .fc-controls select {
+  max-width: 100%;
   padding: 0.55rem 0.9rem;
   border-radius: 999px;
   border: 1px solid var(--border);
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: max(15pt, 0.95rem);
   background: white;
 }
 
@@ -1201,13 +1213,13 @@ a.progress-row:hover {
 
 .fc-prompt,
 .fc-hint {
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
   opacity: 0.8;
 }
 
 .fc-big {
-  font-family: var(--serif, Georgia, serif);
-  font-size: 1.7rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: max(15pt, 1.7rem);
   font-weight: 700;
   line-height: 1.25;
 }
@@ -1219,7 +1231,7 @@ a.progress-row:hover {
 
 .fc-small {
   font-family: inherit;
-  font-size: 1.05rem;
+  font-size: max(15pt, 1.05rem);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -1228,7 +1240,7 @@ a.progress-row:hover {
   padding-top: 0.75rem;
   border-top: 3px solid;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
 }
 
 /* ---- Concept gallery ---- */
@@ -1265,20 +1277,20 @@ a.progress-row:hover {
 }
 
 .cg-term {
-  font-family: var(--serif, Georgia, serif);
-  font-size: 1.3rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: max(15pt, 1.3rem);
   font-weight: 700;
 }
 
 .cg-snippet {
-  font-size: 0.92rem;
+  font-size: max(15pt, 0.92rem);
   line-height: 1.45;
   opacity: 0.92;
 }
 
 .cg-source {
   margin-top: auto;
-  font-size: 0.8rem;
+  font-size: max(15pt, 0.8rem);
   font-weight: 600;
   opacity: 0.8;
 }
@@ -1294,12 +1306,12 @@ a.progress-row:hover {
 }
 
 .cg-detail h3 {
-  font-size: 1.8rem;
+  font-size: max(15pt, 1.8rem);
   margin-bottom: 0.5rem;
 }
 
 .cg-def {
-  font-size: 1.12rem;
+  font-size: max(15pt, 1.12rem);
   max-width: 760px;
   margin-bottom: 0.75rem;
 }
@@ -1315,7 +1327,7 @@ a.progress-row:hover {
   right: 1rem;
   border: 0;
   background: none;
-  font-size: 1.8rem;
+  font-size: max(15pt, 1.8rem);
   line-height: 1;
   color: var(--muted);
   cursor: pointer;
@@ -1331,7 +1343,7 @@ a.progress-row:hover {
   align-items: center;
   gap: 0.5rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: max(15pt, 0.9rem);
 }
 
 .cg-related .tag {
@@ -1347,7 +1359,7 @@ a.progress-row:hover {
 }
 
 .bp-section h3 {
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1360,7 +1372,7 @@ a.progress-row:hover {
   border-left: 5px solid var(--swatch, var(--accent));
   background: color-mix(in srgb, var(--accent) 6%, white);
   border-radius: 0 10px 10px 0;
-  font-size: 1.1rem;
+  font-size: max(15pt, 1.1rem);
   line-height: 1.6;
 }
 
@@ -1383,7 +1395,7 @@ a.progress-row:hover {
 .bp-questions cite {
   margin-left: 0.5rem;
   font-style: normal;
-  font-size: 0.8rem;
+  font-size: max(15pt, 0.8rem);
   color: var(--muted);
   white-space: nowrap;
 }
@@ -1399,7 +1411,7 @@ a.progress-row:hover {
   border-radius: 999px;
   border: 2px solid var(--swatch, var(--accent));
   background: white;
-  font-size: 0.92rem;
+  font-size: max(15pt, 0.92rem);
   font-weight: 600;
 }
 
@@ -1408,5 +1420,5 @@ a.progress-row:hover {
   padding-top: 0.75rem;
   border-top: 1px dashed var(--border);
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: max(15pt, 0.85rem);
 }

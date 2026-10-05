@@ -146,9 +146,9 @@ export function softEarthRamp(count) {
 }
 
 // Light pastel settings for hueRamp: every step stays light enough for dark
-// ink, and a wider hue band keeps neighbors distinct now that lightness
-// varies less.
-const PASTEL_RAMP = { spread: 40, saturation: 32, lMax: 90, lMin: 79 };
+// ink. The hue band stays narrow so sections whose hues sit close together
+// (like the rhetoric list's three blues) still read as separate families.
+const PASTEL_RAMP = { spread: 22, saturation: 40, lMax: 90, lMin: 78 };
 
 function resolveRamp(hue, count, { pastel = false } = {}) {
   if (hue === 'soft-green') return softGreenRamp(count);

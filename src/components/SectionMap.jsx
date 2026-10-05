@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react';
 import { sectionSwatch, pastelize } from '../utils/palette.js';
 
-const WIDE = { width: 800, height: 420, circleR: 100, boxW: 240, sideX: 24 };
-const NARROW = { width: 360, circleR: 66, boxW: 300, gap: 18 };
+// The map renders at its natural pixel size (never stretched to fill the
+// page), so the font sizes set in index.css for its text are the sizes
+// readers actually see. Below WIDE_MIN_VIEWPORT the wide layout would have
+// to shrink to fit, so the stacked narrow layout takes over instead.
+const WIDE = { width: 1100, height: 420, circleR: 150, boxW: 340, sideX: 30 };
+const NARROW = { width: 320, circleR: 88, boxW: 300, gap: 18 };
+const WIDE_MIN_VIEWPORT = 1180;
 
-const TITLE_LINE_HEIGHT = 20;
-const NODE_MIN_HEIGHT = 60;
+const TITLE_LINE_HEIGHT = 28;
+const NODE_MIN_HEIGHT = 80;
 
 function wrapText(text, maxCharsPerLine) {
   const words = text.split(' ');
@@ -29,16 +34,16 @@ function wrapText(text, maxCharsPerLine) {
 // longer titles just overflow their box.
 function layoutNode(section, maxCharsPerLine) {
   const lines = wrapText(section.title, maxCharsPerLine).slice(0, 3);
-  const height = Math.max(NODE_MIN_HEIGHT, 26 + (lines.length - 1) * TITLE_LINE_HEIGHT + 24 + 14);
+  const height = Math.max(NODE_MIN_HEIGHT, 34 + (lines.length - 1) * TITLE_LINE_HEIGHT + 28 + 16);
   return { lines, height };
 }
 
 function useIsNarrow() {
   const [isNarrow, setIsNarrow] = useState(
-    () => typeof window !== 'undefined' && window.innerWidth < 640,
+    () => typeof window !== 'undefined' && window.innerWidth < WIDE_MIN_VIEWPORT,
   );
   useEffect(() => {
-    const mql = window.matchMedia('(max-width: 640px)');
+    const mql = window.matchMedia(`(max-width: ${WIDE_MIN_VIEWPORT - 1}px)`);
     const onChange = (e) => setIsNarrow(e.matches);
     mql.addEventListener('change', onChange);
     return () => mql.removeEventListener('change', onChange);
@@ -47,7 +52,7 @@ function useIsNarrow() {
 }
 
 function NodeContent({ x, y, width, lines, countText, swatch }) {
-  const titleStartY = y + 26;
+  const titleStartY = y + 34;
   return (
     <>
       {lines.map((line, i) => (
@@ -64,7 +69,7 @@ function NodeContent({ x, y, width, lines, countText, swatch }) {
       ))}
       <text
         x={x + width / 2}
-        y={titleStartY + (lines.length - 1) * TITLE_LINE_HEIGHT + 22}
+        y={titleStartY + (lines.length - 1) * TITLE_LINE_HEIGHT + 28}
         textAnchor="middle"
         fill={swatch.text}
         className="section-map-node-count"
@@ -110,9 +115,9 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
     return { laidOut, totalHeight };
   }
 
-  const right = columnLayout(rightItems, rightX, 'right', 20);
-  const left = columnLayout(leftItems, sideX, 'left', 20);
-  const bottom = columnLayout(bottomItems, width / 2 - boxW / 2, 'bottom', 20);
+  const right = columnLayout(rightItems, rightX, 'right', 26);
+  const left = columnLayout(leftItems, sideX, 'left', 26);
+  const bottom = columnLayout(bottomItems, width / 2 - boxW / 2, 'bottom', 26);
 
   const topHeight = Math.max(right.totalHeight, left.totalHeight, circleR * 2);
   const center = { x: width / 2, y: topMargin + topHeight / 2 };
@@ -140,13 +145,20 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
     return { x: center.x + (dx / dist) * circleR, y: center.y + (dy / dist) * circleR };
   }
 
-  const titleLines = wrapText(list.title, 15).slice(0, 4);
-  const lineHeight = 19;
+  const titleLines = wrapText(list.title, 18).slice(0, 4);
+  const lineHeight = 30;
   const titleStartY = center.y - ((titleLines.length - 1) * lineHeight) / 2;
   const hubSwatch = pastelize(list.accent);
 
   return (
-    <svg className="section-map" viewBox={`0 0 ${width} ${height}`} role="group" aria-label="Browse by section">
+    <svg
+      className="section-map"
+      width={width}
+      height={height}
+      viewBox={`0 0 ${width} ${height}`}
+      role="group"
+      aria-label="Browse by section"
+    >
       {positioned.map((item, i) => {
         const anchor = nodeAnchor(item);
         const bottomChain = item.side === 'bottom' && i > 0 && positioned[i - 1].side === 'bottom';
@@ -219,10 +231,10 @@ function WideLayout({ list, activeSection, onSelect, counts }) {
 function NarrowLayout({ list, activeSection, onSelect, counts }) {
   const { width, circleR, boxW, gap } = NARROW;
   const centerX = width / 2;
-  const hubCy = 78;
+  const hubCy = circleR + 12;
   const boxX = (width - boxW) / 2;
 
-  const laidOut = list.sections.map((section) => ({ section, ...layoutNode(section, 24) }));
+  const laidOut = list.sections.map((section) => ({ section, ...layoutNode(section, 22) }));
   const startY = hubCy + circleR + 34;
   const positioned = laidOut.reduce((acc, item) => {
     const y = acc.length ? acc[acc.length - 1].y + acc[acc.length - 1].height + gap : startY;
@@ -232,12 +244,19 @@ function NarrowLayout({ list, activeSection, onSelect, counts }) {
   const height = (lastNode ? lastNode.y + lastNode.height : startY) + 20;
 
   const titleLines = wrapText(list.title, 12).slice(0, 4);
-  const lineHeight = 16;
+  const lineHeight = 26;
   const titleStartY = hubCy - ((titleLines.length - 1) * lineHeight) / 2;
   const hubSwatch = pastelize(list.accent);
 
   return (
-    <svg className="section-map section-map-narrow" viewBox={`0 0 ${width} ${height}`} role="group" aria-label="Browse by section">
+    <svg
+      className="section-map section-map-narrow"
+      width={width}
+      height={height}
+      viewBox={`0 0 ${width} ${height}`}
+      role="group"
+      aria-label="Browse by section"
+    >
       {positioned.map(({ section, y }, i) => {
         const prevBottom = i === 0 ? hubCy + circleR : positioned[i - 1].y + positioned[i - 1].height;
         return (
