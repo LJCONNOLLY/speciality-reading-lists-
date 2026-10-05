@@ -35,7 +35,7 @@ export const lists = [
         title: 'Recent Studies',
         hue: 330,
         description:
-          'These 12 peer-reviewed articles, published from 2022 on, use the concepts above in actual studies of charts, forms, interfaces, and data systems.',
+          'These 8 peer-reviewed articles, published from 2022 on, use the concepts above in actual studies of charts, forms, interfaces, and data systems.',
       },
     ],
     books: rhetoricTechComm,

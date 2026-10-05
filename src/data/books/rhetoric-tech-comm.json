@@ -517,72 +517,6 @@
     "ucf": "Catalog record"
   },
   {
-    "id": "comi-it-must-be-a-system-thing",
-    "title": "\"It Must Be a System Thing\": Information Infrastructure Genres as Sites of Inequity",
-    "author": [
-      "Dana Comi"
-    ],
-    "year": 2022,
-    "publisher": "Communication Design Quarterly",
-    "tags": [
-      "infrastructure",
-      "genre",
-      "public assistance"
-    ],
-    "status": "unread-unprinted",
-    "section": "recent",
-    "pdf": "pdfs/Comi_2022_SystemThing.pdf",
-    "citation": "Comi, D. (2022). \"It must be a system thing\": Information infrastructure genres as sites of inequity. Communication Design Quarterly, 10(3), 22–32. https://doi.org/10.1145/3507870.3507874",
-    "annotation": "Comi interviews participants in the WIC nutrition program and focuses on the Approved Product List, the document that tells participants what they may buy. She shows that the list standardizes benefit redemption in ways that make participants more visible and more vulnerable. It demonstrates how to locate inequity in one mundane federal document.",
-    "studyType": "Qualitative interview study.",
-    "rhetoricalConcept": "Genre, applied to the documents that make up a federal information infrastructure.",
-    "ucf": "Catalog record"
-  },
-  {
-    "id": "doan-brooks-charting-a-new-course",
-    "title": "Charting a New Course: An Inventory of Data Visualization Scholarship in TPC From 2013 to 2023",
-    "author": [
-      "Sara C. Doan",
-      "Steven S. Brooks"
-    ],
-    "year": 2026,
-    "publisher": "IEEE Transactions on Professional Communication",
-    "tags": [
-      "data visualization",
-      "systematic review"
-    ],
-    "status": "unread-unprinted",
-    "section": "recent",
-    "pdf": "pdfs/Doan_2026_ChartingNewCourse.pdf",
-    "citation": "Doan, S. C., & Brooks, S. S. (2026). Charting a new course: An inventory of data visualization scholarship in TPC from 2013 to 2023. IEEE Transactions on Professional Communication, 69(2), 168–182. https://doi.org/10.1109/TPC.2026.3686896",
-    "annotation": "Doan and Brooks review the data visualization scholarship published in the field from 2013 to 2023. They sort it by the kinds of articles published, the cases studied, and the disciplines scholars draw from. It is here as a map of the conversation that the other visual studies in this section join.",
-    "studyType": "Systematic review.",
-    "rhetoricalConcept": "None applied to a case; the article categorizes how the field studies visualization.",
-    "ucf": "Catalog record"
-  },
-  {
-    "id": "green-trans-and-queer-visibility",
-    "title": "Trans and Queer Visibility in an Era of Hyper Surveillance: A User Experience Study of University Systems for Sharing Gender Pronouns",
-    "author": [
-      "McKinley Green"
-    ],
-    "year": 2026,
-    "publisher": "Journal of Technical Writing and Communication",
-    "tags": [
-      "pronouns",
-      "surveillance",
-      "user experience"
-    ],
-    "status": "unread-unprinted",
-    "section": "recent",
-    "pdf": "pdfs/Green_2026_TransQueerVisibility.pdf",
-    "citation": "Green, M. (2026). Trans and queer visibility in an era of hyper surveillance: A user experience study of university systems for sharing gender pronouns. Journal of Technical Writing and Communication, 56(1), 35–60. https://doi.org/10.1177/00472816251384913",
-    "annotation": "Green studies how college students use university systems for sharing a chosen name and pronouns. The systems promise inclusion, and they also make gender nonconformity visible to institutions at a time when pronouns are a target of government and board policy. It is the most direct recent study of how a data field for gender exposes the people who fill it in.",
-    "studyType": "User experience study.",
-    "rhetoricalConcept": "Visibility, drawn from trans and queer scholarship and applied to design.",
-    "ucf": "Catalog record"
-  },
-  {
     "id": "hartzog-flatten-the-curve",
     "title": "'Flatten the Curve': Rhetorical Data Visualizations of a Global Pandemic",
     "author": [
@@ -669,28 +603,6 @@
     "annotation": "Lindgren studies a data journalism team as it prepares a report and maps where members confronted competing definitions of metrics. Those definitions shaped what the team treated as significant and as ethically possible. It shows that the meaning of a number is argued out before any chart is drawn.",
     "studyType": "Qualitative study of a data team.",
     "rhetoricalConcept": "Stasis, extended into a network method.",
-    "ucf": "Catalog record"
-  },
-  {
-    "id": "sorapure-actionability-in-data-dashboards",
-    "title": "User Perceptions of Actionability in Data Dashboards",
-    "author": [
-      "Madeleine Sorapure"
-    ],
-    "year": 2023,
-    "publisher": "Journal of Business and Technical Communication",
-    "tags": [
-      "dashboards",
-      "COVID-19",
-      "user research"
-    ],
-    "status": "unread-unprinted",
-    "section": "recent",
-    "pdf": "pdfs/Sorapure_2023_ActionabilityDashboards.pdf",
-    "citation": "Sorapure, M. (2023). User perceptions of actionability in data dashboards. Journal of Business and Technical Communication, 37(3), 253–280. https://doi.org/10.1177/10506519231161611",
-    "annotation": "Sorapure observes nonexpert users working with COVID-19 dashboards and asks whether the dashboards help them decide what to do. She finds that users want data at personal and local scales and that emotional response matters to use. It supplies user evidence for claims the Section 2 sources make from design analysis.",
-    "studyType": "Multiphase user study with recorded interviews.",
-    "rhetoricalConcept": "Actionability, an audience-centered measure of whether a display supports decisions.",
     "ucf": "Catalog record"
   },
   {
