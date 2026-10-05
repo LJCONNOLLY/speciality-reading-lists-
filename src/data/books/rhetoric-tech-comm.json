@@ -61,7 +61,7 @@
     "mode": "T+V",
     "pdf": "pdfs/Dragga_2001_CruelPiesInhumanity.pdf",
     "citation": "Dragga, S., & Voss, D. (2001). Cruel pies: The inhumanity of technical illustrations. Technical Communication, 48(3), 265–274.",
-    "annotation": "Dragga and Voss argue that conventional charts of deaths and injuries are ethically incomplete because they strip out the people the numbers count. They propose adding pictorial and human elements to statistical graphics. The article started the field's conversation about humanizing data, which Kostelnick (2016) in Section 2 continues.",
+    "annotation": "Dragga and Voss argue that conventional charts of deaths and injuries are ethically incomplete because they strip out the people the numbers count. They propose adding pictorial and human elements to statistical graphics. The article started the field's conversation about humanizing data, which Kostelnick (2016) continues.",
     "ucf": "Catalog record"
   },
   {
@@ -298,27 +298,6 @@
     "ucf": "Catalog record"
   },
   {
-    "id": "brasseur-nightingale-rose-diagrams",
-    "title": "Florence Nightingale's Visual Rhetoric in the Rose Diagrams",
-    "author": [
-      "Lee Brasseur"
-    ],
-    "year": 2005,
-    "publisher": "Technical Communication Quarterly",
-    "tags": [
-      "visual rhetoric",
-      "data visualization",
-      "history"
-    ],
-    "status": "unread-unprinted",
-    "section": "contemporary",
-    "mode": "V",
-    "pdf": "pdfs/Brasseur_2005_NightingaleRoseDiagrams.pdf",
-    "citation": "Brasseur, L. (2005). Florence Nightingale's visual rhetoric in the rose diagrams. Technical Communication Quarterly, 14(2), 161–182. https://doi.org/10.1207/s15427625tcq1402_3",
-    "annotation": "Brasseur analyzes the rose diagrams Florence Nightingale designed to show causes of death in the Crimean War. She shows how the sequence and form of the diagrams were built to move government readers toward sanitary reform. It is the field's model historical study of a statistical graphic made to persuade.",
-    "ucf": "Catalog record"
-  },
-  {
     "id": "drucker-humanities-approaches-to-graphical-display",
     "title": "Humanities Approaches to Graphical Display",
     "author": [
@@ -426,28 +405,6 @@
     "ucf": "Catalog record"
   },
   {
-    "id": "jones-williams-technologies-of-disenfranchisement",
-    "title": "Technologies of Disenfranchisement: Literacy Tests and Black Voters in the US from 1890 to 1965",
-    "author": [
-      "Natasha N. Jones",
-      "Miriam F. Williams"
-    ],
-    "year": 2018,
-    "publisher": "Technical Communication",
-    "tags": [
-      "race",
-      "voting",
-      "social justice"
-    ],
-    "status": "unread-unprinted",
-    "section": "contemporary",
-    "mode": "T",
-    "pdf": "pdfs/Jones_2018_TechnologiesOfDisenfranchisement.pdf",
-    "citation": "Jones, N. N., & Williams, M. F. (2018). Technologies of disenfranchisement: Literacy tests and Black voters in the US from 1890 to 1965. Technical Communication, 65(4), 371–386.",
-    "annotation": "Jones and Williams read the literacy tests used to block Black voters from 1890 to 1965 as technical documents. They show that the tests' design, instructions, and administration were built to produce failure. It models your kind of argument: an official form treated as a technology that sorts people.",
-    "ucf": "Catalog record"
-  },
-  {
     "id": "kennedy-et-al-work-that-visualisation-conventions-do",
     "title": "The Work That Visualisation Conventions Do",
     "author": [
@@ -472,27 +429,6 @@
     "ucf": "Catalog record"
   },
   {
-    "id": "kimball-london-through-rose-colored-graphics",
-    "title": "London Through Rose-Colored Graphics: Visual Rhetoric and Information Graphic Design in Charles Booth's Maps of London Poverty",
-    "author": [
-      "Miles A. Kimball"
-    ],
-    "year": 2006,
-    "publisher": "Journal of Technical Writing and Communication",
-    "tags": [
-      "visual rhetoric",
-      "maps",
-      "poverty"
-    ],
-    "status": "unread-unprinted",
-    "section": "contemporary",
-    "mode": "V",
-    "pdf": "pdfs/Kimball_2006_RoseColoredGraphics.pdf",
-    "citation": "Kimball, M. A. (2006). London through rose-colored graphics: Visual rhetoric and information graphic design in Charles Booth's maps of London poverty. Journal of Technical Writing and Communication, 36(4), 353–381. https://doi.org/10.2190/K561-40P2-5422-PTG2",
-    "annotation": "Kimball studies the color-coded poverty maps Charles Booth made of London in the late nineteenth century. He argues that the maps turned a classification of social classes into a clear and reassuring picture, and that this appeal to order helps explain their influence. It pairs a classification scheme with its visualization, which is the combination you study.",
-    "ucf": "Catalog record"
-  },
-  {
     "id": "kostelnick-conundrum-of-clarity",
     "title": "The Visual Rhetoric of Data Displays: The Conundrum of Clarity",
     "author": [
@@ -514,49 +450,6 @@
     "ucf": "Catalog record"
   },
   {
-    "id": "kostelnick-emotional-appeals",
-    "title": "The Re-Emergence of Emotional Appeals in Interactive Data Visualization",
-    "author": [
-      "Charles Kostelnick"
-    ],
-    "year": 2016,
-    "publisher": "Technical Communication",
-    "tags": [
-      "pathos",
-      "data visualization",
-      "interactivity"
-    ],
-    "status": "unread-unprinted",
-    "section": "contemporary",
-    "mode": "V",
-    "pdf": "pdfs/Kostelnick_2016_EmotionalAppeals.pdf",
-    "citation": "Kostelnick, C. (2016). The re-emergence of emotional appeals in interactive data visualization. Technical Communication, 63(2), 116–135.",
-    "annotation": "Kostelnick traces emotional appeals in data design from their presence in earlier graphics, through their suppression under modernist minimalism, to their return in interactive visualization. He shows how interactive displays invite readers to feel as well as compare. It updates the humanizing argument of Dragga and Voss (2001) for digital displays.",
-    "ucf": "Catalog record"
-  },
-  {
-    "id": "novotny-hutchinson-data-our-bodies-tell",
-    "title": "Data Our Bodies Tell: Towards Critical Feminist Action in Fertility and Period Tracking Applications",
-    "author": [
-      "Maria Novotny",
-      "Les Hutchinson"
-    ],
-    "year": 2019,
-    "publisher": "Technical Communication Quarterly",
-    "tags": [
-      "feminism",
-      "health data",
-      "apps"
-    ],
-    "status": "unread-unprinted",
-    "section": "contemporary",
-    "mode": "T+V",
-    "pdf": "pdfs/Novotny_2019_DataOurBodiesTell.pdf",
-    "citation": "Novotny, M., & Hutchinson, L. (2019). Data our bodies tell: Towards critical feminist action in fertility and period tracking applications. Technical Communication Quarterly, 28(4), 332–360. https://doi.org/10.1080/10572252.2019.1607907",
-    "annotation": "Novotny and Hutchinson analyze fertility and period tracking apps as technical communication. They show how the apps collect and use intimate body data and argue for a critical feminist approach to their design and use. It is the field's main article on body data and interfaces.",
-    "ucf": "Catalog record"
-  },
-  {
     "id": "popham-forms-as-boundary-genres",
     "title": "Forms as Boundary Genres in Medicine, Science, and Business",
     "author": [
@@ -575,68 +468,6 @@
     "pdf": "pdfs/Popham_2005_FormsAsBoundaryGenres.pdf",
     "citation": "Popham, S. L. (2005). Forms as boundary genres in medicine, science, and business. Journal of Business and Technical Communication, 19(3), 279–303. https://doi.org/10.1177/1050651905275624",
     "annotation": "Popham studies the forms that move between a medical practice, its insurers, and its business office. She argues that forms act as boundary genres that carry one profession's values into another's work. It is the most direct treatment of forms in the field's journals.",
-    "ucf": "Catalog record"
-  },
-  {
-    "id": "rude-mapping-the-research-questions",
-    "title": "Mapping the Research Questions in Technical Communication",
-    "author": [
-      "Carolyn D. Rude"
-    ],
-    "year": 2009,
-    "publisher": "Journal of Business and Technical Communication",
-    "tags": [
-      "disciplinarity",
-      "research questions"
-    ],
-    "status": "unread-unprinted",
-    "section": "contemporary",
-    "mode": "T",
-    "pdf": "pdfs/Rude_2009_MappingResearchQuestions.pdf",
-    "citation": "Rude, C. D. (2009). Mapping the research questions in technical communication. Journal of Business and Technical Communication, 23(2), 174–215. https://doi.org/10.1177/1050651908329562",
-    "annotation": "Rude reviews the field's scholarship and proposes that one question unites it: how texts and related practices mediate knowledge, values, and action in social and professional settings. She groups research into four areas: disciplinarity, pedagogy, practice, and social change. It is the reference point for claims about what the field studies.",
-    "ucf": "Catalog record"
-  },
-  {
-    "id": "sano-franchini-designing-outrage",
-    "title": "Designing Outrage, Programming Discord: A Critical Interface Analysis of Facebook as a Campaign Technology",
-    "author": [
-      "Jennifer Sano-Franchini"
-    ],
-    "year": 2018,
-    "publisher": "Technical Communication",
-    "tags": [
-      "interface",
-      "critical interface analysis",
-      "social media"
-    ],
-    "status": "unread-unprinted",
-    "section": "contemporary",
-    "mode": "T+V",
-    "pdf": "pdfs/SanoFranchini_2018_DesigningOutrage.pdf",
-    "citation": "Sano-Franchini, J. (2018). Designing outrage, programming discord: A critical interface analysis of Facebook as a campaign technology. Technical Communication, 65(4), 387–410.",
-    "annotation": "Sano-Franchini introduces critical interface analysis and applies it to Facebook as a campaign technology. She shows how the interface's design choices encourage outrage and discord. Chen, Pandey, and Baniya (2025) in Section 3 use her method.",
-    "ucf": "Catalog record"
-  },
-  {
-    "id": "stanfill-interface-as-discourse",
-    "title": "The Interface as Discourse: The Production of Norms Through Web Design",
-    "author": [
-      "Mel Stanfill"
-    ],
-    "year": 2015,
-    "publisher": "New Media & Society",
-    "tags": [
-      "interface",
-      "norms",
-      "affordances"
-    ],
-    "status": "unread-unprinted",
-    "section": "contemporary",
-    "mode": "T+V",
-    "pdf": "pdfs/Stanfill_2015_InterfaceAsDiscourse.pdf",
-    "citation": "Stanfill, M. (2015). The interface as discourse: The production of norms through web design. New Media & Society, 17(7), 1059–1074. https://doi.org/10.1177/1461444814520873",
-    "annotation": "Stanfill proposes discursive interface analysis, which reads a site's features, layout, and defaults for what they assume users are and should do. Interfaces produce norms by making some uses easy and others hard. It comes from media studies, and it gives a clear method for reading an interface as a document.",
     "ucf": "Catalog record"
   },
   {
