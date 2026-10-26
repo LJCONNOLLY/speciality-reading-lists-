@@ -601,6 +601,26 @@ a {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
 }
 
+/* The PDF and Zotero buttons sit side by side and wrap on narrow screens. */
+.bp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.bp-actions .pdf-link {
+  margin-top: 0;
+}
+
+/* Outlined so it reads as the second action next to the filled PDF button.
+   The border takes the book's color; the text stays dark ink for contrast. */
+.zotero-link {
+  background: #fff;
+  color: var(--ink);
+  border: 3px solid;
+}
+
 /* ---- Page tabs ---- */
 
 .list-header {

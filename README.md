@@ -64,6 +64,19 @@ that book, linking straight to the file. Files must live under
 build and won't be served on the live site. There's no field for
 books without a PDF; the button just doesn't render.
 
+## Linking a book to Zotero
+
+Add a `"zotero"` field with the full URL of the book's entry in the
+zotero.org web library, e.g.
+`"zotero": "https://www.zotero.org/ljconnolly211743/collections/UFAEVHTD/items/5E7D3CZX"`.
+The book's page then shows an outlined "Open in Zotero" button next to
+the PDF button. The library is private, so the link only opens for
+someone signed in to that Zotero account.
+
+Each list has a Zotero collection with one subcollection per section:
+"Rhetoric in/of Technical and Visual Communication" (`EUGZRMKI`) and
+"Classification and Datafication of Queer Bodies" (`55HJFZDW`).
+
 ## Sections (subfolders) and list intros
 
 A list can optionally be split into named sections — a second,

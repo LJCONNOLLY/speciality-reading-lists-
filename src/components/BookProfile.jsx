@@ -52,16 +52,31 @@ export default function BookProfile() {
         {book.year} {book.publisher ? `· ${book.publisher}` : ''}
       </p>
       <span className={`status status-${book.status}`}>{statusLabel(book.status)}</span>
-      {book.pdf ? (
-        <a
-          href={`${import.meta.env.BASE_URL}${book.pdf}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="pdf-link"
-          style={{ background: swatch.bg, color: swatch.text }}
-        >
-          Read the PDF &rarr;
-        </a>
+      {book.pdf || book.zotero ? (
+        <div className="bp-actions">
+          {book.pdf ? (
+            <a
+              href={`${import.meta.env.BASE_URL}${book.pdf}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-link"
+              style={{ background: swatch.bg, color: swatch.text }}
+            >
+              Read the PDF &rarr;
+            </a>
+          ) : null}
+          {book.zotero ? (
+            <a
+              href={book.zotero}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-link zotero-link"
+              style={{ borderColor: swatch.bg }}
+            >
+              Open in Zotero &rarr;
+            </a>
+          ) : null}
+        </div>
       ) : null}
 
       {book.annotation ? (
