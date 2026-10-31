@@ -16,7 +16,11 @@ Each list's books live in their own JSON file:
 - `src/data/books/rhetoric-tech-comm.json`
 - `src/data/books/queer-critical-data-studies.json`
 
-Each file is an array of book objects:
+Each file is an array of book objects. Order in the file doesn't matter:
+the site sorts each list by title the way Zotero's Title column does
+(ignoring case and leading quote marks; see `src/utils/sortTitle.js`).
+
+Each book object looks like:
 
 ```json
 {
@@ -115,7 +119,7 @@ explaining why a section exists or what ties a list together.
 Each book renders as a large, colorful "long button" (`.reading-item`
 in `src/components/Library.jsx`), not a plain card. Colors cycle
 through a fixed, validated categorical palette (`src/utils/palette.js`)
-keyed to each book's stable position in its list's JSON file, so a
+keyed to each book's stable position in its list, so a
 book keeps the same color regardless of which filter is active. The
 same palette drives the section-map spokes. To change the look, edit
 `PALETTE` in `src/utils/palette.js` — each entry pairs a background hex
