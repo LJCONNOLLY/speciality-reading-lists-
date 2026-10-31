@@ -4,8 +4,6 @@
   "keller-gender-and-science",
   "collins-learning-from-the-outsider-within",
   "foucault-power-knowledge",
-  "butler-subjects-of-sex-gender-desire",
-  "mackinnon-difference-and-dominance",
   "crenshaw-mapping-the-margins",
   "butler-gender-trouble",
   "longino-science-as-social-knowledge",
@@ -48,24 +46,6 @@
     {
      "bookId": "collins-learning-from-the-outsider-within",
      "uses": 6
-    },
-    {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 95,
-     "page": 1,
-     "quote": "The philosophy underlying the difference approach is that sex is a difference, a division, a distinction, beneath which lies a stratum of human commonality, sameness.",
-     "definition": "MacKinnon describes the legal view that sex is a neutral difference in order to reject it: sex is a question of power.",
-     "stance": "critiques",
-     "changed": "Moves sex from difference to dominance."
-    },
-    {
-     "bookId": "butler-subjects-of-sex-gender-desire",
-     "uses": 53,
-     "page": 3,
-     "quote": "If the immutable character of sex is contested, perhaps this construct called ‘sex’ is as culturally constructed as gender; indeed, perhaps it was always already gender, with the consequence that the distinction between sex and gender turns out to be no distinction at all.",
-     "definition": "Sex may be as culturally constructed as gender, which collapses the sex/gender distinction earlier feminism relied on.",
-     "stance": "defines",
-     "changed": "Breaks the sex/gender split: there is no pre-cultural sex underneath."
     },
     {
      "bookId": "butler-gender-trouble",
@@ -139,24 +119,6 @@
      "definition": "Gender never works alone; it interlocks with race in specific modes of domination.",
      "stance": "in passing",
      "changed": "Gender as one axis in interlocking systems."
-    },
-    {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 37,
-     "page": 4,
-     "quote": "But if gender is an inequality first, constructed as a socially relevant differentiation in order to keep that inequality in place, then sex inequality questions are questions of systematic dominance, of male supremacy, which is not at all abstract and is anything but a mistake.",
-     "definition": "Gender is inequality first; \"difference\" is the story told to keep that inequality in place.",
-     "stance": "defines",
-     "changed": "Gender becomes a hierarchy, not a trait."
-    },
-    {
-     "bookId": "butler-subjects-of-sex-gender-desire",
-     "uses": 123,
-     "page": 8,
-     "quote": "In this sense, gender is not a noun, but neither is it a set of free-floating attributes, for we have seen that the substantive effect of gender is performatively produced and compelled by the regulatory practices of gender coherence.",
-     "definition": "Gender is neither a thing nor a free choice: it is performatively produced and compelled by regulatory practices.",
-     "stance": "defines",
-     "changed": "Names the mechanism: regulation compels gender coherence."
     },
     {
      "bookId": "butler-gender-trouble",
@@ -247,19 +209,6 @@
      "changed": "The power to define becomes the issue, which is the core of later classification critique."
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 11,
-     "page": 2,
-     "quote": "The difference approach misses the fact that hierarchy of power produces real as well as fantasied differences, differences that are also inequalities.",
-     "definition": "Power produces sex differences, not the other way round.",
-     "stance": "defines",
-     "changed": "Power comes before difference."
-    },
-    {
-     "bookId": "butler-subjects-of-sex-gender-desire",
-     "uses": 1
-    },
-    {
      "bookId": "butler-gender-trouble",
      "uses": 185,
      "page": 39,
@@ -338,24 +287,6 @@
      "changed": "Disciplinary discourse is open to marginal knowers."
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 3,
-     "page": 1,
-     "quote": "My concern is not with which of these paths to sex equality is preferable in the long run or more appropriate to any particular issue, although most discourse on sex discrimination revolves about these questions as if that were all there is.",
-     "definition": "Legal discourse frames sex equality so narrowly that other questions cannot be asked.",
-     "stance": "critiques",
-     "changed": "Discourse as a frame that limits the options."
-    },
-    {
-     "bookId": "butler-subjects-of-sex-gender-desire",
-     "uses": 7,
-     "page": 5,
-     "quote": "Whether gender or sex is fixed or free is a function of a discourse which, it will be suggested, seeks to set certain limits to analysis or to safeguard certain tenets of humanism as presuppositional to any analysis of gender.",
-     "definition": "Even the debate over whether gender is fixed or free is set by a discourse with its own limits.",
-     "stance": "defines",
-     "changed": "Discourse sets the terms of the debate itself."
-    },
-    {
      "bookId": "butler-gender-trouble",
      "uses": 124
     },
@@ -412,14 +343,6 @@
     {
      "bookId": "collins-learning-from-the-outsider-within",
      "uses": 2
-    },
-    {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 0
-    },
-    {
-     "bookId": "butler-subjects-of-sex-gender-desire",
-     "uses": 0
     },
     {
      "bookId": "butler-gender-trouble",
@@ -483,19 +406,6 @@
      "definition": "Black women's standpoint is a site of knowledge that Black women intellectuals articulate.",
      "stance": "defines",
      "changed": "Black women's standpoint as knowledge."
-    },
-    {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 2,
-     "page": 4,
-     "quote": "The dominance approach, in that it sees the inequalities of the social world from the standpoint of the subordination of women to men, is feminist.",
-     "definition": "Seeing inequality from the position of women's subordination is what makes an approach feminist.",
-     "stance": "defines",
-     "changed": "Standpoint becomes a feminist method."
-    },
-    {
-     "bookId": "butler-subjects-of-sex-gender-desire",
-     "uses": 0
     },
     {
      "bookId": "butler-gender-trouble",
@@ -571,24 +481,6 @@
      "changed": "The census enters the story."
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 3,
-     "page": 3,
-     "quote": "The goal of this dissident approach is not to make legal categories trace and trap the way things are.",
-     "definition": "Legal categories should not just mirror, and so lock in, an unequal reality.",
-     "stance": "critiques",
-     "changed": "Categories that trace reality also trap it."
-    },
-    {
-     "bookId": "butler-subjects-of-sex-gender-desire",
-     "uses": 9,
-     "page": 1,
-     "quote": "The category of sex is the political category that founds society as heterosexual.",
-     "definition": "Butler opens with this line from Monique Wittig: the category of sex is political and founds heterosexual society.",
-     "stance": "defines",
-     "changed": "The category founds what it names."
-    },
-    {
      "bookId": "butler-gender-trouble",
      "uses": 183,
      "page": 179,
@@ -652,19 +544,6 @@
      "uses": 0
     },
     {
-     "bookId": "mackinnon-difference-and-dominance",
-     "uses": 0
-    },
-    {
-     "bookId": "butler-subjects-of-sex-gender-desire",
-     "uses": 30,
-     "page": 6,
-     "quote": "If ‘identity’ is an effect of discursive practices, to what extent is gender identity, construed as a relationship among sex, gender, sexual practice, and desire, the effect of a regulatory practice that can be identified as compulsory heterosexuality?",
-     "definition": "Gender identity is the effect of a regulatory practice: compulsory heterosexuality.",
-     "stance": "defines",
-     "changed": "Identity as an effect, not a source."
-    },
-    {
      "bookId": "butler-gender-trouble",
      "uses": 307,
      "page": 57,
@@ -711,8 +590,8 @@
   "essay": {
    "title": "Talking to Each Other: How the Foundations Use Each Other",
    "paragraphs": [
-    "Within the eleven foundational texts indexed so far, the conversation runs in two separate streams that barely touch. The first is the Foucault-to-Butler line on sex, power, and discourse. The second is the feminist epistemology line on objectivity and standpoint, running from Keller through Collins and Longino to Harding. MacKinnon and Crenshaw stand somewhat apart: Butler argues with MacKinnon at length, Crenshaw cites her only in footnotes, and none of the other indexed texts cites Crenshaw.",
-    "Butler is the heaviest borrower by far. Foucault is named on dozens of pages of Gender Trouble and Bodies That Matter, and his idea that power produces the subjects it claims to describe is the engine of both books. MacKinnon gets the most pointed engagement: Butler credits her account of gender hierarchy as close to her own, then argues it quietly presumes heterosexuality. This is the move that opens room for queer theory to separate from, and argue with, structural feminism.",
+    "Within the nine foundational texts indexed so far, the conversation runs in two separate streams that barely touch. The first is the Foucault-to-Butler line on sex, power, and discourse. The second is the feminist epistemology line on objectivity and standpoint, running from Keller through Collins and Longino to Harding. Crenshaw stands apart: none of the other indexed texts cites her, and Keller's name appears in her notes only as co-editor of an anthology she cites.",
+    "Butler is the heaviest borrower by far. Foucault is named on dozens of pages of Gender Trouble and Bodies That Matter, and his idea that power produces the subjects it claims to describe is the engine of both books.",
     "Harding works as the hub of the epistemology stream. She takes Collins as a central example of thinking from marginal lives, treats Longino as a respected rival (a feminist empiricist whose ideas overlap with standpoint theory), and builds on Keller's critique of 'objectivism'. Longino, in turn, sets out Keller's argument that scientific language carries an ideology of domination. Collins cites Keller on the dualistic thinking that links gender, race, and sexual oppression.",
     "The missing link is the most telling one. None of the epistemologists cite Foucault, and in Gender Trouble Butler mentions Keller and Harding only in acknowledgments and endnotes. Together the two streams make the claim this list rests on, that classification systems constitute what they claim to find. But in these texts the claim is assembled by the reader, not by the authors. Whether and how the Classification and Datafication Critique readings bring the two streams together can be mapped here once their PDFs are added."
    ]
@@ -731,29 +610,6 @@
     "how": "Foucault's productive power is the engine of the book: Butler turns it on feminism's own subject, 'women'."
    },
    {
-    "from": "butler-gender-trouble",
-    "author": "MacKinnon",
-    "toBooks": [
-     "mackinnon-difference-and-dominance"
-    ],
-    "pages": 3,
-    "page": 13,
-    "quote": "Catharine MacKinnon offers a formulation of this problem that resonates with my own at the same time that there are, I believe, crucial and important differences between us.",
-    "how": "An argument, not an alliance: Butler says MacKinnon's account of gender hierarchy presumes heterosexuality."
-   },
-   {
-    "from": "butler-subjects-of-sex-gender-desire",
-    "author": "Foucault",
-    "toBooks": [
-     "foucault-history-of-sexuality-vol-1",
-     "foucault-power-knowledge"
-    ],
-    "pages": 2,
-    "page": 6,
-    "quote": "The notion that there might be a ‘truth’ of sex, as Foucault ironically terms it, is produced precisely through the regulatory practices that generate coherent identities through the matrix of coherent gender norms.",
-    "how": "Foucault's 'truth of sex' becomes the regulatory gender norms of this chapter."
-   },
-   {
     "from": "butler-bodies-that-matter",
     "author": "Foucault",
     "toBooks": [
@@ -764,17 +620,6 @@
     "page": 21,
     "quote": "Thus, the question is no longer, How is gender constituted as and through a certain interpretation of sex? (a question that leaves the \"matter\" of sex untheorized), but rather Through what regulatory norms is sex itself materialized?",
     "how": "Foucault's 'regulatory power' becomes the frame for asking how sex itself is materialized."
-   },
-   {
-    "from": "butler-bodies-that-matter",
-    "author": "MacKinnon",
-    "toBooks": [
-     "mackinnon-difference-and-dominance"
-    ],
-    "pages": 3,
-    "page": 245,
-    "quote": "In theories such as Catharine MacKinnon's, sexual relations of subordination are understood to establish differential gender categories, such that \"men\" are those defined in a sexually dominating social position and \"women\" are those defined in subordination.",
-    "how": "MacKinnon's structuralism is the foil Butler wants queer theory and feminism to rethink together."
    },
    {
     "from": "harding-rethinking-standpoint-epistemology",
@@ -830,17 +675,6 @@
     "page": 8,
     "quote": "They note that there is an implicit belief in the duality of culture and nature.",
     "how": "Collins cites Keller (1983) on the dualistic, gendered thinking that also structures racial and sexual oppression."
-   },
-   {
-    "from": "crenshaw-mapping-the-margins",
-    "author": "MacKinnon",
-    "toBooks": [
-     "mackinnon-difference-and-dominance"
-    ],
-    "pages": 2,
-    "page": 5,
-    "quote": "citing Catharine MacKinnon, Feminism, Marxism, Method, and the State",
-    "how": "A footnote: Crenshaw cites MacKinnon on capitalizing \"Black\" because Black people form a specific cultural group. A citation, not an argument."
    }
   ]
  },
@@ -879,13 +713,6 @@
    "definition": "The position of Black women inside institutions that do not fully include them. Collins argues it gives a distinctive angle of vision on those institutions.",
    "bookId": "collins-learning-from-the-outsider-within",
    "termId": "standpoint"
-  },
-  {
-   "id": "dominance-approach",
-   "term": "Dominance Approach",
-   "definition": "Sex inequality is a matter of hierarchy, not difference. Asking whether women are \"the same as\" or \"different from\" men already accepts a male standard.",
-   "bookId": "mackinnon-difference-and-dominance",
-   "termId": "power"
   },
   {
    "id": "performativity",
@@ -930,20 +757,6 @@
    "termId": "sex"
   },
   {
-   "id": "orientation",
-   "term": "Orientation",
-   "definition": "Sexual orientation is literally about orientation: which objects and paths bodies are directed toward, and how queer bodies fall 'out of line'.",
-   "bookId": "ahmed-queer-phenomenology",
-   "termId": null
-  },
-  {
-   "id": "posttranssexual",
-   "term": "Posttranssexual",
-   "definition": "A refusal to \"pass\" silently into a binary category. Stone asks trans people to write themselves into visibility instead.",
-   "bookId": "stone-the-empire-strikes-back",
-   "termId": null
-  },
-  {
    "id": "residual-categories",
    "term": "Residual Categories",
    "definition": "The 'other' and 'not elsewhere classified' bins every classification system produces; what lands there shows what the system cannot see.",
@@ -965,39 +778,11 @@
    "termId": null
   },
   {
-   "id": "biocertification",
-   "term": "Biocertification",
-   "definition": "The fantasy that identity can be proven through the body, for example fingerprints, blood, or sex testing, and the systems built to certify it.",
-   "bookId": "samuels-fantasies-of-identification",
-   "termId": "identity"
-  },
-  {
-   "id": "racializing-surveillance",
-   "term": "Racializing Surveillance",
-   "definition": "Surveillance practices that produce and enforce racial categories; Browne roots biometric technologies in the surveillance of Blackness.",
-   "bookId": "browne-s-dark-matters",
-   "termId": null
-  },
-  {
    "id": "automatic-gender-recognition",
    "term": "Automatic Gender Recognition",
    "definition": "Software that infers gender from faces or bodies. Keyes shows it encodes a binary, physiological model of gender that misgenders trans people.",
    "bookId": "keyes-the-misgendering-machines",
    "termId": "gender"
-  },
-  {
-   "id": "working-closets",
-   "term": "Working Closets",
-   "definition": "How LGBTQ professionals selectively disclose or conceal identity in workplace communication.",
-   "bookId": "cox-working-closets",
-   "termId": "identity"
-  },
-  {
-   "id": "tactical-technical-communication",
-   "term": "Tactical Technical Communication",
-   "definition": "Instructions people make for each other to route around institutions. Edenfield, Holmes, and Colton queer this existing concept through trans people sharing DIY hormone protocols outside medical gatekeeping.",
-   "bookId": "edenfield-holmes-colton-queering-tactical-technical-communication",
-   "termId": null
   },
   {
    "id": "discursive-violence",
