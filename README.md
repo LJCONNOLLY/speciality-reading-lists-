@@ -89,15 +89,15 @@ subcollection, and points the site's Zotero links there. Run it with no
 arguments for a dry run; `--apply` makes the changes and needs a Zotero
 key with write access in `ZOTERO_API_KEY`.
 
-## Adding a write-up
+## Linking a write-up
 
-Put the Word file at `public/writeups/<book-id>.docx`, add
-`"writeup": "writeups/<book-id>.docx"` to that book's entry, and run
-`python scripts/build_writeups.py` (needs pandoc). The book's page then
-shows a "Download write-up" button and the write-up itself under
-"Write-up", converted from the Word file into
-`src/data/writeups/<book-id>.html`. Rerun the script whenever a write-up
-changes.
+Add a `"writeup"` field with the full URL of the book's Google Doc
+write-up, e.g.
+`"writeup": "https://docs.google.com/document/d/<doc-id>/edit"`.
+The book's page then shows an outlined "Open write-up in Google Docs"
+button next to the PDF and Zotero buttons. The docs live in the "The
+Classification and Datafication of Queer Bodies" Drive folder and, like
+Zotero, only open for someone the doc is shared with.
 
 ## Sections (subfolders) and list intros
 

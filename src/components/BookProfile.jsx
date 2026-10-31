@@ -4,14 +4,6 @@ import { bookSwatches } from '../utils/palette.js';
 
 const MODE_LABELS = { T: 'Technical', V: 'Visual', 'T+V': 'Technical + Visual' };
 
-// Write-ups converted from public/writeups/<book-id>.docx by
-// scripts/build_writeups.py, keyed by book id.
-const WRITEUPS = Object.fromEntries(
-  Object.entries(
-    import.meta.glob('../data/writeups/*.html', { query: '?raw', import: 'default', eager: true }),
-  ).map(([path, html]) => [path.split('/').pop().replace(/\.html$/, ''), html]),
-);
-
 // Renders any http(s) URLs inside a citation as links.
 function Linkified({ text }) {
   return text.split(/(https?:\/\/\S+)/).map((part, i) =>
@@ -41,7 +33,6 @@ export default function BookProfile() {
   }
 
   const swatch = bookSwatches(list)[book.id];
-  const writeup = WRITEUPS[book.id];
 
   return (
     <div className="book-profile" style={{ '--swatch': swatch.bg }}>
@@ -87,22 +78,16 @@ export default function BookProfile() {
           ) : null}
           {book.writeup ? (
             <a
-              href={`${import.meta.env.BASE_URL}${book.writeup}`}
-              download
+              href={book.writeup}
+              target="_blank"
+              rel="noopener noreferrer"
               className="pdf-link zotero-link"
               style={{ borderColor: swatch.bg }}
             >
-              Download write-up (.docx) &darr;
+              Open write-up in Google Docs &rarr;
             </a>
           ) : null}
         </div>
-      ) : null}
-
-      {writeup ? (
-        <section className="bp-section">
-          <h3>Write-up</h3>
-          <div className="bp-writeup" dangerouslySetInnerHTML={{ __html: writeup }} />
-        </section>
       ) : null}
 
       {book.annotation ? (
