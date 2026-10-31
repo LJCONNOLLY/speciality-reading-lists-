@@ -89,6 +89,16 @@ subcollection, and points the site's Zotero links there. Run it with no
 arguments for a dry run; `--apply` makes the changes and needs a Zotero
 key with write access in `ZOTERO_API_KEY`.
 
+## Adding a write-up
+
+Put the Word file at `public/writeups/<book-id>.docx`, add
+`"writeup": "writeups/<book-id>.docx"` to that book's entry, and run
+`python scripts/build_writeups.py` (needs pandoc). The book's page then
+shows a "Download write-up" button and the write-up itself under
+"Write-up", converted from the Word file into
+`src/data/writeups/<book-id>.html`. Rerun the script whenever a write-up
+changes.
+
 ## Sections (subfolders) and list intros
 
 A list can optionally be split into named sections — a second,

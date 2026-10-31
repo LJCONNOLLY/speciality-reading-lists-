@@ -4,6 +4,14 @@ import { bookSwatches } from '../utils/palette.js';
 
 const MODE_LABELS = { T: 'Technical', V: 'Visual', 'T+V': 'Technical + Visual' };
 
+// Write-ups converted from public/writeups/<book-id>.docx by
+// scripts/build_writeups.py, keyed by book id.
+const WRITEUPS = Object.fromEntries(
+  Object.entries(
+    import.meta.glob('../data/writeups/*.html', { query: '?raw', import: 'default', eager: true }),
+  ).map(([path, html]) => [path.split('/').pop().replace(/\.html$/, ''), html]),
+);
+
 // Renders any http(s) URLs inside a citation as links.
 function Linkified({ text }) {
   return text.split(/(https?:\/\/\S+)/).map((part, i) =>
@@ -33,6 +41,7 @@ export default function BookProfile() {
   }
 
   const swatch = bookSwatches(list)[book.id];
+  const writeup = WRITEUPS[book.id];
 
   return (
     <div className="book-profile" style={{ '--swatch': swatch.bg }}>
@@ -52,7 +61,7 @@ export default function BookProfile() {
         {book.year} {book.publisher ? `· ${book.publisher}` : ''}
       </p>
       <span className={`status status-${book.status}`}>{statusLabel(book.status)}</span>
-      {book.pdf || book.zotero ? (
+      {book.pdf || book.zotero || book.writeup ? (
         <div className="bp-actions">
           {book.pdf ? (
             <a
@@ -76,7 +85,24 @@ export default function BookProfile() {
               Open in Zotero &rarr;
             </a>
           ) : null}
+          {book.writeup ? (
+            <a
+              href={`${import.meta.env.BASE_URL}${book.writeup}`}
+              download
+              className="pdf-link zotero-link"
+              style={{ borderColor: swatch.bg }}
+            >
+              Download write-up (.docx) &darr;
+            </a>
+          ) : null}
         </div>
+      ) : null}
+
+      {writeup ? (
+        <section className="bp-section">
+          <h3>Write-up</h3>
+          <div className="bp-writeup" dangerouslySetInnerHTML={{ __html: writeup }} />
+        </section>
       ) : null}
 
       {book.annotation ? (
