@@ -77,7 +77,13 @@ Each list has one Zotero collection, with no subcollections:
 "Rhetoric in/of Technical and Visual Communication" (`EUGZRMKI`) and
 "Queer Bodies and the Politics of Classification and Datafication"
 (`55HJFZDW`). The Zotero collection is the source of truth for which
-readings belong on a list; sections are set on the site only.
+readings belong on a list.
+
+`scripts/zotero_sections.py` mirrors the queer data list's sections as
+Zotero subcollections, moves each reading into its section's
+subcollection, and points the site's Zotero links there. Run it with no
+arguments for a dry run; `--apply` makes the changes and needs a Zotero
+key with write access in `ZOTERO_API_KEY`.
 
 ## Sections (subfolders) and list intros
 
