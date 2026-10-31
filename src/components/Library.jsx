@@ -31,36 +31,44 @@ export default function Library() {
 
   const hasSections = list.sections?.length > 0;
 
+  // Each tab's count is what you'd see after clicking it, keeping the other
+  // filter as it is: status counts are within the chosen section, and
+  // section counts are within the chosen status.
+  const inSection = useMemo(
+    () => (section === 'all' ? list.books : list.books.filter((book) => book.section === section)),
+    [list.books, section],
+  );
+  const inFolder = useMemo(
+    () => (folder === 'all' ? list.books : list.books.filter((book) => book.status === folder)),
+    [list.books, folder],
+  );
+
   const statusCounts = useMemo(() => {
-    const byStatus = { all: list.books.length };
+    const byStatus = { all: inSection.length };
     STATUSES.forEach((status) => {
-      byStatus[status.id] = list.books.filter((book) => book.status === status.id).length;
+      byStatus[status.id] = inSection.filter((book) => book.status === status.id).length;
     });
     return byStatus;
-  }, [list.books]);
+  }, [inSection]);
 
   const sectionCounts = useMemo(() => {
     if (!hasSections) return {};
-    const bySection = { all: list.books.length };
+    const bySection = { all: inFolder.length };
     list.sections.forEach((sec) => {
-      bySection[sec.id] = list.books.filter((book) => book.section === sec.id).length;
+      bySection[sec.id] = inFolder.filter((book) => book.section === sec.id).length;
     });
     return bySection;
-  }, [list.books, list.sections, hasSections]);
+  }, [inFolder, list.sections, hasSections]);
 
-  const results = useMemo(() => {
-    let books = list.books;
-    if (section !== 'all') {
-      books = books.filter((book) => book.section === section);
-    }
-    if (folder !== 'all') {
-      books = books.filter((book) => book.status === folder);
-    }
-    if (query.trim()) {
-      books = books.filter((book) => matches(book, query));
-    }
-    return books;
-  }, [list.books, query, folder, section]);
+  const filtered = useMemo(
+    () => (folder === 'all' ? inSection : inSection.filter((book) => book.status === folder)),
+    [inSection, folder],
+  );
+
+  const results = useMemo(
+    () => (query.trim() ? filtered.filter((book) => matches(book, query)) : filtered),
+    [filtered, query],
+  );
 
   const swatchByBookId = useMemo(() => bookSwatches(list), [list]);
 
@@ -125,7 +133,7 @@ export default function Library() {
           aria-label={`Search within ${list.title}`}
         />
         <span className="search-count">
-          {results.length} of {list.books.length}
+          {results.length} of {filtered.length}
         </span>
       </div>
 
