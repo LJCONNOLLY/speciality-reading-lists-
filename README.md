@@ -3,7 +3,7 @@
 A small site that splits into two independent reading lists, each browsed on its own:
 
 - **Rhetoric in Technical and Visual Communication**
-- **Classification and Datafication of Queer Bodies**
+- **Queer Bodies and the Politics of Classification and Datafication**
 
 The home page just links out to each list. Once inside a list, everything
 (library grid, search, book pages) is scoped to that list only — search never
@@ -73,9 +73,11 @@ The book's page then shows an outlined "Open in Zotero" button next to
 the PDF button. The library is private, so the link only opens for
 someone signed in to that Zotero account.
 
-Each list has a Zotero collection with one subcollection per section:
+Each list has one Zotero collection, with no subcollections:
 "Rhetoric in/of Technical and Visual Communication" (`EUGZRMKI`) and
-"Classification and Datafication of Queer Bodies" (`55HJFZDW`).
+"Queer Bodies and the Politics of Classification and Datafication"
+(`55HJFZDW`). The Zotero collection is the source of truth for which
+readings belong on a list; sections are set on the site only.
 
 ## Sections (subfolders) and list intros
 

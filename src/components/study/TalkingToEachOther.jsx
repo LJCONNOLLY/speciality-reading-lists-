@@ -135,7 +135,7 @@ export default function TalkingToEachOther({ study }) {
 
       <p className="study-note">
         Mapped across the {study.indexed.length} readings with PDFs attached. Foucault&rsquo;s two books and
-        MacKinnon cite none of the others; the later critique readings join the map as their PDFs are added.
+        Crenshaw cite none of the others; the later critique readings join the map as their PDFs are added.
       </p>
     </div>
   );
